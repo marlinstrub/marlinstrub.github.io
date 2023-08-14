@@ -1,0 +1,22 @@
+#+title: Personal website
+
+* Instructions
+
+** Local
+
+The site can be served locally via Emacs using [[https://github.com/skeeto/emacs-web-server/tree/master][simple-httpd]]. I have tested this with the following [[https://github.com/radian-software/straight.el][straight]] recipe:
+
+#+begin_src elisp
+(use-package simple-httpd
+  :straight (simple-httpd :host github :repo "skeeto/emacs-web-server"))
+#+end_src
+
+You can serve the site locally by first running [[file:build.sh][build.sh]] and then calling src_elisp{httpd-serve-directory} and navigating to the ~public~ folder when asked for a directory to serve. By default, this will serve the directory at [[http://localhost:8080/]].
+
+** Public
+
+This repository contains the file [[file:.github/workflows/publish.yml][.github/workflows/publish.yml]], which instructs GitHub to generate the site using [[file:build.sh][build.sh]] whenever a commit is pushed to the ~main~ branch. This script will place the generated files in a directory called ~public~ and copy those files to a branch called ~gh-pages~. This branch will then be hosted by GitHub.
+
+* Acknowledgements
+
+The css stylesheet is a slightly modified version of Nicolas Rougier's [[https://www.labri.fr/perso/nrougier/GTD/GTD.css][GTD.css]]. The approach for [[https://youtu.be/AfkrzFodoNw][generating the website with Emacs]] and [[https://youtu.be/za99DwdZEyg][hosting it on GitHub pages]] was inspired by David Wilson's linked tutorials.
