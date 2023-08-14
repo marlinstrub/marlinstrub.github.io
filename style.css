@@ -35,7 +35,6 @@ i, i a {
 .custom { animation: blinker 1s linear infinite; }
 @keyframes blinker { 50% { opacity: 0; } }
 
-
 /* --- Side notes --- */
 div.side-note::before {
     content: "Note";
@@ -276,7 +275,7 @@ pre {
 details {
     background: #fbfbfb;
     border: 1px solid #ebebeb;
-    border-radius: 3px;
+    border-radius: 5px;
     padding:  0.25em;
     margin-bottom: 0.25em;
     margin-top: 0.25em;
