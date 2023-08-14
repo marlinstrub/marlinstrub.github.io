@@ -20,6 +20,12 @@
              :base-directory "./style"
              :base-extension "css"
              :publishing-directory "./public"
+             :publishing-function 'org-publish-attachment)
+       (list "mps-assets"
+             :recursive nil
+             :base-directory "./assets"
+             :base-extension "pdf"
+             :publishing-directory "./public/assets"
              :publishing-function 'org-publish-attachment)))
 
 ;; Remove the validation link.
@@ -30,7 +36,7 @@
       org-html-head-include-default-style nil
       org-html-head "<link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">")
 
-;; Generate the html. The 't' is for forcing a new build.
+;; Generate the html. The 't' is for discarding cached values.
 (org-publish-all t)
 
 (message "Build complete.")

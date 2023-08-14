@@ -3,14 +3,14 @@
 
 * About me
 
-I'm a Robotics Technologist at [[https://www.jpl.nasa.gov/][NASA/JPL]], where I currently lead the path-planning efforts for a snake-like robot called [[https://www-robotics.jpl.nasa.gov/how-we-do-it/systems/exobiology-extant-life-surveyor-eels/][Exobiology Extant Life Surveyor (EELS)]] and  for the [[https://mars.nasa.gov/msr/spacecraft/sample-recovery-helicopters/][Sample Recovery Helicopters (SRH)]] ground mobility control. Before joining JPL I completed my Ph.D. at the [[https://www.ox.ac.uk/][University of Oxford]] as a member of the [[https://robotic-esp.com/][Estimation, Search, and Planning (ESP) Group]] led by [[https://robotic-esp.com/people/gammell/][Dr. Jonathan D. Gammell]].
-My research at Oxford focused on designing and implementing path-planning algorithms that leverage different sources of information to improve planning performance for complex systems in robotics and beyond. If you're interested in my work, please take a look at my [[#publications][publications]]. All of the algorithms I designed at ESP are available in the [[https://ompl.kavrakilab.org/][Open Motion Planning Library (OMPL)]].
+I'm a Robotics Technologist at [[https://www.jpl.nasa.gov/][NASA/JPL]], where I currently lead the path-planning efforts for a snake-like robot called [[https://www-robotics.jpl.nasa.gov/how-we-do-it/systems/exobiology-extant-life-surveyor-eels/][Exobiology Extant Life Surveyor (EELS)]] and  for the [[https://mars.nasa.gov/msr/spacecraft/sample-recovery-helicopters/][Sample Recovery Helicopters (SRH)]] ground mobility control. I hold a Ph.D in Engineering Science from the [[https://www.ox.ac.uk/][University of Oxford]], where I was a member of the [[https://robotic-esp.com/][Estimation, Search, and Planning (ESP) Group]] led by [[https://robotic-esp.com/people/gammell/][Dr. Jonathan D. Gammell]]. My research at Oxford focused on designing and implementing path-planning algorithms that leverage different sources of information to improve planning performance for complex systems in robotics and beyond. If you're interested in my work, please take a look at my [[#publications][publications]]. All of the algorithms I designed at ESP are available in the [[https://ompl.kavrakilab.org/][Open Motion Planning Library (OMPL)]].
+
+A detailed CV can be downloaded by clicking on [[file:assets/cv_marlin_strub.pdf][this link]].
 
 * Publications
 :PROPERTIES:
 :CUSTOM_ID: publications
 :END:
-
 
 ** Journal articles
 
