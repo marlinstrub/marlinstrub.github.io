@@ -134,7 +134,7 @@ ul.org-ul li p {
 
 ul.org-ul li::before {
     display: inline-block;
-    content: "—  ";
+    content: "- ";
     color: #999999;
     width: 1em;
     margin-left: -1em;
@@ -258,8 +258,9 @@ pre::before {
 pre.src-lisp::before { content: "lisp"; }
 pre.src-org::before { content: "org"; }
 
+
 pre {
-    color: #00008b;
+    color: rgba(51, 51, 51, 0.50);
     background-color: #fbfbfb;
     overflow: auto;
     margin: 0em;
@@ -291,7 +292,7 @@ summary::after {
     font-size: 0.85em;
     display: inline-block;
     float: right;
-    content: "Click to fold/unfold";
+    content: "Click to show/hide";
     padding-right:  0.5em;
 }
 

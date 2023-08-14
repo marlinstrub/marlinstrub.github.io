@@ -34,11 +34,14 @@ A detailed CV can be downloaded by clicking on [[file:assets/cv_marlin_strub.pdf
 #+HTML: <details><summary>Bibtex entry</summary>
 #+begin_src bibtex
 @Article{strub_ijrr2021,
-	author = {Strub, Marlin P. and Gammell, Jonathan D.}
-	title = {{AIT*} and {EIT*}: {Asymmetric} bidirectional sampling-based path planning},
-	note = {To appear, Manuscript \#IJR-21-4179},
-	year = {2022},
-	journal = {The International Journal of Robotics Research ({IJRR})}
+  author = {Strub, Marlin P. and Gammell, Jonathan D.}
+  title = {{AIT*} and {EIT*}: {Asymmetric} bidirectional sampling-based path planning},
+  journal = {The International Journal of Robotics Research ({IJRR})},
+  year = {2022},
+  volume = {41},
+  number = {4},
+  pages = {351--457},
+  doi = {10.1177/02783649211069572}
 }
 #+end_src
 #+HTML: </details>
@@ -50,10 +53,10 @@ A detailed CV can be downloaded by clicking on [[file:assets/cv_marlin_strub.pdf
   author = {Gammell, Jonathan D. and Strub, Marlin P.},
   title = {Asymptotically optimal sampling-based motion planning methods},
   journal = {Annual Review of Control, Robotics, and Autonomous Systems},
-  pages = {295--318},
   year = {2021},
   volume = {4},
   number = {1},
+  pages = {295--318},
   doi = {10.1146/annurev-control-061920-093753}
 }
 #+end_src
@@ -61,7 +64,7 @@ A detailed CV can be downloaded by clicking on [[file:assets/cv_marlin_strub.pdf
 
 ** Conference papers
 
-  - V. N. Hartmann, M. P. Strub, M. Toussaint, J. D. Gammell (2022) /Effort Informed Roadmaps (EIRM*): Efficient asymptotically optimal multiquery planning by actively reusing validation effort/. In: Proceedings of the International Symposium on Robotics Research (ISRR). to be published. ([[https://arxiv.org/pdf/2205.08480][arxiv]])
+  - V. N. Hartmann, M. P. Strub, M. Toussaint, J. D. Gammell (2022) /Effort Informed Roadmaps (EIRM*): Efficient asymptotically optimal multiquery planning by actively reusing validation effort/. In: Proceedings of the International Symposium on Robotics Research (ISRR). ([[https://arxiv.org/pdf/2205.08480][arxiv]])
 #+HTML: <details><summary>Bibtex entry</summary>
 #+begin_src bibtex
 @InProceedings{hartmann_arxiv22,
@@ -69,7 +72,7 @@ A detailed CV can be downloaded by clicking on [[file:assets/cv_marlin_strub.pdf
   title = {{Effort} {Informed} {Roadmaps} ({EIRM*}): {Efficient} asymptotically optimal multiquery planning by actively reusing validation effort},
   booktitle = {Proceedings of the International Symposium on Robotics Research ({ISRR})},
   year = {2022},
-  note = {Submitted, Manuscript \#3, {arXiv}:2205.08480 {[cs.RO]}},
+  doi = {10.1007/978-3-031-25555-7_37}
 }
 #+end_src
 #+HTML: </details>
@@ -80,8 +83,8 @@ A detailed CV can be downloaded by clicking on [[file:assets/cv_marlin_strub.pdf
   author = {Paton, Michael and Strub, Marlin P. and Brown, Travis and Greene, Rebecca J. and Lizewski, Jacob and Patel, Vandan and Gammell, Jonathan D. and Nesnas, Issa A.D.},
   title = {Navigation on the line: {Traversability} analysis and path planning for extreme-terrain rappelling rovers},
   booktitle = {Proceedings of the {IEEE}/{RSJ} International Conference on Intelligent Robots and Systems ({IROS})},
+  year = {2020},
   pages = {7034--7041},
-  year = 2020,
   doi = {10.1109/IROS45743.2020.9341409}
 }
 #+end_src
@@ -91,10 +94,10 @@ A detailed CV can be downloaded by clicking on [[file:assets/cv_marlin_strub.pdf
 #+begin_src bibtex
 @InProceedings{strub_icra2020b,
   author = {Strub, Marlin P. and Gammell, Jonathan D.},
-  title = {{Adaptively} {Informed} {Trees} ({AIT}*): {Fast} asymptotically optimal path planning through adaptive heuristics},
-	booktitle = {Proceedings of the {IEEE} International Conference on Robotics and Automation ({ICRA})},
-	pages = {3191--3198},
-  year = 2020,
+  title = {{Adaptively} {Informed} {Trees} ({AIT*}): {Fast} asymptotically optimal path planning through adaptive heuristics},
+  booktitle = {Proceedings of the {IEEE} International Conference on Robotics and Automation ({ICRA})},
+  year = {2020},
+  pages = {3191--3198},
   doi = {10.1109/ICRA40945.2020.9197338}
 }
 #+end_src
@@ -103,11 +106,11 @@ A detailed CV can be downloaded by clicking on [[file:assets/cv_marlin_strub.pdf
 #+HTML: <details><summary>Bibtex entry</summary>
 #+begin_src bibtex
 @InProceedings{strub_icra2020a,
-	author = {Strub, Marlin P. and Gammell, Jonathan D.},
-	title = {{Advanced} {BIT}* ({ABIT}*): {Sampling}-based planning with advanced graph-search techniques},
-	booktitle = {Proceedings of the {IEEE} International Conference on Robotics and Automation ({ICRA})},
+  author = {Strub, Marlin P. and Gammell, Jonathan D.},
+  title = {{Advanced} {BIT*} ({ABIT*}): {Sampling}-based planning with advanced graph-search techniques},
+  booktitle = {Proceedings of the {IEEE} International Conference on Robotics and Automation ({ICRA})},
+  year = 2020,
   pages = {130--136},
-	year = 2020,
   doi = {10.1109/ICRA40945.2020.9196580},
 }
 #+end_src
@@ -122,7 +125,7 @@ A detailed CV can be downloaded by clicking on [[file:assets/cv_marlin_strub.pdf
   author = {Strub, Marlin P.},
   title = {Leveraging multiple sources of information to search continuous spaces},
   school = {University of Oxford},
-	year = {2022}
+  year = {2022}
 }
 #+end_src
 #+HTML: </details>
