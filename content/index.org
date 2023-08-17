@@ -33,7 +33,7 @@ W. Thomason, M. P. Strub, J. D. Gammell (2022) /Task and Motion Informed Trees (
 #+end_src
 #+HTML: </details>
 
-M. P. Strub, J. D. Gammell (2022) /AIT​* and EIT*: Asymmetric bidirectional sampling-based path planning/. The International Journal of Robotics Research, 41(4): pages 390—417. ([[https://arxiv.org/abs/2111.01877][arxiv]], [[https://www.doi.org/10.1177/02783649211069572][doi]])
+M. P. Strub, J. D. Gammell (2022) /AIT​* and EIT*: Asymmetric bidirectional sampling-based path planning/. The International Journal of Robotics Research (IJRR), 41(4): pages 390—417. ([[https://arxiv.org/abs/2111.01877][arxiv]], [[https://www.doi.org/10.1177/02783649211069572][doi]])
 #+HTML: <details><summary>Bibtex entry</summary>
 #+begin_src bibtex
 @Article{strub_ijrr2021,
@@ -49,7 +49,7 @@ M. P. Strub, J. D. Gammell (2022) /AIT​* and EIT*: Asymmetric bidirectional sa
 #+end_src
 #+HTML: </details>
 
-J. D. Gammell, M. P. Strub (2021) /Asymptotically optimal sampling-based motion planning methods/. Annual Review of Control, Robotics, and Autonomous Systems, 4(1): pages 295—318. Invited. ([[https://arxiv.org/abs/2009.10484][arxiv]], [[https://www.annualreviews.org/doi/full/10.1146/annurev-control-061920-093753][annualreviews]])
+J. D. Gammell, M. P. Strub (2021) /Asymptotically optimal sampling-based motion planning methods/. Annual Review of Control, Robotics, and Autonomous Systems (ARCRA), 4(1): pages 295—318. Invited. ([[https://arxiv.org/abs/2009.10484][arxiv]], [[https://www.annualreviews.org/doi/full/10.1146/annurev-control-061920-093753][annualreviews]])
 #+HTML: <details><summary>Bibtex entry</summary>
 #+begin_src bibtex
 @Article{gammell_arcras2021,
