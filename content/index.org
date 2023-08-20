@@ -4,7 +4,7 @@
 #+attr_html: :width 650px :style border-radius:5px :title Me with the engineering model of Curiosity.
 [[file:./assets/profile_picture.jpg]]
 
-| [[id:news][*NEWS*]] | [[id:about][*ABOUT*]] | [[id:publications][*PUBLICATIONS*]] |
+| [[*News][*NEWS*]] | [[*About][*ABOUT*]] | [[*Publications][*PUBLICATIONS*]] |
 
 * News
 :PROPERTIES:
