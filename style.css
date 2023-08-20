@@ -7,7 +7,6 @@ body {
     font-weight: 300;
     color:  rgba(51, 51, 51, 1.00);
     line-height: 1.4em;
-    font-weight: light;
     counter-reset: section;
     counter-reset: toc-section;
     counter-increment: toc-section;
@@ -160,8 +159,8 @@ ol.org-ol {
 #content, #postamble {
     margin: 0 auto;
     max-width: 650px;
-    margin-top: 2.5%;
-    margin-bottom: 2.5%;
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
 }
 
 #postamble {
@@ -177,7 +176,7 @@ ol.org-ol {
 
 h1.title {
     font-size: 1.5em;
-    margin-top: 4em;
+    margin-top: 3em;
     margin-bottom: 0em;
     font-weight: 400;
     text-align: left;
@@ -294,14 +293,35 @@ summary::after {
     content: "Click to show/hide";
     padding-right:  0.5em;
 }
+news details {
+    background: none;
+    border: 0;
+    padding:  0.25em;
+    margin-bottom: 0.25em;
+    margin-top: 0.25em;
+    margin-left: 20px;
+    font-size: 1.0em;
+}
+news summary {
+    margin-left: -17px;
+    font-size: 1.0em;
+    color: rgba(51, 51, 51, 1.00);
+}
+news details summary::marker {
+    display:none;
+}
+news details summary { list-style-type: none; } /* Firefox */
+
+news summary::after {
+    content: "";
+}
 
 /* --- Table --- */
-table { min-width: 100%; }
 table, tbody, td, tr, th, colgroup, thead {
     border: 0;
-/*    padding: 0;*/
 }
 table {
+    min-width: 20%;
     margin-top: 1em;
 }
 thead {
@@ -314,7 +334,11 @@ th {
     margin-bottom: 0.25em;
     padding-bottom: 0.25em;
 }
-td { padding: 0; }
+td {
+    padding: 30px;
+    padding-top: 0;
+    padding-left: 0;
+}
 
 tr:nth-child(even) {background: #f9f9f9;}
 tr:nth-child(odd) {background: #ffffff;}
@@ -333,7 +357,7 @@ div.back a {
     float: right;
     font-weight: 300;
     color: #aaaaaa;
-    font-variant: small-caps;
+    text-transform: uppercase;
     margin-top: -2.5em;
 }
 /* h2 { border-bottom: .5px solid #999999; } */

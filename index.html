@@ -17,15 +17,139 @@
 </h1>
 
 <div class="figure">
-<p><img src="./assets/profile_picture.jpg" alt="profile_picture.jpg" width="650px" style="border-radius:5px" />
+<p><img src="./assets/profile_picture.jpg" alt="profile_picture.jpg" width="650px" style="border-radius:5px" title="Me with the engineering model of Curiosity." />
 </p>
 </div>
 
-<div id="outline-container-orge323da1" class="outline-2">
-<h2 id="orge323da1">About</h2>
-<div class="outline-text-2" id="text-orge323da1">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left"><a href="#news"><b>NEWS</b></a></td>
+<td class="org-left"><a href="#about"><b>ABOUT</b></a></td>
+<td class="org-left"><a href="#publications"><b>PUBLICATIONS</b></a></td>
+</tr>
+</tbody>
+</table>
+
+<div id="outline-container-orgdf304bb" class="outline-2">
+<h2 id="news">News</h2>
+<div class="outline-text-2" id="text-news">
+<div class="back"><a href="#top">Back to top</a></div>
+
 <p>
-I'm a Robotics Technologist at <a href="https://www.jpl.nasa.gov/">NASA/JPL</a>, where I currently lead the path-planning efforts for a snake-like robot called <a href="https://www-robotics.jpl.nasa.gov/how-we-do-it/systems/exobiology-extant-life-surveyor-eels/">Exobiology Extant Life Surveyor (EELS)</a> and  for the <a href="https://mars.nasa.gov/msr/spacecraft/sample-recovery-helicopters/">Sample Recovery Helicopters (SRH)</a> ground mobility control. I hold a PhD in Engineering Science from the <a href="https://www.ox.ac.uk/">University of Oxford</a>, where I was a member of the <a href="https://robotic-esp.com/">Estimation, Search, and Planning (ESP) Group</a> led by <a href="https://robotic-esp.com/people/gammell/">Dr. Jonathan D. Gammell</a>. My research at Oxford focused on designing and implementing path-planning algorithms that leverage different sources of information to improve planning performance for complex systems in robotics and beyond. I also hold an MSc in Robotics, Systems, and Control and a BSc in Mechanical Engineering from <a href="https://ethz.ch/en.html">ETH Zürich</a>. If you're interested in my work, please take a look at my <a href="#publications">publications</a>. All of the algorithms I designed at ESP are available in the <a href="https://ompl.kavrakilab.org/">Open Motion Planning Library (OMPL)</a>.
+Click the list items to show/hide details.
+</p>
+
+<news>
+<details><summary>- <b>Jul 2023</b> Our EELS paper was accepted at IROS.</summary>
+<p>
+The <a href="https://www-robotics.jpl.nasa.gov/how-we-do-it/systems/exobiology-extant-life-surveyor-eels/">Exobiology Extant Life Surveyor (EELS)</a> team wrote a paper that control and planning algorithms for EELS. One of the core ideas of the paper is to decouple shape control from motion control for screw-based gaits. The control strategy that gets EELS into a desired shape is distinct from the control strategy that propels EELS forward.
+</p>
+</details>
+
+<details><summary>- <b>Oct 2022</b> I'm now a Robotics Technologist at NASA/JPL.</summary>
+<p>
+I was promoted to Robotics Technologist at JPL. Fortunately my responsibilities stay the same, so I still get to do hands-on robotics work on the <a href="https://www-robotics.jpl.nasa.gov/how-we-do-it/systems/exobiology-extant-life-surveyor-eels/">Exobiology Extant Life Surveyor (EELS)</a> and the <a href="https://mars.nasa.gov/msr/spacecraft/sample-recovery-helicopters/">Sample Recovery Helicopters (SRH)</a> ground mobility effort.
+</p>
+</details>
+
+<details><summary>- <b>Aug 2022</b> Wil's TMIT* paper was published at RA-L.</summary>
+<p>
+I coauthored a paper with <a href="https://scholar.google.com/citations?user=qsIX7joAAAAJ&amp;hl=en">Wil</a> and <a href="https://robotic-esp.com/gammell/">Jon</a> that presents Task and Motion Informed Trees (TMIT*), an integrated task and motion planning algorithm. TMIT* combines AIT* with <a href="https://www.cs.cornell.edu/~wil/papers/isrr2019_unifiedtamp.pdf">PLANET</a> to improve performance when high-level tasks, such as sorting potentially stacked objects, require reasoning about the order in which path-planning problems are to be executed.
+</p>
+</details>
+
+<details><summary>- <b>Jan 2022</b> I started as a postdoc at NASA/JPL.</summary>
+<p>
+I accepted a position as a postdoctoral researcher at NASA/JPL. I'm part of the autonomy team for a snake-like robot called <a href="https://www-robotics.jpl.nasa.gov/how-we-do-it/systems/exobiology-extant-life-surveyor-eels/">EELS</a> that is being built to explore alien worlds. My work focuses on coming up with path planning and control approaches for EELS and includes contributing to the corresponding modules in its C++ autonomy stack.
+</p>
+</details>
+
+<details><summary>- <b>Jan 2022</b> I passed my viva at the University of Oxford!</summary>
+<p>
+I passed my viva (Ph.D. defense) at the University of Oxford. There are umpteen people to thank. Here I just want to thank Jon for letting me stand on his shoulders these past three years and Nick and Wheeler for their time and constructive criticism. It is sincerely appreciated!
+</p>
+</details>
+
+<details><summary>- <b>Nov 2021</b> The journal paper on AIT* & EIT* was accepted at IJRR.</summary>
+<p>
+My first journal paper got accepted at IJRR. AIT* and EIT* improve planning performance by leveraging multiple sources of information with an asymmetric bidirectional search. The paper will be published in 2022 but you can already find a preprint <a href="https://arxiv.org/abs/2111.01877">on arxiv</a> and a high-level presentation of it <a href="https://youtu.be/aC2xBwOcDoo">on youtube</a>.
+</p>
+</details>
+
+<details><summary>- <b>Apr 2021</b> I wrote about heuristics for obstacle clearance.</summary>
+<p>
+Obstacle clearance in search space is an important optimization objective in path planning because it can result in safe paths. This technical report presents admissible heuristics that can improve planning performance when optimizing this objective. You can find the report <a href="https://arxiv.org/abs/2104.02298">on arxiv</a>.
+</p>
+</details>
+
+<details><summary>- <b>Sep 2020</b> Jon's survey was accepted at ARCRAS.</summary>
+<p>
+I assisted Jon in surveying the field of asymptotically optimal sampling-based path planning algorithms for an invited paper in the <i>Annual Review of Controls, Robotics, and Autonomous Systems</i>. The paper will be published in 2021, but you can find a preprint of it <a href="https://arxiv.org/abs/2002.06599">on arxiv</a>.
+</p>
+</details>
+
+<details><summary>- <b>Aug 2020</b> Mike's paper was accepted at IROS.</summary>
+<p>
+I coauthored a paper that presents the autonomy system used on Axel during the field trial last summer. The autonomy system includes a stability analysis that predicts the interaction of Axel's tether with the terrain. My main contribution was to describe how we adapted ABIT* to work with Axel's tether-induced non-Markovian states. You can find an open-access version of it <a href="https://robotic-esp.com/papers/paton_iros20.html">on the ESP website</a>.
+</p>
+</details>
+
+<details><summary>- <b>Feb 2020</b> Adaptively Informed Trees (AIT*) was accepted at ICRA.</summary>
+<p>
+My second paper got accepted at ICRA. AIT* improves planning performance with an asymmetric bidirectional search in which both searches continuously inform each other with complementary information. You can find the AIT* paper <a href="https://arxiv.org/abs/2002.06599">on arxiv</a> and a high-level presentation of it <a href="https://www.youtube.com/watch?v=1h7ugF9F6VM">on youtube</a>.
+</p>
+</details>
+
+<details><summary>- <b>Feb 2020</b> Advanced BIT* (ABIT*) was accepted at ICRA.</summary>
+<p>
+My first paper got accepted at ICRA. ABIT* leverages advanced graph-search techniques, such as inflation and truncation, in sampling-based path planning. This is the algorithm we tested last summer. You can find the ABIT* paper <a href="https://arxiv.org/abs/2002.06589">on arxiv</a> a high-level presentation of it <a href="https://www.youtube.com/watch?v=ZghEeVGgecY">on youtube</a>.
+</p>
+</details>
+
+<details><summary>- <b>Jul 2019</b> We went on a NASA/JPL field trial in California.</summary>
+<p>
+Jon and I had the chance to join the <a href="https://www.jpl.nasa.gov/">NASA Jet Propulsion Laboratory (JPL)</a> on a <a href="https://www.youtube.com/watch?v=GUNWVroyys4">field trial for Axel</a> in the Mojave Desert. We tested new path planning techniques and supported the team at JPL in running science and autonomy experiments.
+</p>
+</details>
+
+<details><summary>- <b>Sep 2018</b> I started my Ph.D. at the University of Oxford.</summary>
+<p>
+I've joined Jon's <a href="https://robotic-esp.com/">Estimation, Search, and Planning Group</a> at the <a href="https://ori.ox.ac.uk/">Oxford Robotics Institute</a> to work on path planning for complex systems.
+</p>
+</details>
+
+<details><summary>- <b>Jan 2018</b> We rowed across the Atlantic!</summary>
+<p>
+<a href="https://www.swissmocean.ch/">Swiss Mocean</a> got third place in the 2017 <a href="https://www.taliskerwhiskyatlanticchallenge.com/">Talisker Whisky Atlantic Challenge</a> and became the first Swiss fours to row any ocean. It took us 30 days, 4 hours, and 59 minutes to row from the Canaries to the Caribbean Islands. If your IP is from Switzerland, you can watch a professionally produced documentary about the project <a href="https://www.srf.ch/play/tv/sendung/rudern-am-limit">here</a>. It's in Swiss German, but there's also a version of it with English subtitles <a href="https://www.youtube.com/playlist?list=PLoxsQMM4ggWFoDgPxYeukqFxZ8K3CPG2n">on youtube</a>.
+</p>
+</details>
+</news>
+</div>
+</div>
+
+<div id="outline-container-org2ddca60" class="outline-2">
+<h2 id="about">About</h2>
+<div class="outline-text-2" id="text-about">
+<div class="back"><a href="#top">Back to top</a></div>
+
+
+<div class="figure">
+<p><img src="./assets/aitstar_teaser.gif" alt="aitstar_teaser.gif" width="250px" title="AIT* optimizing path length on random path-planning problems." style="float:right" />
+</p>
+</div>
+
+<p>
+I'm a Robotics Technologist at <a href="https://www.jpl.nasa.gov/">NASA/JPL</a>, where I currently lead the path-planning efforts for a snake-like robot called <a href="https://www-robotics.jpl.nasa.gov/how-we-do-it/systems/exobiology-extant-life-surveyor-eels/">Exobiology Extant Life Surveyor (EELS)</a> and  for the <a href="https://mars.nasa.gov/msr/spacecraft/sample-recovery-helicopters/">Sample Recovery Helicopters (SRH)</a> ground mobility control. I hold a PhD in Engineering Science from the <a href="https://www.ox.ac.uk/">University of Oxford</a>, where I was a member of the <a href="https://robotic-esp.com/">Estimation, Search, and Planning (ESP) Group</a> led by <a href="https://robotic-esp.com/people/gammell/">Dr. Jonathan D. Gammell</a>. My research at Oxford focused on designing and implementing path-planning algorithms that leverage different sources of information to improve planning performance for complex systems in robotics and beyond. I also hold an MSc in Robotics, Systems, and Control and a BSc in Mechanical Engineering from <a href="https://ethz.ch/en.html">ETH Zürich</a>. If you're interested in my work, please take a look at my <a href="#publications">publications</a>. All of the algorithms I designed at ESP are publicly available in the <a href="https://ompl.kavrakilab.org/">Open Motion Planning Library (OMPL)</a> under a <a href="https://ompl.kavrakilab.org/license.html#bsdlicense">BSD license</a>.
 </p>
 
 <p>
@@ -34,14 +158,15 @@ A detailed CV can be downloaded by clicking on <a href="assets/cv_marlin_strub.p
 </div>
 </div>
 
-<div id="outline-container-org40e4e16" class="outline-2">
+<div id="outline-container-org0e221a2" class="outline-2">
 <h2 id="publications">Publications</h2>
 <div class="outline-text-2" id="text-publications">
+<div class="back"><a href="#top">Back to top</a></div>
 </div>
 
-<div id="outline-container-orgc34cd79" class="outline-3">
-<h3 id="orgc34cd79">Journal articles</h3>
-<div class="outline-text-3" id="text-orgc34cd79">
+<div id="outline-container-orge6784bc" class="outline-3">
+<h3 id="orge6784bc">Journal articles</h3>
+<div class="outline-text-3" id="text-orge6784bc">
 <p>
 W. Thomason, M. P. Strub, J. D. Gammell (2022) <i>Task and Motion Informed Trees (TMIT*): Almost-surely asymptotically optimal integrated task and motion planning</i>. Robotics and Automation Letters (RA-L), 7(4): pages 11370—11377. (<a href="https://arxiv.org/abs/2210.09367">arxiv, </a><a href="https://www.doi.org/10.1109/LRA.2022.3199676">doi</a>)
 </p>
@@ -101,9 +226,9 @@ J. D. Gammell, M. P. Strub (2021) <i>Asymptotically optimal sampling-based motio
 </div>
 </div>
 
-<div id="outline-container-org0702421" class="outline-3">
-<h3 id="org0702421">Conference papers</h3>
-<div class="outline-text-3" id="text-org0702421">
+<div id="outline-container-org00f8582" class="outline-3">
+<h3 id="org00f8582">Conference papers</h3>
+<div class="outline-text-3" id="text-org00f8582">
 <p>
 V. N. Hartmann, M. P. Strub, M. Toussaint, J. D. Gammell (2022) <i>Effort Informed Roadmaps (EIRM*): Efficient asymptotically optimal multiquery planning by actively reusing validation effort</i>. In: Proceedings of the International Symposium on Robotics Research (ISRR). (<a href="https://arxiv.org/pdf/2205.08480">arxiv</a>)
 </p>
@@ -173,9 +298,9 @@ M. P. Strub, J. D. Gammell (2020) <i>Advanced BIT* (ABIT*): Sampling-based plann
 </div>
 </div>
 
-<div id="outline-container-org2268f81" class="outline-3">
-<h3 id="org2268f81">Theses</h3>
-<div class="outline-text-3" id="text-org2268f81">
+<div id="outline-container-org9246082" class="outline-3">
+<h3 id="org9246082">Theses</h3>
+<div class="outline-text-3" id="text-org9246082">
 <p>
 M. P. Strub (2022) <i>Leveraging multiple sources of information to search continuous spaces</i>. Ph.D. Thesis, University of Oxford (<a href="https://ora.ox.ac.uk/objects/uuid:1a241006-0ddd-4829-bdd5-ade7301c863a">Oxford University Research Archive</a>)
 </p>
@@ -193,9 +318,9 @@ M. P. Strub (2022) <i>Leveraging multiple sources of information to search conti
 </div>
 </div>
 
-<div id="outline-container-org9985339" class="outline-3">
-<h3 id="org9985339">Workshop papers and technical reports</h3>
-<div class="outline-text-3" id="text-org9985339">
+<div id="outline-container-orgb51e906" class="outline-3">
+<h3 id="orgb51e906">Workshop papers and technical reports</h3>
+<div class="outline-text-3" id="text-orgb51e906">
 <p>
 J. D. Gammell, M. P. Strub, V. N. Hartmann (2022) <i>Planner Developer Tools (PDT): Reproducible experiments and statistical analysis for developing and testing motion planners</i>. In: Proceedings of the Workshop on Evaluating Motion Planning Performance (EMPP), IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS). (<a href="https://robotic-esp.com/papers/gammell_empp22.pdf">open-access</a>)
 </p>
