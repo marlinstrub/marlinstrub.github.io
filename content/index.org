@@ -16,7 +16,7 @@ Click the list items to show/hide details.
 
 #+html: <news>
 #+html: <details><summary>- <b>Jul 2023</b> Our EELS paper was accepted at IROS.</summary>
-The [[https://www-robotics.jpl.nasa.gov/how-we-do-it/systems/exobiology-extant-life-surveyor-eels/][Exobiology Extant Life Surveyor (EELS)]] team wrote a paper that control and planning algorithms for EELS. One of the core ideas of the paper is to decouple shape control from motion control for screw-based gaits. The control strategy that gets EELS into a desired shape is distinct from the control strategy that propels EELS forward.
+The [[https://www-robotics.jpl.nasa.gov/how-we-do-it/systems/exobiology-extant-life-surveyor-eels/][Exobiology Extant Life Surveyor (EELS)]] team wrote a paper that presents control and planning algorithms for EELS. One of the core ideas of the paper is to decouple shape control from motion control for screw-based gaits. This lets us tackle control and planning problems with relatively simple algorithms despite the many (>30) degrees of freedom EELS has.
 #+html: </details>
 
 #+html: <details><summary>- <b>Oct 2022</b> I'm now a Robotics Technologist at NASA/JPL.</summary>
