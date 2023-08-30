@@ -273,7 +273,6 @@ pre {
 /* --- Code folding --- */
 details {
     background: #fbfbfb;
-    border: 1px solid #ebebeb;
     border-radius: 5px;
     padding:  0.25em;
     margin-bottom: 0.25em;
@@ -284,6 +283,7 @@ details pre {
     border: 1px;
 }
 summary {
+    border: 1px solid #ebebeb;
     color: rgba(51, 51, 51, 0.50);
 }
 summary::after {
@@ -312,7 +312,7 @@ news details summary::marker {
 }
 news details summary { list-style-type: none; } /* Firefox */
 news details summary::-webkit-details-marker { display: none; } /* Chrome */
-
+* {-webkit-font-smoothing: antialiased;}
 
 news summary::after {
     content: "";
