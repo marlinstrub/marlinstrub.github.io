@@ -311,6 +311,8 @@ news details summary::marker {
     display:none;
 }
 news details summary { list-style-type: none; } /* Firefox */
+news details summary::-webkit-details-marker { display: none; } /* Chrome */
+
 
 news summary::after {
     content: "";
