@@ -34,10 +34,7 @@
 ;; Remove default headers and include our own css style.
 (setq org-html-head-include-scripts nil
       org-html-head-include-default-style nil
-      org-html-head "<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">
-<link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>
-<link href=\"https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;1,300&display=swap\" rel=\"stylesheet\">
-<link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">")
+      org-html-head "<link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">")
 
 ;; Generate the html. The 't' is for discarding cached values.
 (org-publish-all t)
