@@ -1,20 +1,21 @@
 @charset "utf-8";
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@300&family=Roboto+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@300&family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;600&display=swap');
 
 body {
-    font-family: "IBM Plex Mono", monospace;
-    font-size: 16px;
-    font-weight: 400;
+    font-family: "Roboto Mono", monospace;
+    font-size: 14px;
+    font-weight: 300;
     color:  rgba(51, 51, 51, 1.00);
-    line-height: 1.6em;
+    line-height: 1.5em;
     counter-reset: section;
     counter-reset: toc-section;
     counter-increment: toc-section;
+    hyphens: auto;
 }
 
 a, a:visited {
-    text-decoration: underline rgba(48,63,159, 0.20);
+    text-decoration: none;
     color: rgba(48,63,159, 1.00);
 }
 a:hover {
@@ -33,11 +34,6 @@ i, i a {
 .org-face-salient {
     font-weight: 400;
 }
-
-
-/* Blinking cursor when strike-through */
-.custom { animation: blinker 1s linear infinite; }
-@keyframes blinker { 50% { opacity: 0; } }
 
 /* --- Side notes --- */
 div.side-note::before {
@@ -163,7 +159,7 @@ ol.org-ol {
 
 #content, #postamble {
     margin: 0 auto;
-    max-width: 650px;
+    max-width: 600px;
     margin-top: 1.5%;
     margin-bottom: 1.5%;
 }
@@ -181,7 +177,7 @@ ol.org-ol {
 
 h1.title {
     font-size: 1.5em;
-    margin-top: 3em;
+    margin-top: 2em;
     margin-bottom: 0em;
     font-weight: 500;
     text-align: left;
@@ -204,8 +200,8 @@ h1 {
     text-transform: uppercase;
 }
 h2 {
-    text-transform: uppercase;
-    padding-top: 5em;
+    /* text-transform: uppercase; */
+    padding-top: 2em;
 }
 h3 {
     padding-top: 1em;
@@ -244,7 +240,7 @@ h3::before {
 
 code {
     background-color: #f9f9f9;
-    font-family: "IBM Plex Mono", monospace;
+    font-family: "Roboto Mono", monospace;
     font-weight: 400;
 }
 
@@ -270,7 +266,7 @@ pre {
     padding: 0.25em;
     padding-left: 0.5em;
     line-height: 1.35em;
-    font-family: "IBM Plex Mono", sans-serif;
+    font-family: "Roboto Mono", sans-serif;
     font-weight: 400;
     border-left: 2px dotted #00008b;
 }
