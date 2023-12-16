@@ -1,1 +1,1 @@
-| [[../content/index.org][HOME]] | [[../content/news.org][NEWS]] | [[../content/publications.org][PUBLICATIONS]] | [[../content/about.org][ABOUT]] |
+| [[../content/index.org][Home]] | [[../content/news.org][News]] | [[../content/research.org][Research]] | [[../content/publications.org][Publications]] | [[../content/about.org][About]] |

@@ -3,11 +3,15 @@
 
 * News
 
-Click the list items to show/hide details.
+Click on the list items to show/hide details.
 
 #+html: <news>
 #+html: <details><summary>- <b>Jul 2023</b> Our EELS paper was accepted at IROS.</summary>
-The [[https://www-robotics.jpl.nasa.gov/how-we-do-it/systems/exobiology-extant-life-surveyor-eels/][Exobiology Extant Life Surveyor (EELS)]] team wrote a paper that presents control and planning algorithms for EELS. One of the core ideas of the paper is to decouple shape control from motion control for screw-based gaits. This lets us tackle control and planning problems with relatively simple algorithms despite the many (>30) degrees of freedom EELS has.
+The [[https://www-robotics.jpl.nasa.gov/how-we-do-it/systems/exobiology-extant-life-surveyor-eels/][Exobiology Extant Life Surveyor (EELS)]] team wrote a paper that presents control and planning algorithms for EELS. One of the core ideas of the paper is to decouple shape control from motion control for screw-based gaits. This lets us tackle the control and planning problems with relatively simple algorithms despite the many (>30) degrees of freedom EELS has.
+#+html: </details>
+
+#+html: <details><summary>- <b>Feb 2023</b> Effort Informed Trees (EIT*) was merged into OMPL.</summary>
+A reference implementation of the final algorithm of my PhD thesis is now also publicly available in the [[https://ompl.kavrakilab.org/][Open Motion Planning Library (OMPL)]]. Implementing this has been more of a challenge than anticipated, both technically and schedule-wise.
 #+html: </details>
 
 #+html: <details><summary>- <b>Oct 2022</b> I'm now a Robotics Technologist at NASA/JPL.</summary>
@@ -34,12 +38,28 @@ My first journal paper got accepted at IJRR. AIT* and EIT* improve planning perf
 Obstacle clearance in search space is an important optimization objective in path planning because it can result in safe paths. This technical report presents admissible heuristics that can improve planning performance when optimizing this objective. You can find the report [[https://arxiv.org/abs/2104.02298][on arxiv]].
 #+html: </details>
 
+#+html: <details><summary>- <b>Mar 2021</b> I became a co-maintainer of OMPL.</summary>
+The [[https://ompl.kavrakilab.org/][Open Motion Planning Library (OMPL)]] has been immensely useful in my own research and I'm stoked to join its impressive team of maintainers. Very much looking forward to contributing more to OMPL.
+#+html: </details>
+
+#+html: <details><summary>- <b>Sep 2020</b> I made my first (tiny) contribution to Emacs.</summary>
+I use [[https://www.gnu.org/software/emacs/][Emacs]] for many things (too many, perhaps). Emacs has [[https://orgmode.org/][org-mode]], which is, among other things, an excellent tool for note-taking and journaling. I fixed [[https://github.com/TonCherAmi/org-starless/issues/1][this tiny bug]] in org-mode that was exposed by a package that (subjectively) improves the appearance of org-mode by hiding some markdown.
+#+html: </details>
+
 #+html: <details><summary>- <b>Sep 2020</b> Jon's survey was accepted at ARCRAS.</summary>
 I assisted Jon in surveying the field of asymptotically optimal sampling-based path planning algorithms for an invited paper in the /Annual Review of Controls, Robotics, and Autonomous Systems/. The paper will be published in 2021, but you can find a preprint of it [[https://arxiv.org/abs/2002.06599][on arxiv]].
 #+html: </details>
 
 #+html: <details><summary>- <b>Aug 2020</b> Mike's paper was accepted at IROS.</summary>
 I coauthored a paper that presents the autonomy system used on Axel during the field trial last summer. The autonomy system includes a stability analysis that predicts the interaction of Axel's tether with the terrain. My main contribution was to describe how we adapted ABIT* to work with Axel's tether-induced non-Markovian states. You can find an open-access version of it [[https://robotic-esp.com/papers/paton_iros20.html][on the ESP website]].
+#+html: </details>
+
+#+html: <details><summary>- <b>May 2020</b> ABIT* and AIT* were merged into OMPL.</summary>
+ABIT* and AIT* were merged into the [[https://ompl.kavrakilab.org/][Open Motion Planning Library (OMPL)]]. This constitutes my first major contribution to an open-source library and I'm hoping ABIT* and AIT* will be useful for someone.
+#+html: </details>
+
+#+html: <details><summary>- <b>Feb 2020</b> I made my first contribution to OpenRAVE.</summary>
+I implemented a feature that allows using the [[https://github.com/flexible-collision-library/fcl][Flexible Collision Library (FCL)]] for distance queries in [[https://github.com/rdiankov/openrave][OpenRAVE]]. This constitutes my first minor contribution to an open-source library and I'm very happy to finally being able to contribute back to the community.
 #+html: </details>
 
 #+html: <details><summary>- <b>Feb 2020</b> Adaptively Informed Trees (AIT*) was accepted at ICRA.</summary>
@@ -50,7 +70,7 @@ My second paper got accepted at ICRA. AIT* improves planning performance with an
 My first paper got accepted at ICRA. ABIT* leverages advanced graph-search techniques, such as inflation and truncation, in sampling-based path planning. This is the algorithm we tested last summer. You can find the ABIT* paper [[https://arxiv.org/abs/2002.06589][on arxiv]] a high-level presentation of it [[https://www.youtube.com/watch?v=ZghEeVGgecY][on youtube]].
 #+html: </details>
 
-#+html: <details><summary>- <b>Jul 2019</b> We went on a NASA/JPL field trial in California.</summary>
+#+html: <details><summary>- <b>Jul 2019</b> Jon and I went on a NASA/JPL field trial in California.</summary>
 Jon and I had the chance to join the [[https://www.jpl.nasa.gov/][NASA Jet Propulsion Laboratory (JPL)]] on a [[https://www.youtube.com/watch?v=GUNWVroyys4][field trial for Axel]] in the Mojave Desert. We tested new path planning techniques and supported the team at JPL in running science and autonomy experiments.
 #+html: </details>
 
@@ -58,7 +78,15 @@ Jon and I had the chance to join the [[https://www.jpl.nasa.gov/][NASA Jet Propu
 I've joined Jon's [[https://robotic-esp.com/][Estimation, Search, and Planning Group]] at the [[https://ori.ox.ac.uk/][Oxford Robotics Institute]] to work on path planning for complex systems.
 #+html: </details>
 
+#+html: <details><summary>- <b>Jun 2018</b> The documentary about our row is on national TV.</summary>
+The Swiss national television produced a 4-part documentary about our row across the Atlantic. If your IP is from Switzerland, you can watch it [[https://www.srf.ch/play/tv/sendung/rudern-am-limit?id=c82c1f74-2f6f-4e78-af79-b362f008fc91][here]]. It's in Swiss German, but there's also a version of it with English subtitles [[https://www.youtube.com/playlist?list=PLoxsQMM4ggWFoDgPxYeukqFxZ8K3CPG2n][on youtube]]. Edit: There's now also a 90-minute version of it.
+#+html: </details>
+
+#+html: <details><summary>- <b>Feb 2018</b> I wrote a blog post for ETH about rowing the Atlantic.</summary>
+[[https://ethz.ch/][ETH Zürich]] asked me to write a blog post about rowing the Atlantic, which I happily did. You can read it [[https://ethambassadors.ethz.ch/2018/02/15/rowing-the-atlantic/][here]].
+#+html: </details>
+
 #+html: <details><summary>- <b>Jan 2018</b> We rowed across the Atlantic!</summary>
-[[https://www.swissmocean.ch/][Swiss Mocean]] got third place in the 2017 [[https://www.taliskerwhiskyatlanticchallenge.com/][Talisker Whisky Atlantic Challenge]] and became the first Swiss fours to row any ocean. It took us 30 days, 4 hours, and 59 minutes to row from the Canaries to the Caribbean Islands. If your IP is from Switzerland, you can watch a professionally produced documentary about the project [[https://www.srf.ch/play/tv/sendung/rudern-am-limit][here]]. It's in Swiss German, but there's also a version of it with English subtitles [[https://www.youtube.com/playlist?list=PLoxsQMM4ggWFoDgPxYeukqFxZ8K3CPG2n][on youtube]].
+[[https://www.swissmocean.ch/][Swiss Mocean]] took third place in the 2017 [[https://www.taliskerwhiskyatlanticchallenge.com/][Talisker Whisky Atlantic Challenge]] and became the first Swiss fours to row any ocean. It took us 30 days, 4 hours, and 59 minutes to row from the Canaries to the Caribbean Islands.
 #+html: </details>
 #+html: </news>
