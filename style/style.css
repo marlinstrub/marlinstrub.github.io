@@ -25,9 +25,6 @@ a:hover {
 .org-bold {
     font-weight: 500;
 }
-i, i a {
-    color: rgba(51, 51, 51, 1.00);
-}
 .org-italic, .org-org-meta-line {
     color: rgba(51, 51, 51, 1.00);
 }
@@ -199,14 +196,12 @@ h1 {
     text-transform: uppercase;
 }
 h2 {
-    /* text-transform: uppercase; */
+    text-transform: uppercase;
     padding-top: 2em;
 }
 h3 {
     padding-top: 1em;
-    color:  rgba(51, 51, 51, 1.00);
-    font-size: 1.0em;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 body {
@@ -216,25 +211,23 @@ h2 {
   counter-reset: subsection;
 }
 h2::before {
-    color: #aaaaaa;
+    color: rgba(51, 51, 51, 1.00);
     float: left;
     text-align: right;
-    font-weight: 300;
-    width: 7.5em;
-    margin-left: -8.0em;
+    font-weight: 500;
+    margin-right: 2em;
     counter-increment: section;
-    content: counter(section) " "; /* "Section " counter(section) " "; */
+    content: counter(section);
 }
 
 h3::before {
-    color: #aaaaaa;
+    color: rgba(51, 51, 51, 1.00);
     float: left;
     text-align: right;
-    font-weight: 300;
-    width: 2.5em;
-    margin-left: -3.0em;
+    font-weight: 400;
+    margin-right: 2em;
     counter-increment: subsection;
-    content: counter(section) "." counter(subsection) " ";
+    content: counter(section) "." counter(subsection);
 }
 
 code {
@@ -360,8 +353,6 @@ div.back a {
     text-transform: uppercase;
     margin-top: -2.5em;
 }
-/* h2 { border-bottom: .5px solid #999999; } */
-
 
 /* Image sliders */
 .wrapper {
