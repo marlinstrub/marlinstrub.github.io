@@ -263,6 +263,17 @@ pre {
     border-left: 2px dotted #00008b;
 }
 
+/* --- Mobile disclaimer --- */
+.mobile-only {
+  display: none;
+}
+
+@media only screen and (max-device-width: 480px) {
+  .mobile-only {
+    display: inline;
+  }
+}
+
 /* --- Folding --- */
 details {
     background: #fbfbfb;
@@ -328,7 +339,7 @@ th {
     padding-bottom: 0.25em;
 }
 td {
-    padding: 30px;
+    padding: 1rem;
     padding-top: 0;
     padding-left: 0;
 }
