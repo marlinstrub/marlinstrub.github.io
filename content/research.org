@@ -3,7 +3,7 @@
 
 * Research interests
 
-My primary research interests are path planning and control algorithms. I enjoy and have experience in designing algorithms, analyzing them analytically, implementing them in C++, evaluating them empirically, and deploying them on real-world systems. I'm proud that my work was useful to other researchers, some of my favorite examples are when:
+My primary research interests are path planning and control algorithms. I'm passionate about and have experience in designing algorithms, analyzing them analytically, implementing them in C++, evaluating them empirically, and deploying them on real-world systems. My work has been useful to other researchers, which I'm proud of. Some of my favorite examples of this include when researchers from
 
   - CMU and Mistral AI used AIT* with LLMs for robotic tasks ([[https://openreview.net/pdf?id=2q14O7h8Zm][paper]])
   - The University of Oxford used AIT* on their drone ([[https://arxiv.org/pdf/2311.03484.pdf][paper]], [[https://www.youtube.com/watch?v=CVIXu2qUQJ8][video]])
@@ -13,7 +13,7 @@ My primary research interests are path planning and control algorithms. I enjoy 
   
 * Real-world deployments
 
-I have deployed my research on two of NASA/JPL's +coolest+ subjectively most interesting rover prototypes: [[*Axel][Axel]] and [[*EELS][EELS]]. Here are short introductions and links to further information.
+I have deployed my research on two of NASA/JPL's +coolest+ I mean subjectively most interesting rover prototypes: [[*Axel][Axel]] and [[*EELS][EELS]]. Here are short project-overviews that focus on my contributions and contain links to further information.
 
 ** Axel
 
@@ -24,27 +24,27 @@ Some of the most interesting science targets of planetary exploration are locate
 <div class="wrapper">
 	<input type="radio" name="axel-slide" checked="checked">
   <picture aria-label="Fig. 1: Axel as part of DuAxel, driving on flat terrain.">
-	<img src="./assets/axel_01.jpg" alt="Axel 1">
+	<img src="./assets/axel_01.jpg" alt="DuAxel driving.">
   </picture>
 	
 	<input type="radio" name="axel-slide">
   <picture aria-label="Fig. 2: Axel separate from the anchor, only connected via tether.">
-	<img src="./assets/axel_02.jpg" alt="Axel 2">
+	<img src="./assets/axel_02.jpg" alt="Axel separating from DuAxel.">
   </picture>
   
 	<input type="radio" name="axel-slide">
   <picture aria-label="Fig. 3: The tether provides stability, power, and communication.">
-	<img src="./assets/axel_03.jpg" alt="Axel 3">
+	<img src="./assets/axel_03.jpg" alt="Axel descending.">
   </picture>
   
 	<input type="radio" name="axel-slide">
   <picture aria-label="Fig. 4: Axel knows its surroundings and can avoid obstacles.">
-	<img src="./assets/axel_04.jpg" alt="Axel 4">
+	<img src="./assets/axel_04.jpg" alt="Axel scan.">
   </picture>
 
 	<input type="radio" name="axel-slide">
   <picture aria-label="Fig. 5: This allows it to safely traverse steep slopes...">
-	<img src="./assets/axel_05.jpg" alt="Axel 4">
+	<img src="./assets/axel_05.jpg" alt="Axel on steep terrain.">
   </picture>
 
 	<input type="radio" name="axel-slide">
@@ -65,71 +65,68 @@ Some of the most interesting science targets of planetary exploration are locate
 </center>
 #+end_export
 
-While Axel presented the team with various challenges, my work was focused on its autonomy stack. My primary contribution was formulating the path-planning problem in a way that can be solved by ABIT*, a sampling-based planning algorithm I had previously developed.
+While Axel presented the team with various challenges, my work was focused on its autonomy stack. My primary contribution was formulating the path-planning problem in a way that can be solved by sampling-based planning algorithms, e.g., ABIT*, which I had previously developed.
 
 The main challenge in doing so was due to Axel's tether. When planning paths for Axel, we made ABIT* analyze the static stability of each state using gravity-, tether- and ground-reaction-forces. The tether-force at any given state depends on where the tether most recently anchored to the ground, which in turn depends on the path Axel took to that state. These types of non-Markovian problems must be handled with care in any sampling-based planning algorithm. Our [[https://robotic-esp.com/papers/paton_iros20.pdf][IROS 2020 paper]] presents an approach that includes the relevant state history in the state space. This idea is not limited to ABIT*, but can be applied to any sampling-based algorithm.
 
 
 ** EELS
 
-Enceladus, a small moon of Saturn, has large water plumes at its south pole. They are thought to be connected to a global ocean underneath Enceladus' icy surface and make Enceladus a prime target for the search of extraterrestrial life. Unfortunately, Enceladus is far away and a lot about its surface is still unknown. To deal with this uncertainty, I helped JPL develop EELS, a snake-like robot with /active skin/ (i.e., screws along its body). [[https://youtu.be/e0D9IVo-E9M?si=LdHYoO4WN43e7DCN][Here's a video]] that describes the system and concept of operations, and [[https://www.youtube.com/watch?v=ifCIDT4X9AM][here's another video]] that showcases some early results.
+Enceladus, a small moon of Saturn, has large water plumes at its south pole. They are thought to be connected to a global ocean underneath Enceladus' icy surface and make Enceladus a prime target for the search of extraterrestrial life. Unfortunately, Enceladus is relatively far away and a lot about its surface is still uncertain. One way to deal with this uncertainty is to develop a system that is capable of adapting to many different surfaces. This is the fundamental idea of EELS, a snake-like robot with /active skin/ (actuated screws) that is being developed at JPL. [[https://youtu.be/e0D9IVo-E9M?si=LdHYoO4WN43e7DCN][Here's a video]] that describes the system and the concept of operations, and [[https://www.youtube.com/watch?v=ifCIDT4X9AM][here's another video]] that showcases some early results.
 
 #+begin_export html
 <center>
 <div class="wrapper">
 	<input type="radio" name="eels-slide" checked="checked">
-  <picture aria-label="Fig. 9: EELS 1.0 in its early shake-out tests.">
-	<img src="./assets/eels_01.jpg" alt="Axel 1">
+  <picture aria-label="Fig. 9: EELS 1.0 is about 4.4 m long and 100 kg in weight.">
+	<img src="./assets/eels_01.jpg" alt="EELS during shake-out tests.">
   </picture>
 	
 	<input type="radio" name="eels-slide">
-  <picture aria-label="Fig. 10: Axel separate from the anchor, only connected via tether.">
-	<img src="./assets/eels_02.jpg" alt="Axel 2">
+  <picture aria-label="Fig. 10: It has screws all along its body which can propel it.">
+	<img src="./assets/eels_02.jpg" alt="The screws of EELS.">
   </picture>
   
 	<input type="radio" name="eels-slide">
-  <picture aria-label="Fig. 11: The tether provides stability, power, and communication.">
-	<img src="./assets/eels_03.jpg" alt="Axel 3">
+  <picture aria-label="Fig. 11: It also has 20 actuators to change its shape.">
+	<img src="./assets/eels_03.jpg" alt="EELS doing a scan.">
   </picture>
   
 	<input type="radio" name="eels-slide">
-  <picture aria-label="Fig. 12: Axel knows its surroundings and can avoid obstacles.">
-	<img src="./assets/eels_04.jpg" alt="Axel 4">
+  <picture aria-label="Fig. 12: We tested it on many surfaces, e.g., loose snow ...">
+	<img src="./assets/eels_04.jpg" alt="EELS on loose snow.">
   </picture>
 
 	<input type="radio" name="eels-slide">
-  <picture aria-label="Fig. 13: This allows it to safely traverse steep slopes...">
-	<img src="./assets/eels_05.jpg" alt="Axel 4">
+  <picture aria-label="Fig. 13: ...consolidated snow...">
+	<img src="./assets/eels_05.jpg" alt="EELS on consolidated snow.">
   </picture>
 
 	<input type="radio" name="eels-slide">
-  <picture aria-label="Fig. 14: ... and take scientific measurements of the soil.">
-	<img src="./assets/eels_06.jpg" alt="Axel 4">
+  <picture aria-label="Fig. 14: ...glacial surface-ice...">
+	<img src="./assets/eels_06.jpg" alt="EELS on glacier.">
   </picture>
 
 	<input type="radio" name="eels-slide">
-  <picture aria-label="Fig. 15: This was our field-test site in the Mojave Desert, USA.">
-	<img src="./assets/eels_07.jpg" alt="Axel 4">
+  <picture aria-label="Fig. 15: ...and sand.">
+	<img src="./assets/eels_07.jpg" alt="EELS on sand.">
   </picture>
 
 	<input type="radio" name="eels-slide">
-  <picture aria-label="Fig. 16: Me, Axel, and Dr. Jonathan Gammell, my PhD supervisor.">
-	<img src="./assets/eels_08.jpg" alt="Axel 4">
+  <picture aria-label="Fig. 16: We even tested a later version inside glacial moulins.">
+	<img src="./assets/eels_08.jpg" alt="EELS in moulin.">
   </picture>
   
 	<input type="radio" name="eels-slide">
-  <picture aria-label="Fig. 17: Me, Axel, and Dr. Jonathan Gammell, my PhD supervisor.">
-	<img src="./assets/eels_09.jpg" alt="Axel 4">
-  </picture>
-  
-	<input type="radio" name="eels-slide">
-  <picture aria-label="Fig. 18: Me, Axel, and Dr. Jonathan Gammell, my PhD supervisor.">
-	<img src="./assets/eels_10.jpg" alt="Axel 4">
+  <picture aria-label="Fig. 17: Sometimes I had to force it to do what I wanted...">
+	<img src="./assets/eels_09.jpg" alt="Me wrangling EELS.">
   </picture>
 </div>
 </center>
 #+end_export
 
+EELS allowed us to work on many open research questions. My main contribution to EELS was leading the path-planning effort, but I also designed and implemented the base architecture for the control module.
 
-([[https://www.youtube.com/watch?v=ifCIDT4X9AM][video]])
+The simplest mode of locomotion for surface operations we came up with was a leader-follower gait. I implemented a curve-fitting controller that takes in a 3D trajectory and the percentage of an anchor module along that trajectory and returns the shape-joint positions by sequentially computing inverse kinematics starting from the anchor module. This controller worked with a screw-velocity allocator to keep EELS progressing along the 3D trajectory. The full details of this approach are in [[https://ieeexplore.ieee.org/abstract/document/10341448][our 2023 IROS paper]].
 
+Designing planning algorithms for subsurface operations was challenging because it required to: 1) deal with many degrees of freedom, 2) analyze static stability based on online mapping and imperfectly-understood screw-ice interactions, and 3) constantly adapting the planner because we concurrently developed the subsurface control code, which kept changing what types of paths the we can actually track. We came up with /controller-based projections/ which allowed us to address the high dimensionality and the constantly changing controllers and also gave us confidence that we could handle inaccurate maps, although we unfortunately ran out of time to validate this idea in the field. We are working on a paper that describes this approach in detail.
