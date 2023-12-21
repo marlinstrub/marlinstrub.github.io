@@ -270,7 +270,7 @@ pre {
     border-left: 2px dotted #00008b;
 }
 
-/* --- Code folding --- */
+/* --- Folding --- */
 details {
     background: #fbfbfb;
     border: 1px solid #ebebeb;
@@ -279,13 +279,13 @@ details {
     margin-bottom: 0.25em;
     margin-top: 0.25em;
     font-size: 0.85em;
-    cursor: pointer;
 }
 details pre {
     border: 1px;
 }
 summary {
     color: rgba(51, 51, 51, 0.50);
+    cursor: pointer;
 }
 summary::after {
     font-size: 0.85em;
@@ -295,23 +295,21 @@ summary::after {
 }
 news details {
     background: none;
-    border: 0;
     padding:  0.25em;
+    border: none;
     margin-bottom: 0.25em;
     margin-top: 0.25em;
-    margin-left: 20px;
+    margin-left: 2em;
     font-size: 1.0em;
 }
 news summary {
-    margin-left: -17px;
+    margin-left: -1em;
     font-size: 1.0em;
     color: rgba(51, 51, 51, 1.00);
 }
 news details summary::marker {
-    display:none;
+    color: rgba(51, 51, 51, 0.90);
 }
-news details summary { list-style-type: none; } /* Firefox */
-news details summary::-webkit-details-marker { display: none; } /* Chrome */
 * {-webkit-font-smoothing: antialiased;}
 
 news summary::after {
