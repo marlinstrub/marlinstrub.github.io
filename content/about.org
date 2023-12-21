@@ -1,15 +1,24 @@
 #+include: ../elements/title.org
 #+include: ../elements/navigation.org
 
-* About
+* Hi, I'm Marlin
 
-I'm a Robotics Technologist at [[https://www.jpl.nasa.gov/][NASA/JPL]], where I currently lead the path-planning efforts for a snake-like robot called [[https://www-robotics.jpl.nasa.gov/how-we-do-it/systems/exobiology-extant-life-surveyor-eels/][Exobiology Extant Life Surveyor (EELS)]] and  for the [[https://mars.nasa.gov/msr/spacecraft/sample-recovery-helicopters/][Sample Recovery Helicopters (SRH)]] ground mobility control.
+I enjoy designing, implementing, and deploying path-planning and control algorithms that are both theoretically sound and perform well in practice. Until recently, I was a Robotics Technologist at [[https://www.jpl.nasa.gov/][NASA/JPL]], where I lead the path-planning efforts for a snake-like robot called [[https://www-robotics.jpl.nasa.gov/how-we-do-it/systems/exobiology-extant-life-surveyor-eels/][EELS]] and the new [[https://mars.nasa.gov/msr/spacecraft/sample-recovery-helicopters/][Mars helicopters]] ground mobility.
 
-#+attr_html: :width 650px :style border-radius:5px :title Me with the engineering model of Curiosity.
+#+html: <center>
+#+attr_html: :width 500px
 #+caption: Me next to Curiosity's engineering model.
 [[file:./assets/profile_picture.jpg]]
+#+html: </center>
 
-I hold a PhD in Engineering Science from the [[https://www.ox.ac.uk/][University of Oxford]], where I was a member of the [[https://robotic-esp.com/][Estimation, Search, and Planning (ESP) Group]] led by [[https://robotic-esp.com/people/gammell/][Dr. Jonathan D. Gammell]]. My research at Oxford focused on designing and implementing path-planning algorithms that leverage different sources of information to improve planning performance for complex systems in robotics and beyond. I also hold an MSc in Robotics, Systems, and Control and a BSc in Mechanical Engineering from [[https://ethz.ch/en.html][ETH Zürich]]. If you're interested in my work, please take a look at my [[./publications.org][publications]]. All of the algorithms I designed at ESP are publicly available in the [[https://ompl.kavrakilab.org/][Open Motion Planning Library (OMPL)]] under a [[https://ompl.kavrakilab.org/license.html#bsdlicense][BSD license]].
+When I'm not working with robots, I like to explore the outdoors, spend time with family and friends, and combine good food with good conversations.
+
+* Education
+
+I hold a PhD in Engineering Science from the [[https://www.ox.ac.uk/][University of Oxford]], where I was a member of the [[https://robotic-esp.com/][Estimation, Search, and Planning (ESP) Group]] led by [[https://robotic-esp.com/people/gammell/][Dr. Jonathan D. Gammell]]. My research at Oxford focused on designing and implementing path-planning algorithms that leverage different sources of information to improve planning performance for complex systems in robotics and beyond. I also hold an MSc in Robotics, Systems, and Control and a BSc in Mechanical Engineering from [[https://ethz.ch/en.html][ETH Zürich]]. If you're interested in my work, please take a look at my [[./research.org][research]] and [[./publications.org][publications]] pages.
 
 A detailed CV can be downloaded by clicking on [[file:assets/cv_marlin_strub.pdf][this link]].
 
+* Open-source contributions
+
+I'm passionate about open-source software. Reference implementations of all algorithms I designed at ESP are publicly available in the [[https://ompl.kavrakilab.org/][Open Motion Planning Library (OMPL)]], which I'm currently a co-maintainer of. Jon and I also open-sourced our [[https://github.com/robotic-esp/pdt][planner benchmark and development framework]], which automatically generates publication-ready performance plots in [[https://en.wikipedia.org/wiki/PGF/TikZ][PGF/TikZ]] whenever a benchmark is run (here's our [[https://robotic-esp.com/papers/gammell_empp22.pdf][workshop paper]] about it). I have also contributed features and bug-fixes to various other projects, including [[https://github.com/rdiankov/openrave][OpenRAVE]] and [[https://www.gnu.org/software/emacs/][Emacs]].
