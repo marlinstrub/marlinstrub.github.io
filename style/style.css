@@ -368,6 +368,11 @@ div.back a {
 	justify-content: center;
 }
 
+img {
+  width: 95vw;
+  max-width: 500px;
+}
+
 input {
 	appearance: none;
 	z-index: 100;
