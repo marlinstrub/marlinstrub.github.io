@@ -10,17 +10,17 @@ I enjoy designing, implementing, and deploying path-planning and control algorit
 <div class="wrapper">
 	<input type="radio" name="about-slide" checked="checked">
   <picture aria-label="Fig. 1: Me in front of the engineering model of Curiosity.">
-	<img src="./assets/about_01.jpg" alt="DuAxel driving.">
+	<img src="./assets/about_01.jpg" alt="Me in front of the engineering model of Curiosity.">
   </picture>
 	
 	<input type="radio" name="about-slide">
-  <picture aria-label="Fig. 2: Colleagues and me in the best office in the world.">
-	<img src="./assets/about_02.jpg" alt="Axel separating from DuAxel.">
+  <picture aria-label="Fig. 2: Colleagues and me in the coolest office.">
+	<img src="./assets/about_02.jpg" alt="Colleagues and me on the Athabasca glacier.">
   </picture>
   
 	<input type="radio" name="about-slide">
   <picture aria-label="Fig. 3: Me wrestling with EELS because it was begin stubborn.">
-	<img src="./assets/eels_09.jpg" alt="Me wrangling EELS.">
+	<img src="./assets/about_03.jpg" alt="Me wrestling with EELS.">
   </picture>
 </div>
 </center>
