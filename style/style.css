@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;600&display=swap');
 
 body {
-    font-family: "Roboto Mono", monospace;
+    font-family: "IBM Plex Mono", monospace;
     font-size: 14px;
     font-weight: 300;
     color:  rgba(51, 51, 51, 1.00);
@@ -236,7 +236,7 @@ h3::before {
 
 code {
     background-color: #f9f9f9;
-    font-family: "Roboto Mono", monospace;
+    font-family: "IBM Plex Mono", monospace;
     font-weight: 400;
 }
 
@@ -262,7 +262,7 @@ pre {
     padding: 0.25em;
     padding-left: 0.5em;
     line-height: 1.35em;
-    font-family: "Roboto Mono", sans-serif;
+    font-family: "IBM Plex Mono", sans-serif;
     font-weight: 400;
     border-left: 2px dotted #00008b;
 }
