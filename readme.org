@@ -1,6 +1,6 @@
 #+title: Marlin's personal website
 
-This repository contains the source code for my personal website.
+This repository contains the source code for my personal website, which is served at [[https://www.marlinstrub.com]].
 
 * Instructions
 
