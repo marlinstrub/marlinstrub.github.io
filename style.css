@@ -51,65 +51,6 @@ div.side-note {
     font-size: 8px;
 }
 
-/* --- Table of contents --- */
-#table-of-contents {
-    padding-top: 0em;
-    margin-top: 0em;
-    text-transform: uppercase;
-}
-#table-of-contents ul {
-    padding: 0;
-    font-weight: 400;
-    list-style: none;
-    counter-reset: list 0;
-}
-#table-of-contents ul ul {
-    padding-left:0em;
-    font-weight: 400;
-    font-size: 90%;
-    line-height: 1.5em;
-    margin-top: 0em;
-    margin-bottom: 1em;
-    padding-left: 2em;
-}
-#table-of-contents h2:before {
-    content: "";
-    counter-reset: section;
-}
-#table-of-contents ul li {
-    vertical-align: top;
-    display: inline-block;
-    width: 32%;
-}
-#table-of-contents ul li:before {
-    display: inline-block;
-    counter-increment: list;
-    content: counters(list, ".") ".";
-    width: 2.0em;
-    margin-left: -2.0em;
-    text-align: right;
-    text-transform: uppercase;
-    color:#2255bb;
-}
-#table-of-contents ul li ul,
-#table-of-contents ul li ul li {
-    display: static;
-    width: 100%;
-    padding-left: 0;
-    line-height: 1.35em;
-}
-#table-of-contents ul li ul li:before {
-    content: ""
-}
-#table-of-contents h2 {
-    font-size: 1em;
-    font-weight: 400;
-    padding-top: 5em;
-}
-#table-of-contents h2:before {
-    content: "->";
-}
-
 blockquote {
     color: #999999;
     padding-top: 0;
