@@ -1,11 +1,6 @@
 ;; Load the publishing system.
 (require 'ox-publish)
 
-(setq org-html-creator-string
-      (format "Made with 🤍 in <a href=\"https://www.gnu.org/software/emacs/\">Emacs</a> %s (<a href=\"https://orgmode.org\">Org</a> mode %s)"
-	  emacs-version
-	  (if (fboundp 'org-version) (org-version) "unknown version")))
-
 ;; Define the publishing project.
 (setq org-publish-project-alist
       (list
@@ -15,7 +10,7 @@
              :publishing-directory "./public"
              :publishing-function 'org-html-publish-to-html
              :with-author nil
-             :with-creator t
+             :with-creator nil
              :with-date t
              :with-toc nil
              :section-numbers nil
