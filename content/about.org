@@ -3,15 +3,30 @@
 
 * Hi, I'm Marlin
 
-I enjoy designing, implementing, and deploying path-planning and control algorithms that are both theoretically sound and perform well in practice. Until recently, I was a Robotics Technologist at [[https://www.jpl.nasa.gov/][NASA/JPL]], where I lead the path-planning efforts for a snake-like robot called [[https://www-robotics.jpl.nasa.gov/how-we-do-it/systems/exobiology-extant-life-surveyor-eels/][EELS]] and the new [[https://mars.nasa.gov/msr/spacecraft/sample-recovery-helicopters/][Mars helicopters]] ground mobility.
+I enjoy designing, implementing, and deploying path-planning and control algorithms that are both theoretically sound and perform well in practice. Until recently, I was a Robotics Technologist at [[https://www.jpl.nasa.gov/][NASA/JPL]], where I led the path-planning efforts for a snake-like robot called [[https://www-robotics.jpl.nasa.gov/how-we-do-it/systems/exobiology-extant-life-surveyor-eels/][EELS]] and the new [[https://mars.nasa.gov/msr/spacecraft/sample-recovery-helicopters/][Mars helicopters]] ground mobility.
 
-#+html: <center>
-#+attr_html: :width 500px
-#+caption: Me next to Curiosity's engineering model.
-[[file:./assets/profile_picture.jpg]]
-#+html: </center>
+#+begin_export html
+<center>
+<div class="wrapper">
+	<input type="radio" name="about-slide" checked="checked">
+  <picture aria-label="Fig. 1: Me in front of the engineering model of Curiosity.">
+	<img src="./assets/about_01.jpg" alt="DuAxel driving.">
+  </picture>
+	
+	<input type="radio" name="about-slide">
+  <picture aria-label="Fig. 2: Colleagues and me in the best office in the world.">
+	<img src="./assets/about_02.jpg" alt="Axel separating from DuAxel.">
+  </picture>
+  
+	<input type="radio" name="about-slide">
+  <picture aria-label="Fig. 3: Me wrestling with EELS because it was begin stubborn.">
+	<img src="./assets/eels_09.jpg" alt="Me wrangling EELS.">
+  </picture>
+</div>
+</center>
+#+end_export
 
-When I'm not working with robots, I like to explore the outdoors, spend time with family and friends, and combine good food with good conversations.
+When I'm not working with robots, I like exploring the outdoors, spending time with family and friends, and combining good food with good conversations.
 
 * Education
 

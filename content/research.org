@@ -69,7 +69,6 @@ While Axel presented the team with various challenges, my work was focused on it
 
 The main challenge in doing so was due to Axel's tether. When planning paths for Axel, we made ABIT* analyze the static stability of each state using gravity-, tether- and ground-reaction-forces. The tether-force at any given state depends on where the tether most recently anchored to the ground, which in turn depends on the path Axel took to that state. These types of non-Markovian problems must be handled with care in any sampling-based planning algorithm. Our [[https://robotic-esp.com/papers/paton_iros20.pdf][IROS 2020 paper]] presents an approach that includes the relevant state history in the state space. This idea is not limited to ABIT*, but can be applied to any sampling-based algorithm.
 
-
 ** EELS
 
 Enceladus, a small moon of Saturn, has large water plumes at its south pole. They are thought to be connected to a global ocean underneath Enceladus' icy surface and make Enceladus a prime target for the search of extraterrestrial life. Unfortunately, Enceladus is relatively far away and a lot about its surface is still uncertain. One way to deal with this uncertainty is to develop a system that is capable of adapting to many different surfaces. This is the fundamental idea of EELS, a snake-like robot with /active skin/ (actuated screws) that is being developed at JPL. [[https://youtu.be/e0D9IVo-E9M?si=LdHYoO4WN43e7DCN][Here's a video]] that describes the system and the concept of operations, and [[https://www.youtube.com/watch?v=ifCIDT4X9AM][here's another video]] that showcases some early results.
@@ -115,11 +114,6 @@ Enceladus, a small moon of Saturn, has large water plumes at its south pole. The
 	<input type="radio" name="eels-slide">
   <picture aria-label="Fig. 16: We even tested a later version in glacial moulins.">
 	<img src="./assets/eels_08.jpg" alt="EELS in moulin.">
-  </picture>
-  
-	<input type="radio" name="eels-slide">
-  <picture aria-label="Fig. 17: Sometimes I had to force it to do what I wanted...">
-	<img src="./assets/eels_09.jpg" alt="Me wrangling EELS.">
   </picture>
 </div>
 </center>
