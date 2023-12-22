@@ -1,6 +1,11 @@
 ;; Load the publishing system.
 (require 'ox-publish)
 
+(setq org-html-creator-string
+      (format "Made with 🤍 in <a href=\"https://www.gnu.org/software/emacs/\">Emacs</a> %s (<a href=\"https://orgmode.org\">Org</a> mode %s)"
+	  emacs-version
+	  (if (fboundp 'org-version) (org-version) "unknown version")))
+
 ;; Define the publishing project.
 (setq org-publish-project-alist
       (list
@@ -31,10 +36,12 @@
 ;; Remove the validation link.
 (setq org-html-validation-link nil)
 
-;; Remove default headers and include our own css style.
-(setq org-html-head-include-scripts nil
-      org-html-head-include-default-style nil
-      org-html-head "<link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">")
+;; Remove default headers and style.
+(setq org-html-head-include-scripts nil)
+(setq org-html-head-include-default-style nil)
+
+;; Include my own css style.
+(setq org-html-head "<link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">")
 
 ;; Generate the html. The 't' is for discarding cached values.
 (org-publish-all t)
