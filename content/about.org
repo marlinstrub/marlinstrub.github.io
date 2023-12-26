@@ -19,7 +19,7 @@ I enjoy designing, implementing, and deploying path-planning and control algorit
   </picture>
   
 	<input type="radio" name="about-slide">
-  <picture aria-label="Fig. 3: Me wrestling with EELS because it was begin stubborn.">
+  <picture aria-label="Fig. 3: Me wrestling with EELS because it was being stubborn.">
 	<img src="./assets/about_03.jpg" alt="Me wrestling with EELS.">
   </picture>
 </div>
