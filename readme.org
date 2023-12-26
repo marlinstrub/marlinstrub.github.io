@@ -13,7 +13,7 @@ The site can be served locally via Emacs using [[https://github.com/skeeto/emacs
   :straight (simple-httpd :host github :repo "skeeto/emacs-web-server"))
 #+end_src
 
-First run [[file:build.sh][build.sh]] and then call src_elisp{httpd-serve-directory}. Navigate to the ~public~ folder when asked for a directory to serve. By default, this will serve the directory at [[http://localhost:8080/]].
+First run [[file:build.sh][build.sh]] and then ~M-x httpd-serve-directory~. Navigate to the ~public~ folder when asked for a directory to serve. By default, this will serve the directory at [[http://localhost:8080/]].
 
 ** Publication
 
