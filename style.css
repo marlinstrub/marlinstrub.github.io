@@ -212,7 +212,6 @@ pre {
 @media only screen and (max-device-width: 480px) {
   .mobile-only {
       display: inline;
-      color: rgba(150, 51, 51, 1.00);
       font-weight: 400;
   }
 }
