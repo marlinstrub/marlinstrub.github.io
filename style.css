@@ -47,10 +47,6 @@ div.side-note {
     width: 20em;
 }
 
-.creator {
-    font-size: 8px;
-}
-
 blockquote {
     color: #999999;
     padding-top: 0;
@@ -215,7 +211,9 @@ pre {
 
 @media only screen and (max-device-width: 480px) {
   .mobile-only {
-    display: inline;
+      display: inline;
+      border: 1px solid rgba(150, 51, 51, 0.50);
+      border-radius: 5px;
   }
 }
 
