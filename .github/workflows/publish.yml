@@ -15,6 +15,9 @@ jobs:
       - name: Install Emacs
         run: sudo apt install emacs-nox --yes
 
+      - name: Install Imagemagick
+        run: sudo apt install imagemagick --yes
+
       - name: Generate the site
         run: ./build.sh
 

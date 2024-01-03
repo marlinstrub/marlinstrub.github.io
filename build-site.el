@@ -1,6 +1,9 @@
 ;; Load the publishing system.
 (require 'ox-publish)
 
+;; Let org use imagemagick to set the image to the desired width.
+(setq org-image-actual-width nil)
+
 ;; Define the publishing project.
 (setq org-publish-project-alist
       (list
