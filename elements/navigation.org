@@ -1,4 +1,4 @@
-| [[../content/index.org][Home]] | [[../content/news.org][News]] | [[../content/research.org][Research]] | [[../content/publications.org][Publications]] | [[../content/about.org][About]] |
+| [[../content/index.org][News]] | [[../content/research.org][Research]] | [[../content/publications.org][Publications]] | [[../content/about.org][About]] |
 
 #+html: <div class="mobile-only">
 This website looks best on a larger screen.
