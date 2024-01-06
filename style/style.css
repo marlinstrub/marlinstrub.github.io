@@ -27,6 +27,7 @@ a:hover {
 }
 .org-italic, .org-org-meta-line {
     color: rgba(51, 51, 51, 1.00);
+    font-style: italic;
 }
 .org-face-salient {
     font-weight: 400;
@@ -49,6 +50,11 @@ div.side-note {
     line-height: 1.25em;
     margin-left: -24em;
     width: 20em;
+}
+
+del {
+    text-decoration-line: line-through;
+    text-decoration-thickness: 0.12rem;
 }
 
 blockquote {
