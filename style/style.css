@@ -249,42 +249,42 @@ pre {
   &::after {
     content: url('./assets/icon-code.svg');
     display: inline-block;
-    vertical-align: -3px;
+    vertical-align: -2px;
   }
 }
 .icon-publication {
   &::after {
     content: url('./assets/icon-publication.svg');
     display: inline-block;
-    vertical-align: -3px;
+    vertical-align: -2px;
   }
 }
 .icon-position {
   &::after {
     content: url('./assets/icon-position.svg');
     display: inline-block;
-    vertical-align: -3px;
+    vertical-align: -2px;
   }
 }
 .icon-field-test {
   &::after {
     content: url('./assets/icon-field-test.svg');
     display: inline-block;
-    vertical-align: -3px;
+    vertical-align: -2px;
   }
 }
 .icon-academic {
   &::after {
     content: url('./assets/icon-academic.svg');
     display: inline-block;
-    vertical-align: -3px;
+    vertical-align: -2px;
   }
 }
 .icon-personal {
   &::after {
     content: url('./assets/icon-personal.svg');
     display: inline-block;
-    vertical-align: -3px;
+    vertical-align: -2px;
   }
 }
 
