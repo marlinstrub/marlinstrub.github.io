@@ -8,6 +8,8 @@ Click on the list items to toggle details.
 #+html: <news>
 #+html: <details><summary><b>Jul 2023</b> 📝 Our EELS paper was accepted at IROS.</summary>
 The [[https://www-robotics.jpl.nasa.gov/how-we-do-it/systems/exobiology-extant-life-surveyor-eels/][Exobiology Extant Life Surveyor (EELS)]] team wrote a paper that presents control and planning algorithms for EELS. One of the core ideas of the paper is to decouple shape control from motion control for screw-based gaits. This lets us tackle the control and planning problems with relatively simple algorithms despite the many (>30) degrees of freedom EELS has.
+
+The paper was nominated for a best-paper award.
 #+html: </details>
 
 #+html: <details><summary><b>Feb 2023</b> 💻 Effort Informed Trees (EIT*) was merged into OMPL.</summary>
@@ -52,6 +54,8 @@ I assisted [[https://robotic-esp.com/gammell/][Jon]] in surveying the field of a
 
 #+html: <details><summary><b>Aug 2020</b> 📝 <a href="https://www-robotics.jpl.nasa.gov/who-we-are/people/michael_paton/">Mike</a>'s paper was accepted at IROS.</summary>
 I coauthored a paper that presents the autonomy system used on Axel during the field trial last summer. The autonomy system includes a stability analysis that predicts the interaction of Axel's tether with the terrain. My main contribution was to describe how we adapted ABIT* to work with Axel's tether-induced non-Markovian states. You can find an open-access version of it [[https://robotic-esp.com/papers/paton_iros20.html][on the ESP website]].
+
+The paper was nominated for a best-paper award.
 #+html: </details>
 
 #+html: <details><summary><b>May 2020</b> 💻 ABIT* and AIT* were merged into OMPL.</summary>
