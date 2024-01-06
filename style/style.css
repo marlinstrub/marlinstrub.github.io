@@ -297,7 +297,6 @@ resume details summary::marker {
     color: rgba(51, 51, 51, 0.90);
 }
 * {-webkit-font-smoothing: antialiased;}
-
 resume summary::after {
     content: "";
 }
@@ -305,11 +304,6 @@ resume summary::after {
 resume ul.org-ul li {
     margin: 0.0em;
     padding: 0.0em;
-}
-
-resume p {
-    margin-bottom: 0.0em;
-    margin-top: 0.0em;
 }
 
 /* --- Table --- */
