@@ -66,7 +66,7 @@ I conducted another field trial with the [[https://www-robotics.jpl.nasa.gov/how
 #+html: </details>
 
 #+html: <details><summary><b>Aug 2022</b> <span class="icon-publication"></span> <a href="https://wbthomason.com/">Wil</a>'s TMIT* paper was published in RA-L.</summary>
-I coauthored a paper with [[https://scholar.google.com/citations?user=qsIX7joAAAAJ&hl=en][Wil]] and [[https://robotic-esp.com/gammell/][Jon]] that presents Task and Motion Informed Trees (TMIT*), an integrated task and motion planning algorithm. TMIT* combines AIT* with [[https://www.cs.cornell.edu/~wil/papers/isrr2019_unifiedtamp.pdf][PLANET]] to improve performance when high-level tasks, such as sorting potentially stacked objects, require reasoning about the order in which path-planning problems are to be executed.
+I coauthored a paper with [[https://wbthomason.com/][Wil]] and [[https://robotic-esp.com/gammell/][Jon]] that presents Task and Motion Informed Trees (TMIT*), an integrated task and motion planning algorithm. TMIT* combines AIT* with [[https://www.cs.cornell.edu/~wil/papers/isrr2019_unifiedtamp.pdf][PLANET]] to improve performance when high-level tasks, such as sorting potentially stacked objects, require reasoning about the order in which path-planning problems are to be executed.
 #+html: </details>
 
 #+html: <details><summary><b>Jan 2022</b> <span class="icon-position"></span> I started as a postdoc at NASA/JPL.</summary>
