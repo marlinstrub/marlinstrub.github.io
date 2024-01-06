@@ -13,12 +13,9 @@ I categorize my news into the following six groups for easy scanning.
 
 #+html: <div class="mobile-only">
 #+attr_html: :style width: 100%; table-layout: fixed; overflow-wrap: break-word;
-| 📝 Publication  |
-| 💻 Open-source  |
-| 🚀 New position |
-| 🌎 Field trial  |
-| 👨🏼‍🎓 Academic     |
-| 🙋🏻‍♂️ Personal     |
+| 📝 Publication  | 💻 Open-source |
+| 🚀 New position | 🌎 Field trial |
+| 👨🏼‍🎓 Academic     | 🙋🏻‍♂️ Personal    |
 #+html: </div>
 
 Click on a list item to toggle details for it.
