@@ -22,6 +22,7 @@ I categorize my news into the following six groups for easy scanning.
 </tbody>
 </table>
 #+end_export
+#+html: </div>
 
 #+html: <div class="mobile-only">
 #+begin_export html
