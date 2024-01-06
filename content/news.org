@@ -28,7 +28,7 @@ I coauthored a paper with [[https://scholar.google.com/citations?user=qsIX7joAAA
 I accepted a position as a postdoctoral researcher at NASA/JPL. I'm part of the autonomy team for a snake-like robot called [[https://www-robotics.jpl.nasa.gov/how-we-do-it/systems/exobiology-extant-life-surveyor-eels/][EELS]] that is being built to explore alien worlds. My work focuses on coming up with path planning and control approaches for EELS and includes contributing to the corresponding modules in its C++ autonomy stack.
 #+html: </details>
 
-#+html: <details><summary><b>Jan 2022</b> 👨🏼‍🎓 I passed my PhD defense at the University of Oxford!</summary>
+#+html: <details><summary><b>Jan 2022</b> 👨🏼‍🎓 I passed my PhD defense at the University of Oxford.</summary>
 I passed my viva (PhD defense) at the University of Oxford. There are umpteen people to thank. Here I just want to thank [[https://robotic-esp.com/gammell/][Jon]] for letting me stand on his shoulders these past three years and Nick and Wheeler for their time and constructive criticism. It is sincerely appreciated!
 #+html: </details>
 
@@ -74,11 +74,11 @@ My second paper got accepted at ICRA. AIT* improves planning performance with an
 My first paper got accepted at ICRA. ABIT* leverages advanced graph-search techniques, such as inflation and truncation, in sampling-based path planning. This is the algorithm we tested last summer. You can find the ABIT* paper [[https://arxiv.org/abs/2002.06589][on arxiv]] a high-level presentation of it [[https://www.youtube.com/watch?v=ZghEeVGgecY][on youtube]].
 #+html: </details>
 
-#+html: <details><summary><b>Jul 2019</b> 🌎 <a href="https://robotic-esp.com/gammell/">Jon</a> and I went on a NASA/JPL field trial in California.</summary>
+#+html: <details><summary><b>Jul 2019</b> 🌎 <a href="https://robotic-esp.com/gammell/">Jon</a> & I went on a NASA/JPL field trial in Calif., USA.</summary>
 [[https://robotic-esp.com/gammell/][Jon]] and I had the chance to join the [[https://www.jpl.nasa.gov/][NASA Jet Propulsion Laboratory (JPL)]] on a [[https://www.youtube.com/watch?v=GUNWVroyys4][field trial for Axel]] in the Mojave Desert. We tested new path planning techniques and supported the team at JPL in running science and autonomy experiments.
 #+html: </details>
 
-#+html: <details><summary><b>Sep 2018</b> 👨🏼‍🎓 I started my Ph.D. at the University of Oxford.</summary>
+#+html: <details><summary><b>Sep 2018</b> 👨🏼‍🎓 I started my PhD at the University of Oxford.</summary>
 I joined [[https://robotic-esp.com/gammell/][Jon]]'s [[https://robotic-esp.com/][Estimation, Search, and Planning Group]] at the [[https://ori.ox.ac.uk/][Oxford Robotics Institute]] to work on path planning for complex systems.
 #+html: </details>
 
