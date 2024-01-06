@@ -5,7 +5,7 @@
 
 ** Journal articles
 
-W. Thomason, M. P. Strub, J. D. Gammell (2022) /Task and Motion Informed Trees (TMIT*): Almost-surely asymptotically optimal integrated task and motion planning/. Robotics and Automation Letters (RA-L), 7(4): pages 11370—11377. ([[https://arxiv.org/abs/2210.09367][arxiv, ]][[https://www.doi.org/10.1109/LRA.2022.3199676][doi]])
+W. Thomason, M. P. Strub, J. D. Gammell (2022) /Task and Motion Informed Trees (TMIT*): Almost-surely asymptotically optimal integrated task and motion planning/. Robotics and Automation Letters (RA-L), 7(4): pages 11370—11377. ([[https://arxiv.org/abs/2210.09367][arxiv]], [[https://www.doi.org/10.1109/LRA.2022.3199676][doi]])
 #+html: <details><summary>Bibtex entry</summary>
 #+begin_src bibtex
 @Article{thomason_ral22,
