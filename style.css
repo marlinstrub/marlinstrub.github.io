@@ -12,6 +12,7 @@ body {
     counter-reset: toc-section;
     counter-increment: toc-section;
     hyphens: auto;
+    padding-bottom: 120px;
 }
 
 a, a:visited {
