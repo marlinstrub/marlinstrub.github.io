@@ -16,7 +16,7 @@ My primary research interests are path planning and control algorithms. I'm pass
   
 * Real-world deployments
 
-I have deployed my research on two of NASA/JPL's +coolest+ I mean subjectively most interesting rover prototypes: [[*Axel][Axel]] and [[*EELS][EELS]]. Here are short project-overviews that focus on my contributions and contain links to further information.
+I have deployed my research on two of NASA/JPL's +coolest+ subjectively most interesting rover prototypes: [[*Axel][Axel]] and [[*EELS][EELS]]. Here are short project-overviews that focus on my contributions and contain links to further information.
 
 ** Axel
 
