@@ -91,7 +91,7 @@ The Swiss national television produced a 4-part documentary about our row across
 #+html: </details>
 
 #+html: <details><summary><b>Jan 2018</b> 🚣🏻‍♂️ We completed our unassisted row across the Atlantic!</summary>
-[[https://www.swissmocean.ch/][Swiss Mocean]] took third place in the 2017 [[https://www.taliskerwhiskyatlanticchallenge.com/][Talisker Whisky Atlantic Challenge]] and became the first Swiss fours to row any ocean. It took us 30 days, 4 hours, and 59 minutes to row from the Canaries to the Caribbean Islands.
+[[https://www.swissoceanrowingsociety.ch/swiss-mocean][Swiss Mocean]] took third place in the 2017 [[https://www.taliskerwhiskyatlanticchallenge.com/][Talisker Whisky Atlantic Challenge]] and became the first Swiss fours to row any ocean. It took us 30 days, 4 hours, and 59 minutes to row from the Canaries to the Caribbean Islands.
 #+html: </details>
 
 #+html: <details><summary><b>Nov 2017</b> 👨🏼‍🎓 I passed my MSc defense at ETH Zürich.</summary>
