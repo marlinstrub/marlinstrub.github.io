@@ -4,6 +4,12 @@
 ;; Let org use imagemagick to set the image to the desired width.
 (setq org-image-actual-width nil)
 
+;; Set the creator string.
+(setq org-html-creator-string
+      (format "Made in <a href=\"https://www.gnu.org/software/emacs/\">Emacs</a> %s (<a href=\"https://orgmode.org\">Org mode</a> %s)"
+	            emacs-version
+	            (if (fboundp 'org-version) (org-version) "unknown version")))
+
 ;; Define the publishing project.
 (setq org-publish-project-alist
       (list
@@ -13,7 +19,7 @@
              :publishing-directory "./public"
              :publishing-function 'org-html-publish-to-html
              :with-author nil
-             :with-creator nil
+             :with-creator t
              :with-date t
              :with-toc nil
              :section-numbers nil
