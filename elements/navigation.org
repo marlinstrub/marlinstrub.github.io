@@ -19,6 +19,8 @@
 </table>
 
 <div class="mobile-only">
+<p style="color: rgba(255, 0, 0, 0.5);">
 This website looks best on a larger screen.
+<p>
 </div>
 #+end_export
