@@ -1,6 +1,23 @@
 #+include: ../elements/title.org
 #+include: ../elements/navigation.org
 
+#+html: <resume><details open>
+#+html: <summary><b>TLDR/Resumé</b> - <a href=./assets/cv_marlin_strub.pdf>Click here</a> for a detailed CV.</summary>
+_Experience_
+  - Robotics Technologist @ [[https://www.jpl.nasa.gov/][NASA/JPL]]
+  - Postdoc @ [[https://www.jpl.nasa.gov/][NASA/JPL]]
+
+_Education_
+  - PhD Robotics @ [[https://www.ox.ac.uk/][Oxford]]
+  - MSc Robotics @ [[https://ethz.ch/de.html][ETH Zürich]]
+  - BSc Mech Eng @ [[https://ethz.ch/de.html][ETH Zürich]]
+
+_Community_
+  - Co-maintainer @ [[https://ompl.kavrakilab.org/][OMPL]]
+  - Reviewer @ [[https://www.ieee.org/][IEEE]] / [[https://www.springer.com/][Springer]]
+  - Skipper @ [[https://www.swissoceanrowingsociety.ch/swiss-mocean][Swiss Mocean]]
+#+html: </details></resume>
+
 * Hi, I'm Marlin
 
 I enjoy designing, implementing, and deploying path-planning and control algorithms that are both theoretically sound and perform well in practice. Until recently, I was a Robotics Technologist at [[https://www.jpl.nasa.gov/][NASA/JPL]], where I led the path-planning efforts for a snake-like robot called [[https://www-robotics.jpl.nasa.gov/how-we-do-it/systems/exobiology-extant-life-surveyor-eels/][EELS]] and the new [[https://mars.nasa.gov/msr/spacecraft/sample-recovery-helicopters/][Mars helicopters]] ground mobility.
@@ -31,8 +48,6 @@ When I'm not working with robots, I like exploring the outdoors, spending time w
 * Education
 
 I hold a PhD in Engineering Science from the [[https://www.ox.ac.uk/][University of Oxford]], where I was a member of the [[https://robotic-esp.com/][Estimation, Search, and Planning (ESP) Group]] led by [[https://robotic-esp.com/people/gammell/][Dr. Jonathan D. Gammell]]. My research at Oxford focused on designing and implementing path-planning algorithms that leverage different sources of information to improve planning performance for complex systems in robotics and beyond. I also hold an MSc in Robotics, Systems, and Control and a BSc in Mechanical Engineering from [[https://ethz.ch/en.html][ETH Zürich]]. If you're interested in my work, please take a look at my [[./research.org][research]] and [[./publications.org][publications]] pages.
-
-A detailed CV can be downloaded by clicking [[file:assets/cv_marlin_strub.pdf][here]].
 
 * Open-source contributions
 

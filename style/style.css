@@ -32,6 +32,10 @@ a:hover {
     font-weight: 400;
 }
 
+.underline {
+    text-decoration: underline;
+}
+
 /* --- Side notes --- */
 div.side-note::before {
     content: "Note";
@@ -92,6 +96,13 @@ ol.org-ol {
     display: inline-block;
     width: 2em;
     margin-left: -2em;
+}
+
+span.underline {
+    display: block;
+    margin-top: 0.5em;
+    margin-left: 1.0em;
+    margin-bottom: -0.8em;
 }
 
 #content, #postamble {
@@ -260,6 +271,39 @@ news details summary::marker {
 
 news summary::after {
     content: "";
+}
+
+resume details {
+    background: #fbfbfb;
+    border: 1px solid #ebebeb;
+    border-radius: 5px;
+    margin: 0.0em;
+    margin-top: 1.2em;
+    padding: 0.25em 0.5em 0.25em 0.5em;
+    font-size: 0.95em;
+}
+resume details summary {
+    background: #fbfbfb;
+    font-size: 1.0em;
+    color: rgba(51, 51, 51, 1.00);
+}
+resume details summary::marker {
+    color: rgba(51, 51, 51, 0.90);
+}
+* {-webkit-font-smoothing: antialiased;}
+
+resume summary::after {
+    content: "";
+}
+
+resume ul.org-ul li {
+    margin: 0.0em;
+    padding: 0.0em;
+}
+
+resume p {
+    margin-bottom: 0.0em;
+    margin-top: 0.0em;
 }
 
 /* --- Table --- */
