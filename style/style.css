@@ -233,6 +233,17 @@ pre {
   }
 }
 
+.desktop-only {
+  display: none;
+}
+
+@media only screen and (min-device-width: 481px) {
+  .desktop-only {
+      display: inline;
+  }
+}
+
+
 /* --- Folding --- */
 details {
     background: #fbfbfb;

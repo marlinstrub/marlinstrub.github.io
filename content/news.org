@@ -3,13 +3,25 @@
 
 * News
 
-I categorize my news into the following six groups for easy scanning. Click on a list item to toggle details for it.
+I categorize my news into the following six groups for easy scanning.
 
+#+html: <div class="desktop-only">
 #+attr_html: :style width: 100%; table-layout: fixed; overflow-wrap: break-word;
 | 📝 Publication | 💻 Open-source | 🚀 New position |
 | 🌎 Field trial | 👨🏼‍🎓 Academic    | 🙋🏻‍♂️ Personal     |
+#+html: </div>
 
-#+html:<br>
+#+html: <div class="mobile-only">
+#+attr_html: :style width: 100%; table-layout: fixed; overflow-wrap: break-word;
+| 📝 Publication  |
+| 💻 Open-source  |
+| 🚀 New position |
+| 🌎 Field trial  |
+| 👨🏼‍🎓 Academic     |
+| 🙋🏻‍♂️ Personal     |
+#+html: </div>
+
+Click on a list item to toggle details for it.
 
 #+html: <news>
 #+html: <details><summary><b>Jul 2023</b> 📝 Our EELS paper was accepted at IROS.</summary>
