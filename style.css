@@ -16,20 +16,25 @@ body {
 
 a, a:visited {
     text-decoration: none;
-    color: rgba(48,63,159, 1.00);
+    color: rgba(8,63,259,1.00);
 }
 a:hover {
-    text-decoration: underline rgba(48,63,159, 1.00);
-    color: rgba(48,63,159, 1.00);
+    text-decoration: underline rgba(8,63,259,1.00);
+    color: rgba(8,63,259,1.00);
 }
 .org-bold {
     font-weight: 500;
 }
 .org-italic, .org-org-meta-line {
     color: rgba(51, 51, 51, 1.00);
+    font-style: italic;
 }
 .org-face-salient {
     font-weight: 400;
+}
+
+.underline {
+    text-decoration: underline;
 }
 
 /* --- Side notes --- */
@@ -47,6 +52,11 @@ div.side-note {
     width: 20em;
 }
 
+del {
+    text-decoration-line: line-through;
+    text-decoration-thickness: 0.12rem;
+}
+
 blockquote {
     color: #999999;
     padding-top: 0;
@@ -60,7 +70,7 @@ ul.org-ul {
 }
 ul.org-ul li  {
     list-style-type: none;
-    margin-bottom: .5em;
+    margin-bottom: 0.5em;
 }
 
 ul.org-ul li p {
@@ -92,6 +102,13 @@ ol.org-ol {
     display: inline-block;
     width: 2em;
     margin-left: -2em;
+}
+
+span.underline {
+    display: block;
+    margin-top: 0.5em;
+    margin-left: 1.0em;
+    margin-bottom: -0.8em;
 }
 
 #content, #postamble {
@@ -237,7 +254,7 @@ summary::after {
     font-size: 0.85em;
     display: inline-block;
     float: right;
-    padding-right:  0.5em;
+    padding-right: 0.5em;
 }
 news details {
     background: none;
@@ -260,6 +277,39 @@ news details summary::marker {
 
 news summary::after {
     content: "";
+}
+
+resume details {
+    background: #fbfbfb;
+    border: 1px solid #ebebeb;
+    border-radius: 5px;
+    margin: 0.0em;
+    margin-top: 1.2em;
+    padding: 0.25em 0.5em 0.25em 0.5em;
+    font-size: 0.95em;
+}
+resume details summary {
+    background: #fbfbfb;
+    font-size: 1.0em;
+    color: rgba(51, 51, 51, 1.00);
+}
+resume details summary::marker {
+    color: rgba(51, 51, 51, 0.90);
+}
+* {-webkit-font-smoothing: antialiased;}
+
+resume summary::after {
+    content: "";
+}
+
+resume ul.org-ul li {
+    margin: 0.0em;
+    padding: 0.0em;
+}
+
+resume p {
+    margin-bottom: 0.0em;
+    margin-top: 0.0em;
 }
 
 /* --- Table --- */
