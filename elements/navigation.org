@@ -1,5 +1,22 @@
-| [[../content/index.org][About]] | [[../content/news.org][News]] | [[../content/research.org][Research]] | [[../content/publications.org][Publications]] |
+#+begin_export html
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<colgroup>
+<col  class="org-left" />
+<col  class="org-left" />
+<col  class="org-left" />
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left"><a target="_self" href="index.html">About</a></td>
+<td class="org-left"><a target="_self" href="news.html">News</a></td>
+<td class="org-left"><a target="_self" href="research.html">Research</a></td>
+<td class="org-left"><a target="_self" href="publications.html">Publications</a></td>
+</tr>
+</tbody>
+</table>
 
-#+html: <div class="mobile-only">
+<div class="mobile-only>
 This website looks best on a larger screen.
-#+html: </div>
+</div>
+#+end_export

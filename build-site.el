@@ -41,6 +41,9 @@
 ;; Include my own css style.
 (setq org-html-head "<link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">")
 
+;; Open all links in external tabs, unless specified otherwise.
+(setq org-html-head (concat org-html-head "<base target=\"_blank\">"))
+
 ;; Generate the html. The 't' is for discarding cached values.
 (org-publish-all t)
 
