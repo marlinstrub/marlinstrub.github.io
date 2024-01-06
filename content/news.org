@@ -11,7 +11,7 @@ The [[https://www-robotics.jpl.nasa.gov/how-we-do-it/systems/exobiology-extant-l
 #+html: </details>
 
 #+html: <details><summary><b>Feb 2023</b> 💻 Effort Informed Trees (EIT*) was merged into OMPL.</summary>
-A reference implementation of the final algorithm of my PhD thesis is now also publicly available in the [[https://ompl.kavrakilab.org/][Open Motion Planning Library (OMPL)]]. Implementing this has been more of a challenge than anticipated, both technically and in terms of making time for it.
+A reference implementation of [[https://github.com/ompl/ompl/blob/19e007c97e7d500270798b53f243592c4428cb10/src/ompl/geometric/planners/informedtrees/EITstar.h#L57][EIT*]], the final algorithm of my PhD thesis, is now also publicly available in the [[https://ompl.kavrakilab.org/][Open Motion Planning Library (OMPL)]]. Implementing this has been more of a challenge than anticipated, both technically and in terms of making time for it.
 #+html: </details>
 
 #+html: <details><summary><b>Oct 2022</b> 🚀 I was promoted to Robotics Technologist at NASA/JPL.</summary>
@@ -55,7 +55,7 @@ I coauthored a paper that presents the autonomy system used on Axel during the f
 #+html: </details>
 
 #+html: <details><summary><b>May 2020</b> 💻 ABIT* and AIT* were merged into OMPL.</summary>
-ABIT* and AIT* were merged into the [[https://ompl.kavrakilab.org/][Open Motion Planning Library (OMPL)]]. This constitutes my first major contribution to an open-source library and I'm hoping ABIT* and AIT* will be useful for someone.
+[[https://ompl.kavrakilab.org/classompl_1_1geometric_1_1ABITstar.html#gABITstar][ABIT*]] and [[https://ompl.kavrakilab.org/classompl_1_1geometric_1_1AITstar.html#gAITstar][AIT*]] were merged into the [[https://ompl.kavrakilab.org/][Open Motion Planning Library (OMPL)]]. This constitutes my first major contribution to an open-source library and I'm hoping ABIT* and AIT* will be useful for someone.
 #+html: </details>
 
 #+html: <details><summary><b>Feb 2020</b> 💻 I made my first contribution to OpenRAVE.</summary>
