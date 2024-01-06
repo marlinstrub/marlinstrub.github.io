@@ -20,6 +20,10 @@ A reference implementation of [[https://github.com/ompl/ompl/blob/19e007c97e7d50
 I was promoted to Robotics Technologist at JPL. Fortunately my responsibilities stay the same, so I still get to do hands-on robotics work on the [[https://www-robotics.jpl.nasa.gov/how-we-do-it/systems/exobiology-extant-life-surveyor-eels/][Exobiology Extant Life Surveyor (EELS)]] and the [[https://mars.nasa.gov/msr/spacecraft/sample-recovery-helicopters/][Sample Recovery Helicopters (SRH)]] ground mobility effort.
 #+html: </details>
 
+#+html: <details><summary><b>Sep 2022</b> 🌎 I went on another NASA/JPL field trial in Alberta, CA.</summary>
+I conducted another field trial with the [[https://www-robotics.jpl.nasa.gov/how-we-do-it/systems/exobiology-extant-life-surveyor-eels/][Exobiology Extant Life Surveyor (EELS)]] team, again on the [[https://maps.app.goo.gl/1Atk21sDF6aaw97J9][Athabasca Glacier]]. This time we stayed on the ice for three weeks and tested two robots and multiple science instruments. It was even better than last time, as we were able to move more independently on the glacier having had more rope-training in advance.
+#+html: </details>
+
 #+html: <details><summary><b>Aug 2022</b> 📝 Wil's TMIT* paper was published in RA-L.</summary>
 I coauthored a paper with [[https://scholar.google.com/citations?user=qsIX7joAAAAJ&hl=en][Wil]] and [[https://robotic-esp.com/gammell/][Jon]] that presents Task and Motion Informed Trees (TMIT*), an integrated task and motion planning algorithm. TMIT* combines AIT* with [[https://www.cs.cornell.edu/~wil/papers/isrr2019_unifiedtamp.pdf][PLANET]] to improve performance when high-level tasks, such as sorting potentially stacked objects, require reasoning about the order in which path-planning problems are to be executed.
 #+html: </details>
@@ -34,6 +38,10 @@ I passed my viva (PhD defense) at the University of Oxford. There are umpteen pe
 
 #+html: <details><summary><b>Nov 2021</b> 📝 The journal paper on AIT* & EIT* was accepted at IJRR.</summary>
 My first journal paper got accepted at IJRR. AIT* and EIT* improve planning performance by leveraging multiple sources of information with an asymmetric bidirectional search. The paper will be published in 2022 but you can already find a preprint [[https://arxiv.org/abs/2111.01877][on arxiv]] and a high-level presentation of it [[https://youtu.be/aC2xBwOcDoo][on youtube]].
+#+html: </details>
+
+#+html: <details><summary><b>Sep 2021</b> 🌎 I went on a NASA/JPL field trial in Alberta, CA.</summary>
+I conducted a 10-day field trial with the [[https://www-robotics.jpl.nasa.gov/how-we-do-it/systems/exobiology-extant-life-surveyor-eels/][Exobiology Extant Life Surveyor (EELS)]] team. We tested our sensors and SLAM algorithms on the [[https://maps.app.goo.gl/1Atk21sDF6aaw97J9][Athabasca Glacier]] in the Canadian Rockies. It was my first time on a glacier - what an incredible experience. Our safety team, [[https://www.directactionvertical.com/][Direct Action Vertical (DAV)]], even let us rappel down moulins and crevasses!
 #+html: </details>
 
 #+html: <details><summary><b>Apr 2021</b> 📝 I wrote about heuristics for obstacle clearance.</summary>
