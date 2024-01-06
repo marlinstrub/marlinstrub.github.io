@@ -64,7 +64,7 @@ ul.org-ul {
 }
 ul.org-ul li  {
     list-style-type: none;
-    margin-bottom: .5em;
+    margin-bottom: 0.5em;
 }
 
 ul.org-ul li p {
@@ -248,7 +248,7 @@ summary::after {
     font-size: 0.85em;
     display: inline-block;
     float: right;
-    padding-right:  0.5em;
+    padding-right: 0.5em;
 }
 news details {
     background: none;
