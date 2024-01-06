@@ -21,4 +21,4 @@ This repository contains the file [[file:.github/workflows/publish.yml][.github/
 
 * Acknowledgements
 
-The css stylesheet is a modified version of Nicolas Rougier's [[https://www.labri.fr/perso/nrougier/GTD/GTD.css][GTD.css]]. The approach for [[https://youtu.be/AfkrzFodoNw][generating the website with Emacs]] and [[https://youtu.be/za99DwdZEyg][hosting it on GitHub pages]] was inspired by David Wilson's linked tutorials.
+The css stylesheet is a modified version of Nicolas Rougier's [[https://www.labri.fr/perso/nrougier/GTD/GTD.css][GTD.css]]. The approach for [[https://youtu.be/AfkrzFodoNw][generating the website with Emacs]] and [[https://youtu.be/za99DwdZEyg][hosting it on GitHub pages]] was inspired by David Wilson's linked tutorials. The icons on the news site are modified versions of [[https://www.figma.com/@temuujin_sh][Temuujin SH]] distributed by [[https://www.svgrepo.com][svgrepo.com]].
