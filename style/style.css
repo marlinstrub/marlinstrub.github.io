@@ -244,6 +244,50 @@ pre {
 }
 
 
+/* Icons */
+.icon-code {
+  &::after {
+    content: url('./assets/icon-code.svg');
+    display: inline-block;
+    vertical-align: -3px;
+  }
+}
+.icon-publication {
+  &::after {
+    content: url('./assets/icon-publication.svg');
+    display: inline-block;
+    vertical-align: -3px;
+  }
+}
+.icon-position {
+  &::after {
+    content: url('./assets/icon-position.svg');
+    display: inline-block;
+    vertical-align: -3px;
+  }
+}
+.icon-field-test {
+  &::after {
+    content: url('./assets/icon-field-test.svg');
+    display: inline-block;
+    vertical-align: -3px;
+  }
+}
+.icon-academic {
+  &::after {
+    content: url('./assets/icon-academic.svg');
+    display: inline-block;
+    vertical-align: -3px;
+  }
+}
+.icon-personal {
+  &::after {
+    content: url('./assets/icon-personal.svg');
+    display: inline-block;
+    vertical-align: -3px;
+  }
+}
+
 /* --- Folding --- */
 details {
     background: #fbfbfb;
@@ -337,7 +381,7 @@ th {
 }
 td {
     padding: 0rem;
-    padding-right: 1.0rem;
+    padding-right: 1.5rem;
 }
 tbody {
 /* border-bottom: 1px solid black; */
