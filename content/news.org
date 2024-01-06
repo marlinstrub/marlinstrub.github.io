@@ -3,7 +3,7 @@
 
 * News
 
-I categorize my news items into the following six groups for easy scanning. Click on an item to toggle details for it.
+I categorize my news into the following six groups for easy scanning. Click on a list item to toggle details for it.
 
 #+attr_html: :style width: 100%; table-layout: fixed; overflow-wrap: break-word;
 | 📝 Publication | 💻 Open-source | 🚀 New position |
