@@ -70,7 +70,8 @@ ul.org-ul {
     padding-left: 0
 }
 ul.org-ul li  {
-    list-style-type: none;
+    list-style-type: "- ";
+    margin-left: 2rem;
     margin-bottom: 0.5em;
 }
 
@@ -78,13 +79,6 @@ ul.org-ul li p {
     display: inline-block;
     margin-top: 0em;
     margin-bottom: 0em;
-}
-
-ul.org-ul li::before {
-    display: inline-block;
-    content: "- ";
-    width: 1em;
-    margin-left: 1rem;
 }
 
 ol.org-ol {
@@ -355,11 +349,6 @@ resume details summary::marker {
 * {-webkit-font-smoothing: antialiased;}
 resume summary::after {
     content: "";
-}
-
-resume ul.org-ul li {
-    margin: 0.0em;
-    padding: 0.0em;
 }
 
 /* --- Table --- */
