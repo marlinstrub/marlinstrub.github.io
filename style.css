@@ -408,7 +408,8 @@ div.back a {
 	position: relative;
   width: 95vw;
 	max-width: 500px;
-	height: 290px;
+	height: 350px;
+  min-height: 100%;
   margin-top: 2rem;
   margin-bottom: 2rem;
 	overflow: hidden;
@@ -417,8 +418,19 @@ div.back a {
 	justify-content: center;
 }
 
+.figure {
+    max-width: 200px;
+    float: right;
+    margin-left: 1rem;
+    margin-bottom: 0.25rem;
+    padding: 0rem;
+}
+
 img {
-  max-width: 500px;
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
 }
 
 input {
@@ -429,7 +441,7 @@ input {
 	width: 25px;
 	height: 25px;
 	background: rgba(51, 51, 51, 1.00);
-  opacity: 0.2;
+  opacity: 0.3;
   outline: 10px solid white;
   outline-offset: -10px;
   cursor: pointer;
@@ -442,7 +454,8 @@ input:checked {
 input + * {
 	position: absolute;
 	display: block;
-	top: -1rem;
+	top: -2.0rem;
+  line-height: 1rem;
 	right: 0;
 	width: 100%;
 	height: 100%;
@@ -457,14 +470,12 @@ input + *[aria-label]:before {
   left: 0;
   width: 95vw;
 	max-width: 500px;
-  height: 2rem;
-  text-align: center;
-  vertical-align: top;
+  height: 1.75rem;
 	font-size: 0.8rem;
 	color: rgba(51, 51, 51, 1.00);
 	z-index: 1;
-	padding: .2rem;
-	background-color: rgba(255, 255, 255, 1.00);
+	padding: .3rem;
+	background-color: rgba(255, 255, 255, 1.0);
 }
 
 input:checked + * {
