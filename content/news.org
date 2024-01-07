@@ -3,7 +3,7 @@
 
 * News
 
-I categorize my news into the following six groups for easy scanning.
+Categories for easy scanning:
 
 #+html: <div class="desktop-only">
 #+begin_export html
@@ -62,7 +62,7 @@ A reference implementation of [[https://github.com/ompl/ompl/blob/19e007c97e7d50
 I was promoted to Robotics Technologist at JPL. Fortunately my responsibilities stay the same, so I still get to do hands-on robotics work on the [[https://www-robotics.jpl.nasa.gov/how-we-do-it/systems/exobiology-extant-life-surveyor-eels/][Exobiology Extant Life Surveyor (EELS)]] and the [[https://mars.nasa.gov/msr/spacecraft/sample-recovery-helicopters/][Sample Recovery Helicopters (SRH)]] ground mobility effort.
 #+html: </details>
 
-#+html: <details><summary><b>Sep 2022</b> <span class="icon-field-test"></span> I went on another NASA/JPL field trial in Alberta, CA.</summary>
+#+html: <details><summary><b>Sep 2022</b> <span class="icon-field-test"></span> We went on a 2nd NASA/JPL field trial in Alberta, CA.</summary>
 I conducted another field trial with the [[https://www-robotics.jpl.nasa.gov/how-we-do-it/systems/exobiology-extant-life-surveyor-eels/][Exobiology Extant Life Surveyor (EELS)]] team, again on the [[https://maps.app.goo.gl/1Atk21sDF6aaw97J9][Athabasca Glacier]]. This time we stayed on the ice for three weeks and tested two robots and multiple science instruments. It was even better than last time, as we were able to move more independently on the glacier having had more rope-training in advance.
 #+html: </details>
 
@@ -82,19 +82,19 @@ I passed my viva (PhD defense) at the University of Oxford. There are umpteen pe
 My first journal paper got accepted at IJRR. AIT* and EIT* improve planning performance by leveraging multiple sources of information with an asymmetric bidirectional search. The paper will be published in 2022 but you can already find a preprint [[https://arxiv.org/abs/2111.01877][on arxiv]] and a high-level presentation of it [[https://youtu.be/aC2xBwOcDoo][on youtube]].
 #+html: </details>
 
-#+html: <details><summary><b>Sep 2021</b> <span class="icon-field-test"></span> I went on a NASA/JPL field trial in Alberta, CA.</summary>
-I conducted a 10-day field trial with the [[https://www-robotics.jpl.nasa.gov/how-we-do-it/systems/exobiology-extant-life-surveyor-eels/][Exobiology Extant Life Surveyor (EELS)]] team. We tested our sensors and SLAM algorithms on the [[https://maps.app.goo.gl/1Atk21sDF6aaw97J9][Athabasca Glacier]] in the Canadian Rockies. It was my first time on a glacier - what an incredible experience. Our safety team, [[https://www.directactionvertical.com/][Direct Action Vertical (DAV)]], even let us rappel down moulins and crevasses!
+#+html: <details><summary><b>Sep 2021</b> <span class="icon-field-test"></span> We went on a NASA/JPL field trial in Alberta, CA.</summary>
+I conducted a 10-day field trial as part of the [[https://www-robotics.jpl.nasa.gov/how-we-do-it/systems/exobiology-extant-life-surveyor-eels/][Exobiology Extant Life Surveyor (EELS)]] team at JPL. We tested our sensors and SLAM algorithms on the [[https://maps.app.goo.gl/1Atk21sDF6aaw97J9][Athabasca Glacier]] in the Canadian Rockies. It was my first time on a glacier - what an incredible experience. Our safety team, [[https://www.directactionvertical.com/][Direct Action Vertical (DAV)]], even let us rappel down moulins and crevasses!
 #+html: </details>
 
-#+html: <details><summary><b>Apr 2021</b> <span class="icon-publication"></span> I wrote about heuristics for obstacle clearance.</summary>
+#+html: <details><summary><b>Apr 2021</b> <span class="icon-publication"></span> My report on obstacle-clearance heuristics is on arXiv.</summary>
 Obstacle clearance in search space is an important optimization objective in path planning because it can result in safe paths. This technical report presents admissible heuristics that can improve planning performance when optimizing this objective. You can find the report [[https://arxiv.org/abs/2104.02298][on arxiv]].
 #+html: </details>
 
-#+html: <details><summary><b>Mar 2021</b> <span class="icon-code"></span> I became a co-maintainer of OMPL.</summary>
+#+html: <details><summary><b>Mar 2021</b> <span class="icon-code"></span> OMPL made me a co-maintainer.</summary>
 The [[https://ompl.kavrakilab.org/][Open Motion Planning Library (OMPL)]] has been immensely useful in my own research and I'm stoked to join its impressive team of maintainers. Very much looking forward to contributing more to OMPL.
 #+html: </details>
 
-#+html: <details><summary><b>Sep 2020</b> <span class="icon-code"></span> I made my first (tiny) contribution to Emacs.</summary>
+#+html: <details><summary><b>Sep 2020</b> <span class="icon-code"></span> Emacs accepted my first (tiny) contribution.</summary>
 I use [[https://www.gnu.org/software/emacs/][Emacs]] for many things (too many, perhaps). Emacs has [[https://orgmode.org/][org-mode]], which is, among other things, an excellent tool for note-taking and journaling. I fixed [[https://github.com/TonCherAmi/org-starless/issues/1][this tiny bug]] in org-mode that was exposed by a package that (subjectively) improves the appearance of org-mode by hiding some markdown.
 #+html: </details>
 
@@ -112,7 +112,7 @@ The paper was nominated for a best-paper award.
 [[https://ompl.kavrakilab.org/classompl_1_1geometric_1_1ABITstar.html#gABITstar][ABIT*]] and [[https://ompl.kavrakilab.org/classompl_1_1geometric_1_1AITstar.html#gAITstar][AIT*]] were merged into the [[https://ompl.kavrakilab.org/][Open Motion Planning Library (OMPL)]]. This constitutes my first major contribution to an open-source library and I'm hoping ABIT* and AIT* will be useful for someone.
 #+html: </details>
 
-#+html: <details><summary><b>Feb 2020</b> <span class="icon-code"></span> I made my first contribution to OpenRAVE.</summary>
+#+html: <details><summary><b>Feb 2020</b> <span class="icon-code"></span> OpenRAVE accepted my first feature contribution.</summary>
 I implemented a feature that allows using the [[https://github.com/flexible-collision-library/fcl][Flexible Collision Library (FCL)]] for distance queries in [[https://github.com/rdiankov/openrave][OpenRAVE]]. This constitutes my first minor contribution to an open-source library and I'm very happy to finally being able to contribute back to the community.
 #+html: </details>
 
@@ -136,7 +136,7 @@ I joined [[https://robotic-esp.com/gammell/][Jon]]'s [[https://robotic-esp.com/]
 The Swiss national television produced a 4-part documentary about our row across the Atlantic. If your IP is from Switzerland, you can watch it [[https://www.srf.ch/play/tv/sendung/rudern-am-limit?id=c82c1f74-2f6f-4e78-af79-b362f008fc91][here]]. It's in Swiss German, but there's also a version of it with English subtitles [[https://www.youtube.com/playlist?list=PLoxsQMM4ggWFoDgPxYeukqFxZ8K3CPG2n][on youtube]]. Edit: There's now also a 90-minute version of it.
 #+html: </details>
 
-#+html: <details><summary><b>Feb 2018</b> <span class="icon-personal"></span> I wrote a blog post for ETH about rowing the Atlantic.</summary>
+#+html: <details><summary><b>Feb 2018</b> <span class="icon-personal"></span> ETH published my blog about rowing the Atlantic.</summary>
 [[https://ethz.ch/][ETH Zürich]] asked me to write a blog post about rowing the Atlantic, which I happily did. You can read it [[https://ethambassadors.ethz.ch/2018/02/15/rowing-the-atlantic/][here]].
 #+html: </details>
 
