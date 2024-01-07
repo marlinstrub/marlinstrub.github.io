@@ -70,7 +70,8 @@ ul.org-ul {
     padding-left: 0
 }
 ul.org-ul li  {
-    list-style-type: none;
+    list-style-type: "- ";
+    margin-left: 2rem;
     margin-bottom: 0.5em;
 }
 
@@ -78,13 +79,6 @@ ul.org-ul li p {
     display: inline-block;
     margin-top: 0em;
     margin-bottom: 0em;
-}
-
-ul.org-ul li::before {
-    display: inline-block;
-    content: "- ";
-    width: 1em;
-    margin-left: 1rem;
 }
 
 ol.org-ol {
@@ -297,6 +291,7 @@ details {
     padding:  0.25em;
     margin-bottom: 0.25em;
     margin-top: 0.25em;
+    margin-left: 2rem;
     font-size: 0.85em;
 }
 details pre {
@@ -357,11 +352,6 @@ resume summary::after {
     content: "";
 }
 
-resume ul.org-ul li {
-    margin: 0.0em;
-    padding: 0.0em;
-}
-
 /* --- Table --- */
 table, tbody, td, tr, th, colgroup, thead {
     border: 0;
@@ -392,15 +382,6 @@ tbody {
 dd {
     margin-top: 0.25em;
     margin-bottom: 0.50em;
-}
-
-/* --- Back links in header --- */
-div.back a {
-    float: right;
-    font-weight: 400;
-    color: #aaaaaa;
-    text-transform: uppercase;
-    margin-top: -2.5em;
 }
 
 /* Image sliders */
