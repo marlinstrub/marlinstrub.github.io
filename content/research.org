@@ -6,7 +6,7 @@
 #+attr_html: :width 210px :style  float: right; outline: 2px solid black; outline-offset: -1px; margin: 0.0rem 0.0rem 0.0rem 1.0rem; :title AIT* optimizing path length on random problems.
 [[file:./assets/aitstar_teaser.gif]]
 
-My primary research interests are path planning and control algorithms. I'm passionate about and have experience in designing algorithms, analyzing them analytically, implementing them in C++, evaluating them empirically, and deploying them on real-world systems. I'm proud and humbled when I learn that my work has been useful to others. Some of my favorite examples of this include when researchers from
+My primary research interests are path planning and control algorithms. I'm passionate about and have experience in algorithm design, analysis, implementation, evaluation, and deployment. The two deployments I was most heavily involved in so far are summarized below. I'm proud and humbled when I learn that my work has been useful to others. Some of my favorite examples of this include when researchers from
 
   - CMU and Mistral AI used AIT* with LLMs for robotic tasks ([[https://openreview.net/pdf?id=2q14O7h8Zm][paper]])
   - The University of Oxford used AIT* on their drone ([[https://arxiv.org/pdf/2311.03484.pdf][paper]], [[https://www.youtube.com/watch?v=CVIXu2qUQJ8][video]])
