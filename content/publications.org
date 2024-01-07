@@ -54,7 +54,6 @@ J. D. Gammell, M. P. Strub (2021) /Asymptotically optimal sampling-based motion 
 #+html: </details>
 
 ** Conference papers
-#+html: <div class="back"><a href="#top">Back to top</a></div>
 
 R. Thakker, M. Paton, M. P. Strub, M. Swan, G. Daddi, R. Royce, /et al./ (2023) /EELS: Towards autonomous mobility in extreme terrain with a versatile snake robot with resilience to exteroception failures/. In: Proceedings of the IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS). /to appear./
 #+html: <details><summary>Bibtex entry</summary>
@@ -125,7 +124,6 @@ M. P. Strub, J. D. Gammell (2020) /Advanced BIT* (ABIT*): Sampling-based plannin
 #+html: </details>
 
 ** Theses
-#+html: <div class="back"><a href="#top">Back to top</a></div>
 
 M. P. Strub (2022) /Leveraging multiple sources of information to search continuous spaces/. Ph.D. Thesis, University of Oxford ([[https://ora.ox.ac.uk/objects/uuid:1a241006-0ddd-4829-bdd5-ade7301c863a][Oxford University Research Archive]])
 #+html: <details><summary>Bibtex entry</summary>
@@ -140,7 +138,6 @@ M. P. Strub (2022) /Leveraging multiple sources of information to search continu
 #+html: </details>
 
 ** Workshop papers and technical reports
-#+html: <div class="back"><a href="#top">Back to top</a></div>
 
 J. D. Gammell, M. P. Strub, V. N. Hartmann (2022) /Planner Developer Tools (PDT): Reproducible experiments and statistical analysis for developing and testing motion planners/. In: Proceedings of the Workshop on Evaluating Motion Planning Performance (EMPP), IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS). ([[https://robotic-esp.com/papers/gammell_empp22.pdf][open-access]])
 #+html: <details><summary>Bibtex entry</summary>
