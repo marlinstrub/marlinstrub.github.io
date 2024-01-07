@@ -5,10 +5,11 @@
 
 ** Journal articles
 
-W. Thomason, M. P. Strub, J. D. Gammell (2022) /Task and Motion Informed Trees (TMIT*): Almost-surely asymptotically optimal integrated task and motion planning/. Robotics and Automation Letters (RA-L), 7(4): pages 11370—11377. ([[https://arxiv.org/abs/2210.09367][arxiv]], [[https://www.doi.org/10.1109/LRA.2022.3199676][doi]])
+#+html: <span id="thomason_ral2022"></span>
+- W. Thomason, M. P. Strub, J. D. Gammell (2022) /Task and Motion Informed Trees (TMIT*): Almost-surely asymptotically optimal integrated task and motion planning/. Robotics and Automation Letters (RA-L), 7(4): pages 11370—11377. ([[https://arxiv.org/abs/2210.09367][arxiv]], [[https://www.doi.org/10.1109/LRA.2022.3199676][doi]])
 #+html: <details><summary>Bibtex entry</summary>
 #+begin_src bibtex
-@Article{thomason_ral22,
+@Article{thomason_ral2022,
   author = {Thomason, Wil and Strub, Marlin P. and Gammell, Jonathan D.},
   title = {{Task} and {Motion} {Informed} {Trees} ({TMIT*}): Almost-surely asymptotically optimal integrated task and motion planning},
   journal = {{IEEE} Robotics and Automation Letters ({RA-L})},
@@ -21,7 +22,8 @@ W. Thomason, M. P. Strub, J. D. Gammell (2022) /Task and Motion Informed Trees (
 #+end_src
 #+html: </details>
 
-M. P. Strub, J. D. Gammell (2022) /AIT​* and EIT*: Asymmetric bidirectional sampling-based path planning/. The International Journal of Robotics Research (IJRR), 41(4): pages 390—417. ([[https://arxiv.org/abs/2111.01877][arxiv]], [[https://www.doi.org/10.1177/02783649211069572][doi]])
+#+html: <span id="strub_ijrr2021"></span>
+- M. P. Strub, J. D. Gammell (2022) /AIT​* and EIT*: Asymmetric bidirectional sampling-based path planning/. The International Journal of Robotics Research (IJRR), 41(4): pages 390—417. ([[https://arxiv.org/abs/2111.01877][arxiv]], [[https://www.doi.org/10.1177/02783649211069572][doi]])
 #+html: <details><summary>Bibtex entry</summary>
 #+begin_src bibtex
 @Article{strub_ijrr2021,
@@ -37,7 +39,8 @@ M. P. Strub, J. D. Gammell (2022) /AIT​* and EIT*: Asymmetric bidirectional sa
 #+end_src
 #+html: </details>
 
-J. D. Gammell, M. P. Strub (2021) /Asymptotically optimal sampling-based motion planning methods/. Annual Review of Control, Robotics, and Autonomous Systems (ARCRA), 4(1): pages 295—318. Invited. ([[https://arxiv.org/abs/2009.10484][arxiv]], [[https://www.annualreviews.org/doi/full/10.1146/annurev-control-061920-093753][annualreviews]])
+#+html: <span id="gammell_arcras2021"></span>
+- J. D. Gammell, M. P. Strub (2021) /Asymptotically optimal sampling-based motion planning methods/. Annual Review of Control, Robotics, and Autonomous Systems (ARCRAS), 4(1): pages 295—318. Invited. ([[https://arxiv.org/abs/2009.10484][arxiv]], [[https://www.annualreviews.org/doi/full/10.1146/annurev-control-061920-093753][annualreviews]])
 #+html: <details><summary>Bibtex entry</summary>
 #+begin_src bibtex
 @Article{gammell_arcras2021,
@@ -55,10 +58,11 @@ J. D. Gammell, M. P. Strub (2021) /Asymptotically optimal sampling-based motion 
 
 ** Conference papers
 
-R. Thakker, M. Paton, M. P. Strub, M. Swan, G. Daddi, R. Royce, /et al./ (2023) /EELS: Towards autonomous mobility in extreme terrain with a versatile snake robot with resilience to exteroception failures/. In: Proceedings of the IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS). /to appear./
+#+html: <span id="thakker_iros2023"></span>
+- R. Thakker, M. Paton, M. P. Strub, M. Swan, G. Daddi, R. Royce, /et al./ (2023) /EELS: Towards autonomous mobility in extreme terrain with a versatile snake robot with resilience to exteroception failures/. In: Proceedings of the IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS). /to appear./
 #+html: <details><summary>Bibtex entry</summary>
 #+begin_src bibtex
-@InProceedings{thakker_iros22,
+@InProceedings{thakker_iros23,
   author = {Thakker, Rohan and Paton, Michael and Strub, Marlin P. and Swan, Michael and Daddi, Guglielmo and Royce, Rob and Tosi, Phillipe and Gildner, Matthew and Vaquero, Tiago and Veismann, Marcel and Gavrilov, Peter and Marteau, Eloise Bowkett, Joseph and Loret, Daniel and Nakka, Yashwanth and Hockman, Benjamin and Orekhov, Andrew and Hasseler, Tristan and Leake, Carl and Nuernberger, Benjamin and Proen\c{c}a, Pedro and Reid, William and Talbot, William and Georgiev, Nikola and Pailevanian, Torkom and Archanian, Avak and Ambrose, Eric and Jasper, Jay and Etheredge, Rachel and Roman, Christiahn and Levine, Dan and Otsu, Kyohei and Melikyan, Hovhannes and Nash, Jeremy and Rieber, Richard and Carpenter, Kalind and Jain, Abhinandan and Shiraishi, Lori and Pastor, Daniel and Yearicks, Sarah and Ingham, Michel and Robinson, Matthew and Agha, Ali and Travers, Matthew and Choset, Howie and Burdick, Joel and Ono Masahiro},
   title = {{EELS}: {Towards} autonomous mobility in extreme terrain with a versatile snake robot with resilience to exteroception failures},
   booktitle = {Proceedings of the {IEEE}/{RSJ} International Conference on Intelligent Robots and Systems ({IROS})},
@@ -68,10 +72,11 @@ R. Thakker, M. Paton, M. P. Strub, M. Swan, G. Daddi, R. Royce, /et al./ (2023) 
 #+end_src
 #+html: </details>
 
-V. N. Hartmann, M. P. Strub, M. Toussaint, J. D. Gammell (2022) /Effort Informed Roadmaps (EIRM*): Efficient asymptotically optimal multiquery planning by actively reusing validation effort/. In: Proceedings of the International Symposium on Robotics Research (ISRR). ([[https://arxiv.org/pdf/2205.08480][arxiv]])
+#+html: <span id="hartmann_isrr2022"></span>
+- V. N. Hartmann, M. P. Strub, M. Toussaint, J. D. Gammell (2022) /Effort Informed Roadmaps (EIRM*): Efficient asymptotically optimal multiquery planning by actively reusing validation effort/. In: Proceedings of the International Symposium on Robotics Research (ISRR). ([[https://arxiv.org/pdf/2205.08480][arxiv]])
 #+html: <details><summary>Bibtex entry</summary>
 #+begin_src bibtex
-@InProceedings{hartmann_arxiv22,
+@InProceedings{hartmann_isrr22,
   author = {Hartmann, Valentin N. and Strub, Marlin P. and Toussaint, Marc and Gammell, Jonathan D.},
   title = {{Effort} {Informed} {Roadmaps} ({EIRM*}): {Efficient} asymptotically optimal multiquery planning by actively reusing validation effort},
   booktitle = {Proceedings of the International Symposium on Robotics Research ({ISRR})},
@@ -81,7 +86,8 @@ V. N. Hartmann, M. P. Strub, M. Toussaint, J. D. Gammell (2022) /Effort Informed
 #+end_src
 #+html: </details>
 
-M. Paton, M. P. Strub, T. Brown, R. J. Greene, J. Lizewski, V. Patel, J. D. Gammell, I. A. D. Nesnas (2020) /Navigation on the line: Traversability analysis and path planning for extreme-terrain rappelling rovers/. In: Proceedings of the IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS). pages 7034—7041. ([[https://robotic-esp.com/papers/paton_iros20.pdf][open-access]], [[https://ieeexplore.ieee.org/document/9341409][ieeexplore]])
+#+html: <span id="paton_iros2020"></span>
+- M. Paton, M. P. Strub, T. Brown, R. J. Greene, J. Lizewski, V. Patel, J. D. Gammell, I. A. D. Nesnas (2020) /Navigation on the line: Traversability analysis and path planning for extreme-terrain rappelling rovers/. In: Proceedings of the IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS). pages 7034—7041. ([[https://robotic-esp.com/papers/paton_iros20.pdf][open-access]], [[https://ieeexplore.ieee.org/document/9341409][ieeexplore]])
 #+html: <details><summary>Bibtex entry</summary>
 #+begin_src bibtex
 @InProceedings{paton_iros2020,
@@ -95,7 +101,8 @@ M. Paton, M. P. Strub, T. Brown, R. J. Greene, J. Lizewski, V. Patel, J. D. Gamm
 #+end_src
 #+html: </details>
 
-M. P. Strub, J. D. Gammell (2020) /Adaptively Informed Trees (AIT*): Fast asymptotically optimal path planning through adaptive heuristics/. In: Proceedings of the IEEE International Conference on Robotics and Automation (ICRA). pages 3191—3198. ([[https://arxiv.org/abs/2002.06599][arxiv]], [[https://ieeexplore.ieee.org/document/9197338][ieeexplore]])
+#+html: <span id="strub_icra2020b"></span>
+- M. P. Strub, J. D. Gammell (2020) /Adaptively Informed Trees (AIT*): Fast asymptotically optimal path planning through adaptive heuristics/. In: Proceedings of the IEEE International Conference on Robotics and Automation (ICRA). pages 3191—3198. ([[https://arxiv.org/abs/2002.06599][arxiv]], [[https://ieeexplore.ieee.org/document/9197338][ieeexplore]])
 #+html: <details><summary>Bibtex entry</summary>
 #+begin_src bibtex
 @InProceedings{strub_icra2020b,
@@ -109,7 +116,8 @@ M. P. Strub, J. D. Gammell (2020) /Adaptively Informed Trees (AIT*): Fast asympt
 #+end_src
 #+html: </details>
 
-M. P. Strub, J. D. Gammell (2020) /Advanced BIT* (ABIT*): Sampling-based planning with advanced graph-search techniques/. In: Proceedings of the IEEE International Conference on Robotics and Automation (ICRA). pages 130—136. ([[https://arxiv.org/abs/2002.06589][arxiv]], [[https://ieeexplore.ieee.org/document/9196580][ieeexplore]])
+#+html: <span id="strub_icra2020a"></span>
+- M. P. Strub, J. D. Gammell (2020) /Advanced BIT* (ABIT*): Sampling-based planning with advanced graph-search techniques/. In: Proceedings of the IEEE International Conference on Robotics and Automation (ICRA). pages 130—136. ([[https://arxiv.org/abs/2002.06589][arxiv]], [[https://ieeexplore.ieee.org/document/9196580][ieeexplore]])
 #+html: <details><summary>Bibtex entry</summary>
 #+begin_src bibtex
 @InProceedings{strub_icra2020a,
@@ -125,7 +133,8 @@ M. P. Strub, J. D. Gammell (2020) /Advanced BIT* (ABIT*): Sampling-based plannin
 
 ** Theses
 
-M. P. Strub (2022) /Leveraging multiple sources of information to search continuous spaces/. Ph.D. Thesis, University of Oxford ([[https://ora.ox.ac.uk/objects/uuid:1a241006-0ddd-4829-bdd5-ade7301c863a][Oxford University Research Archive]])
+#+html: <span id="strub_phd2022"></span>
+- M. P. Strub (2022) /Leveraging multiple sources of information to search continuous spaces/. Ph.D. Thesis, University of Oxford ([[https://ora.ox.ac.uk/objects/uuid:1a241006-0ddd-4829-bdd5-ade7301c863a][Oxford University Research Archive]])
 #+html: <details><summary>Bibtex entry</summary>
 #+begin_src bibtex
 @PhDThesis{strub_phd2022,
@@ -139,7 +148,7 @@ M. P. Strub (2022) /Leveraging multiple sources of information to search continu
 
 ** Workshop papers and technical reports
 
-J. D. Gammell, M. P. Strub, V. N. Hartmann (2022) /Planner Developer Tools (PDT): Reproducible experiments and statistical analysis for developing and testing motion planners/. In: Proceedings of the Workshop on Evaluating Motion Planning Performance (EMPP), IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS). ([[https://robotic-esp.com/papers/gammell_empp22.pdf][open-access]])
+- J. D. Gammell, M. P. Strub, V. N. Hartmann (2022) /Planner Developer Tools (PDT): Reproducible experiments and statistical analysis for developing and testing motion planners/. In: Proceedings of the Workshop on Evaluating Motion Planning Performance (EMPP), IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS). ([[https://robotic-esp.com/papers/gammell_empp22.pdf][open-access]])
 #+html: <details><summary>Bibtex entry</summary>
 #+begin_src bibtex
 @InProceedings{gammell_empp22,
@@ -151,7 +160,8 @@ J. D. Gammell, M. P. Strub, V. N. Hartmann (2022) /Planner Developer Tools (PDT)
 #+end_src
 #+html: </details>
 
-M. P. Strub, J. D. Gammell (2021) Admissible heuristics for obstacle clearance optimization objectives. ([[https://arxiv.org/abs/2104.02298][arxiv]])
+#+html: <span id="strub_tr2021"></span>
+- M. P. Strub, J. D. Gammell (2021) Admissible heuristics for obstacle clearance optimization objectives. ([[https://arxiv.org/abs/2104.02298][arxiv]])
 #+html: <details><summary>Bibtex entry</summary>
 #+begin_src bibtex
 @TechReport{strub_tr2021,

@@ -45,17 +45,19 @@ Categories for easy scanning:
 #+end_export
 #+html: </div>
 
-Click on a list item to toggle its details.
+Clicking on a news item toggles further information.
 
 #+html: <news>
 #+html: <details><summary><b>Jul 2023</b> <span class="icon-publication"></span> Our EELS paper was accepted at IROS.</summary>
-The [[https://www-robotics.jpl.nasa.gov/how-we-do-it/systems/exobiology-extant-life-surveyor-eels/][Exobiology Extant Life Surveyor (EELS)]] team wrote a paper that presents control and planning algorithms for EELS. One of the core ideas of the paper is to decouple shape control from motion control for screw-based gaits. This lets us tackle the control and planning problems with relatively simple algorithms despite the many (>30) degrees of freedom EELS has.
+The [[https://www-robotics.jpl.nasa.gov/how-we-do-it/systems/exobiology-extant-life-surveyor-eels/][Exobiology Extant Life Surveyor (EELS)]] team wrote a paper that presents control and planning algorithms for EELS. One of the core ideas of the paper is to decouple shape control from motion control for screw-based gaits. This lets us tackle the control and planning problems with relatively simple algorithms despite the many (>30) degrees of freedom EELS has. The paper was nominated for a best-paper award.
 
-The paper was nominated for a best-paper award.
+#+html: Visit my <a target="_self" href="./publications.html#thakker_iros2023">publications page</a> for the complete author list and a bibtex entry.
 #+html: </details>
 
 #+html: <details><summary><b>Feb 2023</b> <span class="icon-code"></span> Effort Informed Trees (EIT*) was merged into OMPL.</summary>
-A reference implementation of [[https://github.com/ompl/ompl/blob/19e007c97e7d500270798b53f243592c4428cb10/src/ompl/geometric/planners/informedtrees/EITstar.h#L57][EIT*]], the final algorithm of my PhD thesis, is now also publicly available in the [[https://ompl.kavrakilab.org/][Open Motion Planning Library (OMPL)]]. Implementing this has been more of a challenge than anticipated, both technically and in terms of making time for it.
+A reference implementation of EIT* ([[https://arxiv.org/abs/2111.01877][arxiv]], [[https://www.doi.org/10.1177/02783649211069572][doi]]), the final algorithm of my PhD thesis, is now also publicly available in the [[https://ompl.kavrakilab.org/][Open Motion Planning Library (OMPL)]]. Implementing this has been more of a challenge than anticipated, both technically and in terms of making time for it.
+
+#+html: EIT* is not included in the official OMPL documentation yet, but you can find its header file <a  href="https://github.com/ompl/ompl/blob/19e007c97e7d500270798b53f243592c4428cb10/src/ompl/geometric/planners/informedtrees/EITstar.h#L57">here</a>.
 #+html: </details>
 
 #+html: <details><summary><b>Oct 2022</b> <span class="icon-position"></span> I was promoted to Robotics Technologist at NASA/JPL.</summary>
@@ -66,8 +68,16 @@ I was promoted to Robotics Technologist at JPL. Fortunately my responsibilities 
 I conducted another field trial with the [[https://www-robotics.jpl.nasa.gov/how-we-do-it/systems/exobiology-extant-life-surveyor-eels/][Exobiology Extant Life Surveyor (EELS)]] team, again on the [[https://maps.app.goo.gl/1Atk21sDF6aaw97J9][Athabasca Glacier]]. This time we stayed on the ice for three weeks and tested two robots and multiple science instruments. It was even better than last time, as we were able to move more independently on the glacier having had more rope-training in advance.
 #+html: </details>
 
-#+html: <details><summary><b>Aug 2022</b> <span class="icon-publication"></span> <a href="https://wbthomason.com/">Wil</a>'s TMIT* paper was published in RA-L.</summary>
-I coauthored a paper with [[https://wbthomason.com/][Wil]] and [[https://robotic-esp.com/gammell/][Jon]] that presents Task and Motion Informed Trees (TMIT*), an integrated task and motion planning algorithm. TMIT* combines AIT* with [[https://www.cs.cornell.edu/~wil/papers/isrr2019_unifiedtamp.pdf][PLANET]] to improve performance when high-level tasks, such as sorting potentially stacked objects, require reasoning about the order in which path-planning problems are to be executed.
+#+html: <details><summary><b>Aug 2022</b> <span class="icon-publication"></span> Wil's TMIT* paper was published in RA-L.</summary>
+I coauthored a paper with [[https://wbthomason.com/][Wil]] and [[https://robotic-esp.com/gammell/][Jon]] that presents Task and Motion Informed Trees (TMIT*; [[https://arxiv.org/abs/2210.09367][arxiv]], [[https://www.doi.org/10.1109/LRA.2022.3199676][doi]]), an integrated task and motion planning algorithm. TMIT* combines AIT* with [[https://www.cs.cornell.edu/~wil/papers/isrr2019_unifiedtamp.pdf][PLANET]] to improve performance when high-level tasks, such as sorting potentially stacked objects, require reasoning about the order in which path-planning problems are to be executed.
+
+#+html: A bibtex entry for TMIT* is available on my <a target="_self" href="./publications.html#thomason_ral2022">publications page</a>.
+#+html: </details>
+
+#+html: <details><summary><b>Jul 2022</b> <span class="icon-publication"></span> Valentin's EIRM* paper was published in ISRR.</summary>
+I coauthored a paper with [[https://vhartmann.com/][Valentin]] and [[https://robotic-esp.com/gammell/][Jon]] that presents Effort Informed Roadmaps ([[./publications.html#hartmann_isrr2022][EIRM*]]; [[https://arxiv.org/pdf/2205.08480][arxiv]]), an multi-query extension to EIT*. EIRM* deliberatively reuses search-effort when solving path-planning problems that are similar to problems it has solved before. This improves performance on successive problems compared to popular single-query and multi-query planners, including EIT*, RRT-Connect, and PRM*.
+
+#+html: A bibtex entry for EIRM* is available on my <a target="_self" href=./publications.html#hartmann_isrr2022>publications page</a>.
 #+html: </details>
 
 #+html: <details><summary><b>Jan 2022</b> <span class="icon-position"></span> I started as a postdoc at NASA/JPL.</summary>
@@ -75,11 +85,15 @@ I accepted a position as a postdoctoral researcher at NASA/JPL. I'm part of the 
 #+html: </details>
 
 #+html: <details><summary><b>Jan 2022</b> <span class="icon-academic"></span> I passed my PhD defense at the University of Oxford.</summary>
-I passed my viva (PhD defense) at the University of Oxford. There are umpteen people to thank. Here I just want to thank [[https://robotic-esp.com/gammell/][Jon]] for letting me stand on his shoulders these past three years and Nick and Wheeler for their time and constructive criticism. It is sincerely appreciated!
+I successfully defended my PhD thesis at the University of Oxford ([[https://ora.ox.ac.uk/objects/uuid:1a241006-0ddd-4829-bdd5-ade7301c863a][Oxford Archive]]). There are a thousand people to thank. Here I just want to thank [[https://robotic-esp.com/gammell/][Jon]] for letting me stand on his shoulders these past few years and [[https://www.robots.ox.ac.uk/~nickh/][Nick]] and [[https://www.cs.unh.edu/~ruml/][Wheeler]] for the time, energy, and thoughts they invested to help me improve my work.
+
+#+html: A bibtex entry for my thesis is available on my <a target="_self" href=./publications.html#strub_phd2022>publications page</a>.
 #+html: </details>
 
 #+html: <details><summary><b>Nov 2021</b> <span class="icon-publication"></span> The journal paper on AIT* & EIT* was accepted at IJRR.</summary>
-My first journal paper got accepted at IJRR. AIT* and EIT* improve planning performance by leveraging multiple sources of information with an asymmetric bidirectional search. The paper will be published in 2022 but you can already find a preprint [[https://arxiv.org/abs/2111.01877][on arxiv]] and a high-level presentation of it [[https://youtu.be/aC2xBwOcDoo][on youtube]].
+My first journal paper got accepted at IJRR ([[https://arxiv.org/abs/2111.01877][arxiv]], [[https://www.doi.org/10.1177/02783649211069572][doi]]). AIT* and EIT* improve planning performance by leveraging multiple sources of information with an asymmetric bidirectional search. A high-level explanation of what these terms mean is available [[https://youtu.be/aC2xBwOcDoo][on youtube]].
+
+#+html: A bibtex entry for this journal paper is available on my <a target="_self" href=./publications.html#strub_ijrr2021>publications page</a>.
 #+html: </details>
 
 #+html: <details><summary><b>Sep 2021</b> <span class="icon-field-test"></span> We went on a NASA/JPL field trial in Alberta, CA.</summary>
@@ -87,29 +101,35 @@ I conducted a 10-day field trial as part of the [[https://www-robotics.jpl.nasa.
 #+html: </details>
 
 #+html: <details><summary><b>Apr 2021</b> <span class="icon-publication"></span> My report on obstacle-clearance heuristics is on arXiv.</summary>
-Obstacle clearance in search space is an important optimization objective in path planning because it can result in safe paths. This technical report presents admissible heuristics that can improve planning performance when optimizing this objective. You can find the report [[https://arxiv.org/abs/2104.02298][on arxiv]].
+Obstacle clearance in search space is an important optimization objective in path planning because it can result in safe paths. This technical report presents admissible heuristics that can improve planning performance when optimizing this objective ([[https://arxiv.org/abs/2104.02298][arxiv]]).
+
+#+html: A bibtex entry for this report is available on my <a target="_self" href=./publications.html#strub_tr2021>publications page</a>.
 #+html: </details>
 
-#+html: <details><summary><b>Mar 2021</b> <span class="icon-code"></span> OMPL made me a co-maintainer.</summary>
+#+html: <details><summary><b>Mar 2021</b> <span class="icon-code"></span> The OMPL team made me a co-maintainer.</summary>
 The [[https://ompl.kavrakilab.org/][Open Motion Planning Library (OMPL)]] has been immensely useful in my own research and I'm stoked to join its impressive team of maintainers. Very much looking forward to contributing more to OMPL.
 #+html: </details>
 
-#+html: <details><summary><b>Sep 2020</b> <span class="icon-code"></span> Emacs accepted my first (tiny) contribution.</summary>
+#+html: <details><summary><b>Sep 2020</b> <span class="icon-code"></span> My first (tiny) contribution got merged into Emacs.</summary>
 I use [[https://www.gnu.org/software/emacs/][Emacs]] for many things (too many, perhaps). Emacs has [[https://orgmode.org/][org-mode]], which is, among other things, an excellent tool for note-taking and journaling. I fixed [[https://github.com/TonCherAmi/org-starless/issues/1][this tiny bug]] in org-mode that was exposed by a package that (subjectively) improves the appearance of org-mode by hiding some markdown.
 #+html: </details>
 
-#+html: <details><summary><b>Sep 2020</b> <span class="icon-publication"></span> <a href="https://robotic-esp.com/gammell/">Jon</a>'s survey paper was accepted at ARCRAS.</summary>
-I assisted [[https://robotic-esp.com/gammell/][Jon]] in surveying the field of asymptotically optimal sampling-based path planning algorithms for an invited paper in the /Annual Review of Controls, Robotics, and Autonomous Systems/. The paper will be published in 2021, but you can find a preprint of it [[https://arxiv.org/abs/2002.06599][on arxiv]].
+#+html: <details><summary><b>Sep 2020</b> <span class="icon-publication"></span> Jon's survey paper was accepted at ARCRAS.</summary>
+I assisted [[https://robotic-esp.com/gammell/][Jon]] in surveying the field of asymptotically optimal sampling-based path planning algorithms for an invited paper in the /Annual Review of Controls, Robotics, and Autonomous Systems/ ([[https://arxiv.org/abs/2009.10484][arxiv]], [[https://www.annualreviews.org/doi/full/10.1146/annurev-control-061920-093753][annualreviews]]). The survey cites 150 publications and includes thorough problem definition and assumption sections.
+
+#+html: A bibtex entry for Jon's survey is available on my <a target="_self" href=./publications.html#gammell_arcras2021>publications page</a>.
 #+html: </details>
 
-#+html: <details><summary><b>Aug 2020</b> <span class="icon-publication"></span> <a href="https://www-robotics.jpl.nasa.gov/who-we-are/people/michael_paton/">Mike</a>'s paper was accepted at IROS.</summary>
-I coauthored a paper that presents the autonomy system used on Axel during the field trial last summer. The autonomy system includes a stability analysis that predicts the interaction of Axel's tether with the terrain. My main contribution was to describe how we adapted ABIT* to work with Axel's tether-induced non-Markovian states. You can find an open-access version of it [[https://robotic-esp.com/papers/paton_iros20.html][on the ESP website]].
+#+html: <details><summary><b>Aug 2020</b> <span class="icon-publication"></span> Mike's paper was accepted at IROS.</summary>
+I helped [[https://www-robotics.jpl.nasa.gov/who-we-are/people/michael_paton/][Mike]] with a paper that presents the autonomy system used on [[https://www-robotics.jpl.nasa.gov/how-we-do-it/systems/the-axel-rover/][Axel]] during the field trial last summer. The autonomy system includes a stability analysis that predicts the interaction of Axel's tether with the terrain. My main contribution was to describe how we adapted ABIT* to work with Axel's tether-induced non-Markovian states. You can find an open-access version of it on the [[https://robotic-esp.com/papers/paton_iros20.html][ESP website]].
 
-The paper was nominated for a best-paper award.
+#+html: The paper was nominated for a best-paper award. A bibtex entry for it is available on my <a target="_self" href=./publications.html#paton_iros2020>publications page</a>.
 #+html: </details>
 
 #+html: <details><summary><b>May 2020</b> <span class="icon-code"></span> ABIT* and AIT* were merged into OMPL.</summary>
-[[https://ompl.kavrakilab.org/classompl_1_1geometric_1_1ABITstar.html#gABITstar][ABIT*]] and [[https://ompl.kavrakilab.org/classompl_1_1geometric_1_1AITstar.html#gAITstar][AIT*]] were merged into the [[https://ompl.kavrakilab.org/][Open Motion Planning Library (OMPL)]]. This constitutes my first major contribution to an open-source library and I'm hoping ABIT* and AIT* will be useful for someone.
+ABIT* and AIT* were merged into the [[https://ompl.kavrakilab.org/][Open Motion Planning Library (OMPL)]]. This is my first major contribution to an open-source library. I'm hoping ABIT* and AIT* will be useful for someone.
+
+#+html: The documentation for ABIT* and AIT* is available <a href="https://ompl.kavrakilab.org/classompl_1_1geometric_1_1ABITstar.html#gABITstar">here</a> and <a href="https://ompl.kavrakilab.org/classompl_1_1geometric_1_1AITstar.html#gAITstar">here</a>, repectively.
 #+html: </details>
 
 #+html: <details><summary><b>Feb 2020</b> <span class="icon-code"></span> OpenRAVE accepted my first feature contribution.</summary>
@@ -117,15 +137,19 @@ I implemented a feature that allows using the [[https://github.com/flexible-coll
 #+html: </details>
 
 #+html: <details><summary><b>Feb 2020</b> <span class="icon-publication"></span> Adaptively Informed Trees (AIT*) was accepted at ICRA.</summary>
-My second paper got accepted at ICRA. AIT* improves planning performance with an asymmetric bidirectional search in which both searches continuously inform each other with complementary information. You can find the AIT* paper [[https://arxiv.org/abs/2002.06599][on arxiv]] and a high-level presentation of it [[https://www.youtube.com/watch?v=1h7ugF9F6VM][on youtube]].
+My second paper got accepted at ICRA ([[https://arxiv.org/abs/2002.06599][arxiv]], [[https://doi.org/10.1109/ICRA40945.2020.9197338][doi]]). AIT* improves planning performance with an asymmetric bidirectional search in which both searches continuously inform each other with complementary information. A high-level presentation of these concepts is on [[https://www.youtube.com/watch?v=1h7ugF9F6VM][youtube]].
+
+#+html: A bibtex entry for my AIT* paper is available on my <a target="_self" href=./publications.html#strub_icra2020b>publications page</a>.
 #+html: </details>
 
 #+html: <details><summary><b>Feb 2020</b> <span class="icon-publication"></span> Advanced BIT* (ABIT*) was accepted at ICRA.</summary>
-My first paper got accepted at ICRA. ABIT* leverages advanced graph-search techniques, such as inflation and truncation, in sampling-based path planning. This is the algorithm we tested last summer. You can find the ABIT* paper [[https://arxiv.org/abs/2002.06589][on arxiv]] a high-level presentation of it [[https://www.youtube.com/watch?v=ZghEeVGgecY][on youtube]].
+My first paper got accepted at ICRA ([[https://arxiv.org/abs/2002.06589][arxiv]], [[https://doi.org/10.1109/ICRA40945.2020.9196580][doi]]). ABIT* leverages advanced graph-search techniques, such as inflation and truncation, in sampling-based path planning. This is the algorithm we tested last summer. A high-level presentation of these concepts is on [[https://www.youtube.com/watch?v=ZghEeVGgecY][youtube]].
+
+#+html: A bibtex entry for my ABIT* paper is available on my <a target="_self" href=./publications.html#strub_icra2020a>publications page</a>.
 #+html: </details>
 
-#+html: <details><summary><b>Jul 2019</b> <span class="icon-field-test"></span> <a href="https://robotic-esp.com/gammell/">Jon</a> & I went on a NASA/JPL field trial in Calif., USA.</summary>
-[[https://robotic-esp.com/gammell/][Jon]] and I had the chance to join the [[https://www.jpl.nasa.gov/][NASA Jet Propulsion Laboratory (JPL)]] on a [[https://www.youtube.com/watch?v=GUNWVroyys4][field trial for Axel]] in the Mojave Desert. We tested new path planning techniques and supported the team at JPL in running science and autonomy experiments.
+#+html: <details><summary><b>Jul 2019</b> <span class="icon-field-test"></span> Jon & I went on a NASA/JPL field trial in Calif., USA.</summary>
+[[https://robotic-esp.com/gammell/][Jon]] and I had the chance to join the [[https://www.jpl.nasa.gov/][NASA Jet Propulsion Laboratory (JPL)]] on a [[https://www.youtube.com/watch?v=GUNWVroyys4][field trial for Axel]] in the Mojave Desert. We tested new path planning techniques and supported the JPL team in running science and autonomy experiments.
 #+html: </details>
 
 #+html: <details><summary><b>Sep 2018</b> <span class="icon-academic"></span> I started my PhD at the University of Oxford.</summary>
@@ -133,7 +157,7 @@ I joined [[https://robotic-esp.com/gammell/][Jon]]'s [[https://robotic-esp.com/]
 #+html: </details>
 
 #+html: <details><summary><b>Jun 2018</b> <span class="icon-personal"></span> The documentary about our row is on national TV.</summary>
-The Swiss national television produced a 4-part documentary about our row across the Atlantic. If your IP is from Switzerland, you can watch it [[https://www.srf.ch/play/tv/sendung/rudern-am-limit?id=c82c1f74-2f6f-4e78-af79-b362f008fc91][here]]. It's in Swiss German, but there's also a version of it with English subtitles [[https://www.youtube.com/playlist?list=PLoxsQMM4ggWFoDgPxYeukqFxZ8K3CPG2n][on youtube]]. Edit: There's now also a 90-minute version of it.
+The Swiss national television produced a 4-part documentary about our row across the Atlantic. If your IP is from Switzerland, you can watch it [[https://www.srf.ch/play/tv/sendung/rudern-am-limit?id=c82c1f74-2f6f-4e78-af79-b362f008fc91][here]]. It's in Swiss German, but there's also a version of it with English subtitles on [[https://www.youtube.com/playlist?list=PLoxsQMM4ggWFoDgPxYeukqFxZ8K3CPG2n][youtube]]. Edit: There's now also a 90-minute version of it as well.
 #+html: </details>
 
 #+html: <details><summary><b>Feb 2018</b> <span class="icon-personal"></span> ETH published my blog about rowing the Atlantic.</summary>
