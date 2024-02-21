@@ -6,7 +6,7 @@
 ** Journal articles
 
 #+html: <span id="thomason_ral2022"></span>
-- W. Thomason, M. P. Strub, J. D. Gammell (2022) /Task and Motion Informed Trees (TMIT*): Almost-surely asymptotically optimal integrated task and motion planning/. Robotics and Automation Letters (RA-L), 7(4): pages 11370—11377. ([[https://arxiv.org/abs/2210.09367][arxiv]], [[https://www.doi.org/10.1109/LRA.2022.3199676][doi]])
+- W. Thomason, M. P. Strub, J. D. Gammell (2022) /Task and Motion Informed Trees (TMIT*): Almost-surely asymptotically optimal integrated task and motion planning/. Robotics and Automation Letters (RA-L), 7(4): pages 11370—11377. ([[https://arxiv.org/abs/2210.09367][open-access]], [[https://www.doi.org/10.1109/LRA.2022.3199676][doi]])
 #+html: <details><summary>Bibtex entry</summary>
 #+begin_src bibtex
 @Article{thomason_ral2022,
@@ -23,7 +23,7 @@
 #+html: </details>
 
 #+html: <span id="strub_ijrr2021"></span>
-- M. P. Strub, J. D. Gammell (2022) /AIT​* and EIT*: Asymmetric bidirectional sampling-based path planning/. The International Journal of Robotics Research (IJRR), 41(4): pages 390—417. ([[https://arxiv.org/abs/2111.01877][arxiv]], [[https://www.doi.org/10.1177/02783649211069572][doi]])
+- M. P. Strub, J. D. Gammell (2022) /AIT​* and EIT*: Asymmetric bidirectional sampling-based path planning/. The International Journal of Robotics Research (IJRR), 41(4): pages 390—417. ([[https://arxiv.org/abs/2111.01877][open-access]], [[https://www.doi.org/10.1177/02783649211069572][doi]])
 #+html: <details><summary>Bibtex entry</summary>
 #+begin_src bibtex
 @Article{strub_ijrr2021,
@@ -40,7 +40,7 @@
 #+html: </details>
 
 #+html: <span id="gammell_arcras2021"></span>
-- J. D. Gammell, M. P. Strub (2021) /Asymptotically optimal sampling-based motion planning methods/. Annual Review of Control, Robotics, and Autonomous Systems (ARCRAS), 4(1): pages 295—318. Invited. ([[https://arxiv.org/abs/2009.10484][arxiv]], [[https://www.annualreviews.org/doi/full/10.1146/annurev-control-061920-093753][annualreviews]])
+- J. D. Gammell, M. P. Strub (2021) /Asymptotically optimal sampling-based motion planning methods/. Annual Review of Control, Robotics, and Autonomous Systems (ARCRAS), 4(1): pages 295—318. Invited. ([[https://arxiv.org/abs/2009.10484][open-access]], [[https://www.doi.org/10.1146/annurev-control-061920-093753][doi]])
 #+html: <details><summary>Bibtex entry</summary>
 #+begin_src bibtex
 @Article{gammell_arcras2021,
@@ -59,7 +59,7 @@
 ** Conference papers
 
 #+html: <span id="thakker_iros2023"></span>
-- R. Thakker, M. Paton, M. P. Strub, M. Swan, G. Daddi, R. Royce, /et al./ (2023) /EELS: Towards autonomous mobility in extreme terrain with a versatile snake robot with resilience to exteroception failures/. In: Proceedings of the IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS). /to appear./
+- R. Thakker, M. Paton, M. P. Strub, M. Swan, G. Daddi, R. Royce, /et al./ (2023) /EELS: Towards autonomous mobility in extreme terrain with a versatile snake robot with resilience to exteroception failures/. In: Proceedings of the IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS). ([[https://ai.jpl.nasa.gov/public/documents/papers/thakker-et-al-iros2023-eels.pdf][open-access]], [[https://www.doi.org/10.1109/IROS55552.2023.10341448][doi]])
 #+html: <details><summary>Bibtex entry</summary>
 #+begin_src bibtex
 @InProceedings{thakker_iros23,
@@ -73,7 +73,7 @@
 #+html: </details>
 
 #+html: <span id="hartmann_isrr2022"></span>
-- V. N. Hartmann, M. P. Strub, M. Toussaint, J. D. Gammell (2022) /Effort Informed Roadmaps (EIRM*): Efficient asymptotically optimal multiquery planning by actively reusing validation effort/. In: Proceedings of the International Symposium on Robotics Research (ISRR). ([[https://arxiv.org/pdf/2205.08480][arxiv]])
+- V. N. Hartmann, M. P. Strub, M. Toussaint, J. D. Gammell (2022) /Effort Informed Roadmaps (EIRM*): Efficient asymptotically optimal multiquery planning by actively reusing validation effort/. In: Proceedings of the International Symposium on Robotics Research (ISRR). ([[https://arxiv.org/pdf/2205.08480][open-access]], [[https://www.doi.org/10.1007/978-3-031-25555-7_37][doi]])
 #+html: <details><summary>Bibtex entry</summary>
 #+begin_src bibtex
 @InProceedings{hartmann_isrr22,
@@ -87,7 +87,7 @@
 #+html: </details>
 
 #+html: <span id="paton_iros2020"></span>
-- M. Paton, M. P. Strub, T. Brown, R. J. Greene, J. Lizewski, V. Patel, J. D. Gammell, I. A. D. Nesnas (2020) /Navigation on the line: Traversability analysis and path planning for extreme-terrain rappelling rovers/. In: Proceedings of the IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS). pages 7034—7041. ([[https://robotic-esp.com/papers/paton_iros20.pdf][open-access]], [[https://ieeexplore.ieee.org/document/9341409][ieeexplore]])
+- M. Paton, M. P. Strub, T. Brown, R. J. Greene, J. Lizewski, V. Patel, J. D. Gammell, I. A. D. Nesnas (2020) /Navigation on the line: Traversability analysis and path planning for extreme-terrain rappelling rovers/. In: Proceedings of the IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS). pages 7034—7041. ([[https://robotic-esp.com/papers/paton_iros20.pdf][open-access]], [[https://www.doi.org/10.1109/IROS45743.2020.9341409][doi]])
 #+html: <details><summary>Bibtex entry</summary>
 #+begin_src bibtex
 @InProceedings{paton_iros2020,
@@ -102,7 +102,7 @@
 #+html: </details>
 
 #+html: <span id="strub_icra2020b"></span>
-- M. P. Strub, J. D. Gammell (2020) /Adaptively Informed Trees (AIT*): Fast asymptotically optimal path planning through adaptive heuristics/. In: Proceedings of the IEEE International Conference on Robotics and Automation (ICRA). pages 3191—3198. ([[https://arxiv.org/abs/2002.06599][arxiv]], [[https://ieeexplore.ieee.org/document/9197338][ieeexplore]])
+- M. P. Strub, J. D. Gammell (2020) /Adaptively Informed Trees (AIT*): Fast asymptotically optimal path planning through adaptive heuristics/. In: Proceedings of the IEEE International Conference on Robotics and Automation (ICRA). pages 3191—3198. ([[https://arxiv.org/abs/2002.06599][open-access]], [[https://www.doi.org/10.1109/ICRA40945.2020.9197338][doi]])
 #+html: <details><summary>Bibtex entry</summary>
 #+begin_src bibtex
 @InProceedings{strub_icra2020b,
@@ -117,7 +117,7 @@
 #+html: </details>
 
 #+html: <span id="strub_icra2020a"></span>
-- M. P. Strub, J. D. Gammell (2020) /Advanced BIT* (ABIT*): Sampling-based planning with advanced graph-search techniques/. In: Proceedings of the IEEE International Conference on Robotics and Automation (ICRA). pages 130—136. ([[https://arxiv.org/abs/2002.06589][arxiv]], [[https://ieeexplore.ieee.org/document/9196580][ieeexplore]])
+- M. P. Strub, J. D. Gammell (2020) /Advanced BIT* (ABIT*): Sampling-based planning with advanced graph-search techniques/. In: Proceedings of the IEEE International Conference on Robotics and Automation (ICRA). pages 130—136. ([[https://arxiv.org/abs/2002.06589][open-access]], [[https://www.doi.org/10.1109/ICRA40945.2020.9196580][doi]])
 #+html: <details><summary>Bibtex entry</summary>
 #+begin_src bibtex
 @InProceedings{strub_icra2020a,
@@ -134,7 +134,7 @@
 ** Theses
 
 #+html: <span id="strub_phd2022"></span>
-- M. P. Strub (2022) /Leveraging multiple sources of information to search continuous spaces/. Ph.D. Thesis, University of Oxford ([[https://ora.ox.ac.uk/objects/uuid:1a241006-0ddd-4829-bdd5-ade7301c863a][Oxford University Research Archive]])
+- M. P. Strub (2022) /Leveraging multiple sources of information to search continuous spaces/. Ph.D. Thesis, University of Oxford ([[https://ora.ox.ac.uk/objects/uuid:1a241006-0ddd-4829-bdd5-ade7301c863a][open-access]])
 #+html: <details><summary>Bibtex entry</summary>
 #+begin_src bibtex
 @PhDThesis{strub_phd2022,
@@ -161,7 +161,7 @@
 #+html: </details>
 
 #+html: <span id="strub_tr2021"></span>
-- M. P. Strub, J. D. Gammell (2021) Admissible heuristics for obstacle clearance optimization objectives. ([[https://arxiv.org/abs/2104.02298][arxiv]])
+- M. P. Strub, J. D. Gammell (2021) Admissible heuristics for obstacle clearance optimization objectives. ([[https://arxiv.org/abs/2104.02298][open-access]])
 #+html: <details><summary>Bibtex entry</summary>
 #+begin_src bibtex
 @TechReport{strub_tr2021,
