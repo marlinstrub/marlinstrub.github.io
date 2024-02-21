@@ -5,8 +5,8 @@
 
 Categories for easy scanning:
 
-#+html: <div class="desktop-only">
 #+begin_export html
+<div class="desktop-only">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides" style="width: 100%; table-layout: fixed; overflow-wrap: break-word;">
 <tbody>
 <tr>
@@ -21,11 +21,11 @@ Categories for easy scanning:
 </tr>
 </tbody>
 </table>
+</div>
 #+end_export
-#+html: </div>
 
-#+html: <div class="mobile-only">
 #+begin_export html
+<div class="mobile-only">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides" style="width: 100%; table-layout: fixed; overflow-wrap: break-word;">
 <tbody>
 <tr>
@@ -42,8 +42,8 @@ Categories for easy scanning:
 </tr>
 </tbody>
 </table>
+</div>
 #+end_export
-#+html: </div>
 
 Clicking on a news item toggles further information.
 
