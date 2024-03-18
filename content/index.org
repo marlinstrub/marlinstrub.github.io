@@ -43,7 +43,7 @@ I enjoy designing, implementing, and deploying path-planning and control algorit
 </center>
 #+end_export
 
-When I'm not working with robots, I like exploring the outdoors, spending time with family and friends, and combining good food with good conversations.
+When I'm not working with robots, I like sharing delicious food, engaging in deep conversation, and spending time in the remote outdoors.
 
 * Education
 
