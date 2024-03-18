@@ -111,7 +111,7 @@ The [[https://ompl.kavrakilab.org/][Open Motion Planning Library (OMPL)]] has be
 #+html: </details>
 
 #+html: <details><summary><b>Sep 2020</b> <span class="icon-code"></span> My first (tiny) contribution got merged into Emacs.</summary>
-I use [[https://www.gnu.org/software/emacs/][Emacs]] for many things (too many, perhaps). Emacs has [[https://orgmode.org/][org-mode]], which is, among other things, an excellent tool for note-taking and journaling. I fixed [[https://github.com/TonCherAmi/org-starless/issues/1][this tiny bug]] in org-mode that was exposed by a package that (subjectively) improves the appearance of org-mode by hiding some markdown.
+I use [[https://www.gnu.org/software/emacs/][Emacs]] for many things (too many, perhaps). Emacs has [[https://orgmode.org/][org-mode]], which is, among other things, an excellent tool for note-taking and journaling. I fixed [[https://github.com/TonCherAmi/org-starless/issues/1][this tiny bug]] in org-mode that was exposed by a package that (subjectively) improves the appearance of org-mode by hiding some markup symbols.
 #+html: </details>
 
 #+html: <details><summary><b>Sep 2020</b> <span class="icon-publication"></span> Jon's survey paper was accepted at ARCRAS.</summary>
