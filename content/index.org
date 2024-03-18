@@ -47,7 +47,7 @@ When I'm not working with robots, I like sharing delicious food, engaging in dee
 
 * Education
 
-I hold a PhD in Engineering Science from the [[https://www.ox.ac.uk/][University of Oxford]], where I was a member of the [[https://robotic-esp.com/][Estimation, Search, and Planning (ESP) Group]] led by [[https://robotic-esp.com/people/gammell/][Dr. Jonathan D. Gammell]]. My research at Oxford focused on designing and implementing path-planning algorithms that leverage different sources of information to improve planning performance for complex systems in robotics and beyond. I also hold an MSc in Robotics, Systems, and Control and a BSc in Mechanical Engineering from [[https://ethz.ch/en.html][ETH Zürich]]. If you're interested in my work, please take a look at my [[./research.org][research]] and [[./publications.org][publications]] pages.
+I hold a PhD in Engineering Science from the [[https://www.ox.ac.uk/][University of Oxford]], where I was a member of the [[https://robotic-esp.com/][Estimation, Search, and Planning (ESP) Group]] led by [[https://robotic-esp.com/people/gammell/][Dr. Jonathan D. Gammell]]. My research at Oxford focused on designing and implementing path-planning algorithms that can leverage different sources of information to improve planning performance for complex systems in robotics and beyond. I also hold an MSc in Robotics, Systems, and Control and a BSc in Mechanical Engineering from [[https://ethz.ch/en.html][ETH Zürich]]. If you're interested in my work, please take a look at my [[./research.org][research]] and [[./publications.org][publications]] pages.
 
 * Open-source contributions
 
