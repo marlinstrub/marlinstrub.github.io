@@ -4,6 +4,7 @@
 #+html: <resume><details open>
 #+html: <summary><b>TLDR/Resumé</b> - <a href=./assets/cv_marlin_strub.pdf>Click here</a> for a detailed CV.</summary>
 _Experience_
+  - Robotics Engineer @ [[https://www.gravisrobotics.com][Gravis Robotics]]
   - Robotics Technologist @ [[https://www.jpl.nasa.gov/][NASA/JPL]]
   - Postdoc @ [[https://www.jpl.nasa.gov/][NASA/JPL]]
 
@@ -20,7 +21,7 @@ _Community_
 
 * Hi, I'm Marlin
 
-I enjoy designing, implementing, and deploying path-planning and control algorithms that are both theoretically sound and perform well in practice. Until recently, I was a Robotics Technologist at [[https://www.jpl.nasa.gov/][NASA/JPL]], where I led the path-planning efforts for a snake-like robot called [[https://www-robotics.jpl.nasa.gov/how-we-do-it/systems/exobiology-extant-life-surveyor-eels/][EELS]] and the [[https://mars.nasa.gov/msr/spacecraft/sample-recovery-helicopters/][new Mars helicopters]].
+I enjoy designing, implementing, and deploying planning and control algorithms that are both theoretically sound and perform well in practice. I'm currently a Robotics Engineer at [[https://www.gravisrobotics.com][Gravis Robotics]], where we automate heavy machinery to facilitate autonomous construction. Before joining Gravis, I was a Robotics Technologist at [[https://www.jpl.nasa.gov/][NASA/JPL]], where I led the path-planning efforts for a snake-like robot called [[https://www-robotics.jpl.nasa.gov/how-we-do-it/systems/exobiology-extant-life-surveyor-eels/][EELS]] and the [[https://mars.nasa.gov/msr/spacecraft/sample-recovery-helicopters/][new Mars helicopters]].
 
 #+begin_export html
 <center>

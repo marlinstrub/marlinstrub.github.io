@@ -48,6 +48,12 @@ Categories for easy scanning:
 Clicking on a news item toggles further information.
 
 #+html: <news>
+
+#+html: <details><summary><b>Mar 2024</b> <span class="icon-position"></span> I started as a Robotics Engineer at Gravis Robotics.</summary>
+
+I accepted a position as a Robotics Engineer at [[https://www.gravisrobotics.com][Gravis Robotics]], an early-stage startup that automates heavy machinery. I'm part of the autonomy team and primarily work on motion- and mission-planning. I have been following the research done by the team at Gravis for multiple years and am absolutely stoked to start contributing to its commercialization.
+#+html: </details>
+
 #+html: <details><summary><b>Jul 2023</b> <span class="icon-publication"></span> Our EELS paper was accepted at IROS.</summary>
 The [[https://www-robotics.jpl.nasa.gov/how-we-do-it/systems/exobiology-extant-life-surveyor-eels/][Exobiology Extant Life Surveyor (EELS)]] team wrote a paper that presents control and planning algorithms for EELS. One of the core ideas of the paper is to decouple shape control from motion control for screw-based gaits. This lets us tackle the control and planning problems with relatively simple algorithms despite the many (>30) degrees of freedom EELS has. The paper was nominated for a best-paper award.
 
