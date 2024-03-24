@@ -5,6 +5,23 @@
 
 ** Journal articles
 
+#+html: <span id="vaquero_sr2024"></span>
+- T. S. Vaquero, G. Daddi, R. Thakker, M. Paton, A. Jasour, M. P. Strub, R. M. Swan,  R. Royce /et al./ (2024) /EELS: Autonomous snake-like robot with task and motion planning capabilities for ice world exploration/. Science Robotics, 9(88): pages 1—11. ([[https://www.science.org/doi/full/10.1126/scirobotics.adh8332][open-access]], [[https://www.doi.org/10.1126/scirobotics.adh8332][doi]])
+#+html: <details><summary>Bibtex entry</summary>
+#+begin_src bibtex
+@Article{vaquero_sr2024,
+  author = {Vaquero, Tiago S. and Daddi, Guglielmo and Thakker, Rohan and Paton, Michael and Jasour, Akash and Strub, Marlin P. and Swan, R. Michael and Royce, Rob and Gildner, Matthew and Tosi, Phillipe and Veismann, Marcel and Gavrilov, Peter and Marteau, Elo\"{i}se and Bowkett, Joseph and Loret de Mola Lemus, Daniel and Nakka, Yashwanth and Hockman, Ben and Orekhov, Andrew and Hasseler, Tristan D. and Leake, Carl and Nuernberger, Benjamin and Proen\c{c}a, Pedro and Reid, William and Talbot, William and Georgiev, Nikola and Pailevanian, Torkom and Archanian, Avak and Ambrose, Eric and Jasper, Jay and Etheredge, Rachel and Roman, Christian and Levine, Dan and Otsu, Kyon and Yearicks, Sarah and Melikyan, Hovhannes and Rieber, Richard R. and Carpenter, Kalind and Nash, Jeremy and Jain, Abhinandan and Shiraishi, Lori and Robinson, Matt and Travers, Matthew and Choset, Howie and Burdick, Joel W. and Gardner, Alex and Cable, Morgan L. and Ingham, Mitch and Ono, Hiro},
+  title = {{EELS}: {Autonomous} snake-like robot with task and motion planning capabilities for ice world exploration},
+  journal = {Science Robotics},
+  year = {2024},
+  volume = {9},
+  number = {88},
+  pages = {1--11},
+  doi = {10.1126/scirobotics.adh8332}
+}
+#+end_src
+#+html: </details>
+
 #+html: <span id="thomason_ral2022"></span>
 - W. Thomason, M. P. Strub, J. D. Gammell (2022) /Task and Motion Informed Trees (TMIT*): Almost-surely asymptotically optimal integrated task and motion planning/. Robotics and Automation Letters (RA-L), 7(4): pages 11370—11377. ([[https://arxiv.org/abs/2210.09367][open-access]], [[https://www.doi.org/10.1109/LRA.2022.3199676][doi]])
 #+html: <details><summary>Bibtex entry</summary>
