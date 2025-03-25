@@ -165,7 +165,7 @@ My first paper got accepted at ICRA ([[https://arxiv.org/abs/2002.06589][arxiv]]
 #+html: A bibtex entry for my ABIT* paper is available on my <a target="_self" href=./publications.html#strub_icra2020a>publications page</a>.
 #+html: </details>
 
-#+html: <details><summary><b>Jul 2019</b> <span class="icon-field-test"></span> Jon & I joined a NASA/JPL field test in California, USA.</summary>
+#+html: <details><summary><b>Jul 2019</b> <span class="icon-field-test"></span> Jon & I joined a NASA/JPL field test in California.</summary>
 [[https://robotic-esp.com/gammell/][Jon]] and I had the chance to join the [[https://www.jpl.nasa.gov/][NASA Jet Propulsion Laboratory (JPL)]] on a [[https://www.youtube.com/watch?v=GUNWVroyys4][field trial for Axel]] in the Mojave Desert. We tested new path planning techniques and supported the JPL team in running science and autonomy experiments.
 #+html: </details>
 
