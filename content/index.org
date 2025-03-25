@@ -4,7 +4,7 @@
 #+html: <resume><details open>
 #+html: <summary><b>TLDR/Resumé</b> - <a href=./assets/cv_marlin_strub.pdf>Click here</a> for a detailed CV.</summary>
 _Experience_
-  - Robotics Engineer @ [[https://www.gravisrobotics.com][Gravis Robotics]]
+  - Senior Robotics Engineer @ [[https://www.gravisrobotics.com][Gravis Robotics]]
   - Robotics Technologist @ [[https://www.jpl.nasa.gov/][NASA/JPL]]
   - Postdoc @ [[https://www.jpl.nasa.gov/][NASA/JPL]]
 
