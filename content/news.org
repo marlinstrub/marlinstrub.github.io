@@ -49,6 +49,11 @@ Clicking on a news item toggles further information.
 
 #+html: <news>
 
+#+html: <details><summary><b>Feb 2025</b> <span class="icon-personal"></span> I appeared on the Ignition Sequence podcast.</summary>
+
+I recently joined the [[https://www.youtube.com/watch?v=VsF546ydyRc][Ignition Sequence]] podcast to talk about my work in robotics and my row across the Atlantic. This was my first time on a podcast, and I'd love to get some feedback. So if you do give it a listen, please let me know what you think!
+#+html: </details>
+
 #+html: <details><summary><b>Jan 2025</b> <span class="icon-position"></span> I got promoted to Senior Robotics Engineer at Gravis.</summary>
 
 I got promoted to Senior Robotics Engineer at [[https://www.gravisrobotics.com][Gravis Robotics]]. I also stepped into the role of Deputy Team Lead of the autonomy team.
