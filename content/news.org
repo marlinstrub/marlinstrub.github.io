@@ -49,6 +49,11 @@ Clicking on a news item toggles further information.
 
 #+html: <news>
 
+#+html: <details><summary><b>Jan 2025</b> <span class="icon-position"></span> I got promoted to Senior Robotics Engineer at Gravis.</summary>
+
+I got promoted to Senior Robotics Engineer at [[https://www.gravisrobotics.com][Gravis Robotics]]. I also stepped into the role of Deputy Team Lead of the autonomy team.
+#+html: </details>
+
 #+html: <details><summary><b>Mar 2024</b> <span class="icon-position"></span> I started as a Robotics Engineer at Gravis Robotics.</summary>
 
 I accepted a position as a Robotics Engineer at [[https://www.gravisrobotics.com][Gravis Robotics]], an early-stage startup that automates heavy machinery. I'm part of the autonomy team and primarily work on motion- and mission-planning. I have been following the research done by the team at Gravis for multiple years and am absolutely stoked to start contributing to its commercialization.
