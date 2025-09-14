@@ -21,7 +21,7 @@ _Community_
 
 * Hi, I'm Marlin
 
-I enjoy designing, implementing, and deploying planning and control algorithms that are both theoretically sound and perform well in practice. I'm currently a Robotics Engineer at [[https://www.gravisrobotics.com][Gravis Robotics]], where we automate heavy machinery to facilitate autonomous construction. Before joining Gravis, I was a Robotics Technologist at [[https://www.jpl.nasa.gov/][NASA/JPL]], where I led the path-planning efforts for a snake-like robot called [[https://www-robotics.jpl.nasa.gov/how-we-do-it/systems/exobiology-extant-life-surveyor-eels/][EELS]] and the [[https://mars.nasa.gov/msr/spacecraft/sample-recovery-helicopters/][new Mars helicopters]].
+I enjoy designing, implementing, and deploying planning and control algorithms that are both sound in theory and useful in practice. I'm a Senior Robotics Engineer at [[https://gravisrobotics.com/][Gravis Robotics]], where I own the path- and task-planning modules for autonomous excavators. I also serve as the squad lead for soil-moving tasks and the deputy team lead of the autonomy team. Before joining Gravis, I was a Robotics Technologist at [[https://www.jpl.nasa.gov/][NASA/JPL]], where I owned the path-planning modules for the [[https://mars.nasa.gov/msr/spacecraft/sample-recovery-helicopters/][new Mars helicopters]] and for a snake-like robot called [[https://www-robotics.jpl.nasa.gov/how-we-do-it/systems/exobiology-extant-life-surveyor-eels/][EELS]].
 
 #+begin_export html
 <center>
@@ -44,7 +44,7 @@ I enjoy designing, implementing, and deploying planning and control algorithms t
 </center>
 #+end_export
 
-When I'm not working with robots, I like sharing delicious food, engaging in deep conversation, and spending time in the remote outdoors.
+When I'm not working with robots, I take pleasure in sharing delicious food, engaging in deep conversation, and spending time in the remote outdoors.
 
 * Education
 
