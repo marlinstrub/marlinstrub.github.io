@@ -29,16 +29,16 @@ Categories for easy scanning:
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides" style="width: 100%; table-layout: fixed; overflow-wrap: break-word;">
 <tbody>
 <tr>
-<td class="org-left"><span class="icon-publication"></span> Publication</td>
-<td class="org-left"><span class="icon-code"></span> Open-source</td>
+<td class="org-left"><span class="icon-publication"></span>&nbsp;Publication</td>
+<td class="org-left"><span class="icon-code"></span>&nbsp;Open-source</td>
 </tr>
 <tr>
-<td class="org-left"><span class="icon-position"></span> New position</td>
-<td class="org-left"><span class="icon-field-test"></span> Field trial</td>
+<td class="org-left"><span class="icon-position"></span>&nbsp;New position</td>
+<td class="org-left"><span class="icon-field-test"></span>&nbsp;Field trial</td>
 </tr>
 <tr>
-<td class="org-left"><span class="icon-academic"></span> Academic</td>
-<td class="org-left"><span class="icon-personal"></span> Personal</td>
+<td class="org-left"><span class="icon-academic"></span>&nbsp;Academic</td>
+<td class="org-left"><span class="icon-personal"></span>&nbsp;Personal</td>
 </tr>
 </tbody>
 </table>
