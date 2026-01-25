@@ -6,16 +6,15 @@ This repository contains the source code for my personal website, which is serve
 
 ** Development
 
-The site can be served locally via Emacs using [[https://github.com/skeeto/emacs-web-server/tree/master][simple-httpd]]. I have tested this with the following [[https://github.com/radian-software/straight.el][straight]] recipe:
+First build the site using [[file:build.sh][build.sh]] and then serve the site locally, e.g., via
 
-#+begin_src elisp
-(use-package simple-httpd
-  :straight (simple-httpd :host github :repo "skeeto/emacs-web-server"))
+#+begin_src bash
+python -m http.server 8080 -d public
 #+end_src
 
-First run [[file:build.sh][build.sh]] and then ~M-x httpd-serve-directory~. Navigate to the ~public~ folder when asked for a directory to serve. By default, this will serve the directory at [[http://localhost:8080/]].
+which will serve the =public= directory at  [[http://localhost:8080/]].
 
-** Publication
+** Deployment
 
 This repository contains the file [[file:.github/workflows/publish.yml][.github/workflows/publish.yml]], which instructs GitHub to generate the site using [[file:build.sh][build.sh]] whenever a commit is pushed to the ~main~ branch. This script will place the generated files in a directory called ~public~ and copy the files in this directory to a branch called ~gh-pages~. This branch is then hosted by GitHub.
 
