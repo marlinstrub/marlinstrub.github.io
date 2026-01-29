@@ -76,6 +76,19 @@
 ** Conference papers
 
 #+html: <span id="thakker_iros2023"></span>
+- W. Reid, T. Bartlett, A. Bouton, M. P. Strub, M. Newby, S. Gerdts, J. Martin, S. Moreland, R. McCormick (2024) /Planning and control for autonomous drives of the mars sample recovery helicopter/. In: Proceedings of the IEEE Aerospace Conference (AeroConf).
+#+html: <details><summary>Bibtex entry</summary>
+#+begin_src bibtex
+@InProceedings{reid_aeroconf24,
+  author = {Reid, William and Bartlett, Tara and Bouton, Arthur and Strub, Marlin P. and Newby, Michael and Gerdts, Stephen and Martin, Joshua and Moreland, Scott and McCormick, Ryan},
+  title = {Planning and control for autonomous drives of the {Mars} sample {Recovery} {Helicopter}},
+  booktitle = {Proceedings of the {IEEE} Aerospace Conference ({AeroConf})},
+  year = {2024},
+}
+#+end_src
+#+html: </details>
+
+#+html: <span id="thakker_iros2023"></span>
 - R. Thakker, M. Paton, M. P. Strub, M. Swan, G. Daddi, R. Royce, /et al./ (2023) /EELS: Towards autonomous mobility in extreme terrain with a versatile snake robot with resilience to exteroception failures/. In: Proceedings of the IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS). ([[https://ai.jpl.nasa.gov/public/documents/papers/thakker-et-al-iros2023-eels.pdf][open-access]], [[https://www.doi.org/10.1109/IROS55552.2023.10341448][doi]])
 #+html: <details><summary>Bibtex entry</summary>
 #+begin_src bibtex
@@ -84,7 +97,6 @@
   title = {{EELS}: {Towards} autonomous mobility in extreme terrain with a versatile snake robot with resilience to exteroception failures},
   booktitle = {Proceedings of the {IEEE}/{RSJ} International Conference on Intelligent Robots and Systems ({IROS})},
   year = {2023},
-  note = {to appear}
 }
 #+end_src
 #+html: </details>
