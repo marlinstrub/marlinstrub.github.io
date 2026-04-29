@@ -33,8 +33,8 @@ I enjoy designing, implementing, and deploying planning and control algorithms t
 	<img src="./assets/about_01.jpg" alt="Me in front of the engineering model of Curiosity.">
   </picture>
 
-	<input type="radio" name="about-slide" aria-label="Slide 2 of 3: Colleagues and me in the coolest office.">
-  <picture aria-label="Fig. 2: Colleagues and me in the coolest office.">
+	<input type="radio" name="about-slide" aria-label="Slide 2 of 3: Colleagues and me on the Athabasca glacier.">
+  <picture aria-label="Fig. 2: Colleagues and me on the Athabasca glacier.">
 	<img src="./assets/about_02.jpg" alt="Colleagues and me on the Athabasca glacier.">
   </picture>
 
