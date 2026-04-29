@@ -382,28 +382,62 @@ summary::after {
     float: right;
     padding-right: 0.5em;
 }
-news details {
-    background: none;
-    padding:  0.25em;
-    border: none;
-    margin-bottom: 0.25em;
-    margin-top: 0.25em;
-    margin-left: 2em;
-    font-size: 1.0em;
-}
-news summary {
-    margin-left: -1em;
-    font-size: 1.0em;
-    color: rgba(51, 51, 51, 1.00);
-}
-news details summary::marker {
-    color: rgba(51, 51, 51, 0.90);
-}
 * {-webkit-font-smoothing: antialiased;}
 
-news summary::after {
-    content: "";
+/* --- News page entries (h3-grouped, click-to-expand body) ---
+   Summary row is a 4-col grid: month | icon | head | chev. Body's
+   left padding is computed from the same vars as the summary's column
+   widths, so the body text aligns flush-left with the headline column
+   automatically when any column width is changed. */
+:root {
+    --news-pad:   0.25em;
+    --news-month: 2.5em;
+    --news-icon:  1.4em;
+    --news-gap:   0.7em;
+    --news-head-offset: calc(var(--news-pad) + var(--news-month)
+                           + var(--news-gap) + var(--news-icon)
+                           + var(--news-gap));
 }
+details.entry {
+    background: none;
+    border: none;
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.06);
+    border-radius: 0;
+    padding: 0;
+    margin: 0;
+    font-size: 1em;
+}
+details.entry > summary {
+    list-style: none;
+    cursor: pointer;
+    color: rgba(51, 51, 51, 1.00);
+    display: grid;
+    grid-template-columns:
+        var(--news-month) var(--news-icon) minmax(0, 1fr);
+    column-gap: var(--news-gap);
+    align-items: baseline;
+    padding: 0.45em var(--news-pad);
+}
+details.entry > summary::-webkit-details-marker { display: none; }
+details.entry > summary::after { content: ""; }
+details.entry > summary:hover { background: rgba(0, 0, 0, 0.018); }
+details.entry > summary .month { color: rgba(51, 51, 51, 0.55); }
+details.entry > summary .head  { color: rgba(51, 51, 51, 1.00); line-height: 1.45em; }
+details.entry > .body {
+    margin: 0;
+    padding-top: 0.05em;
+    padding-bottom: 0.7em;
+    padding-left: var(--news-head-offset);
+    padding-right: var(--news-pad);
+    color: rgba(51, 51, 51, 0.75);
+}
+details.entry > .body p {
+    margin: 0 0 0.4em;
+    font-size: 0.9em;
+    line-height: 1.6;
+}
+details.entry > .body p:last-child { margin-bottom: 0; }
+details.entry > .body a { color: rgba(8, 63, 255, 0.9); }
 
 /* --- About TLDR card ---
    Profile card matching the hard 2px black outline used on the AIT* video on
@@ -749,8 +783,11 @@ input:checked + * {
   details {
     margin-left: 1rem;
   }
-  news details {
-    margin-left: 1em;
+  /* tighter news-entry column widths at mobile widths;
+     --news-head-offset recomputes automatically. */
+  :root {
+    --news-month: 2em;
+    --news-gap:   0.5em;
   }
 
   /* Carousel radio buttons: 44x44 touch target with a small visible dot in the centre.
