@@ -114,14 +114,25 @@ span.underline {
 }
 
 #postamble {
-/*    border-top: 1px solid #999999; */
+    margin-top: 4em;
     padding-top: 1.5em;
+    border-top: 1px solid rgba(51, 51, 51, 0.15);
+    text-align: center;
 }
-#postamble p, #postamble a {
-    color: #999999;
-    line-height: 1.25em;
-    margin: 0;
-    text-align: right;
+.site-footer {
+    font-size: 0.9em;
+    color: rgba(51, 51, 51, 0.6);
+}
+.site-footer a, .site-footer a:visited {
+    color: rgba(51, 51, 51, 0.6);
+    transition: color 0.15s ease;
+}
+.site-footer a:hover {
+    color: rgba(8, 63, 255, 1.0);
+}
+.site-footer .separator {
+    margin: 0 0.5em;
+    color: rgba(51, 51, 51, 0.3);
 }
 
 h1.title {
@@ -214,6 +225,16 @@ pre {
     font-family: "IBM Plex Mono", sans-serif;
     font-weight: 300;
     border-left: 2px dotted #00008b;
+}
+
+/* --- Navigation highlighting --- */
+.page-index    .site-nav a[href="index.html"],
+.page-news     .site-nav a[href="news.html"],
+.page-research .site-nav a[href="research.html"],
+.page-publications .site-nav a[href="publications.html"] {
+    color: rgba(51, 51, 51, 1.00);
+    font-weight: 500;
+    pointer-events: none;
 }
 
 /* --- Mobile disclaimer --- */
