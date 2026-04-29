@@ -3,23 +3,44 @@
 
 #+description: Senior Robotics Engineer at Gravis Robotics, formerly Robotics Technologist at NASA/JPL, OMPL co-maintainer. Path planning and control algorithms for autonomous excavators and Mars helicopters.
 
-#+html: <resume><details open>
-#+html: <summary><b>TLDR/Resumé</b> - <a href=./assets/cv_marlin_strub.pdf>Click here</a> for a detailed CV.</summary>
-_Experience_
-  - Senior Robotics Engineer @ [[https://www.gravisrobotics.com][Gravis Robotics]]
-  - Robotics Technologist @ [[https://www.jpl.nasa.gov/][NASA/JPL]]
-  - Postdoc @ [[https://www.jpl.nasa.gov/][NASA/JPL]]
+* TLDR/Resumé
 
-_Education_
-  - PhD Robotics @ [[https://www.ox.ac.uk/][Oxford]]
-  - MSc Robotics @ [[https://ethz.ch/de.html][ETH Zürich]]
-  - BSc Mech Eng @ [[https://ethz.ch/de.html][ETH Zürich]]
-
-_Community_
-  - Co-maintainer @ [[https://ompl.kavrakilab.org/][OMPL]]
-  - Reviewer @ [[https://www.ieee.org/][IEEE]]
-  - Skipper @ [[https://www.swissoceanrowingsociety.ch/swiss-mocean][Swiss Mocean]]
-#+html: </details></resume>
+#+begin_export html
+<div class="tldr-card">
+  <div class="headshot">
+    <img src="./assets/headshot.jpg" alt="Marlin P. Strub">
+  </div>
+  <div class="body">
+    <div class="row">
+      <div class="label">Experience</div>
+      <div class="items">
+        <div>Senior Robotics Engineer @ <a href="https://www.gravisrobotics.com">Gravis Robotics</a></div>
+        <div>Robotics Technologist @ <a href="https://www.jpl.nasa.gov/">NASA/JPL</a></div>
+        <div>Postdoc @ <a href="https://www.jpl.nasa.gov/">NASA/JPL</a></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="label">Education</div>
+      <div class="items">
+        <div>PhD Robotics @ <a href="https://www.ox.ac.uk/">Oxford</a></div>
+        <div>MSc Robotics @ <a href="https://ethz.ch/de.html">ETH Zürich</a></div>
+        <div>BSc Mech Eng @ <a href="https://ethz.ch/de.html">ETH Zürich</a></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="label">Community</div>
+      <div class="items">
+        <div>Co-maintainer @ <a href="https://ompl.kavrakilab.org/">OMPL</a></div>
+        <div>Reviewer @ <a href="https://www.ieee.org/">IEEE</a></div>
+        <div>Skipper @ <a href="https://www.swissoceanrowingsociety.ch/swiss-mocean">Swiss Mocean</a></div>
+      </div>
+    </div>
+  </div>
+  <div class="tldr-card-cv">
+    <a href="./assets/cv_marlin_strub.pdf">Detailed CV &rarr;</a>
+  </div>
+</div>
+#+end_export
 
 * Hi, I'm Marlin
 

@@ -374,26 +374,52 @@ news summary::after {
     content: "";
 }
 
-resume details {
-    background: #fbfbfb;
-    border: 1px solid #ebebeb;
-    border-radius: 5px;
-    margin: 0.0em;
-    margin-top: 1.2em;
-    padding: 0.25em 0.5em 0.25em 0.5em;
-    font-size: 0.95em;
+/* --- About TLDR card ---
+   Profile card matching the hard 2px black outline used on the AIT* video on
+   the research page. Headshot sits in a fixed-width left column; lists are
+   aligned by category in a margin column. */
+.tldr-card {
+    margin-top: 1.5em;
+    padding: 1em 1.1em;
+    outline: 0px solid black;
+    outline-offset: -1px;
+    display: grid;
+    grid-template-columns: 130px minmax(0, 1fr);
+    column-gap: 1.25em;
+    align-items: start;
 }
-resume details summary {
-    background: #fbfbfb;
-    font-size: 1.0em;
-    color: rgba(51, 51, 51, 1.00);
+.tldr-card .headshot img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    margin: 0;
+    border-radius: 2px;
 }
-resume details summary::marker {
-    color: rgba(51, 51, 51, 0.90);
+.tldr-card .body > .row {
+    display: grid;
+    grid-template-columns: 7.5em minmax(0, 1fr);
+    column-gap: 1em;
+    margin-bottom: 0.55em;
+    align-items: baseline;
 }
-* {-webkit-font-smoothing: antialiased;}
-resume summary::after {
-    content: "";
+.tldr-card .body > .row:last-of-type {
+    margin-bottom: 0;
+}
+.tldr-card .label {
+    text-align: right;
+    color: rgba(51, 51, 51, 0.55);
+}
+.tldr-card .items div {
+    line-height: 1.45em;
+}
+.tldr-card-cv {
+    grid-column: 1 / -1;
+    margin: 0.85em 0 0;
+    font-size: 0.9em;
+    color: rgba(51, 51, 51, 0.7);
+    text-align: right;
 }
 
 /* --- Table --- */
@@ -639,6 +665,21 @@ input:checked + * {
   }
   .pub > :not(.venue) {
     grid-column: 1;
+  }
+}
+
+/* Narrow tablets / large phones: ≤540px — stack the TLDR card */
+@media only screen and (max-width: 540px) {
+  .tldr-card {
+    grid-template-columns: 1fr;
+    row-gap: 1em;
+  }
+  .tldr-card .headshot {
+    max-width: 140px;
+    margin: 0 auto;
+  }
+  .tldr-card-cv {
+    text-align: left;
   }
 }
 
