@@ -227,6 +227,16 @@ pre {
     border-left: 2px dotted #00008b;
 }
 
+/* --- Navigation highlighting --- */
+.page-index    .site-nav a[href="index.html"],
+.page-news     .site-nav a[href="news.html"],
+.page-research .site-nav a[href="research.html"],
+.page-publications .site-nav a[href="publications.html"] {
+    color: rgba(51, 51, 51, 1.00);
+    font-weight: 500;
+    pointer-events: none;
+}
+
 /* --- Mobile disclaimer --- */
 .mobile-only {
   display: none;

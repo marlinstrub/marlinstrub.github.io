@@ -1,5 +1,5 @@
 #+begin_export html
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<table class="site-nav" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 <tbody>
 <tr>
 <td class="org-left">
@@ -17,6 +17,12 @@
 </tr>
 </tbody>
 </table>
+<script>
+  (function () {
+    var name = location.pathname.split('/').pop().replace(/\.html$/, '') || 'index';
+    document.body.classList.add('page-' + name);
+  })();
+</script>
 
 <div class="mobile-only">
 <p style="color: rgba(255, 0, 0, 0.5);">
