@@ -1,6 +1,8 @@
 #+include: ../elements/title.org
 #+include: ../elements/navigation.org
 
+#+description: Senior Robotics Engineer at Gravis Robotics, formerly Robotics Technologist at NASA/JPL, OMPL co-maintainer. Path planning and control algorithms for autonomous excavators and Mars helicopters.
+
 #+html: <resume><details open>
 #+html: <summary><b>TLDR/Resumé</b> - <a href=./assets/cv_marlin_strub.pdf>Click here</a> for a detailed CV.</summary>
 _Experience_

@@ -1,6 +1,8 @@
 #+include: ../elements/title.org
 #+include: ../elements/navigation.org
 
+#+description: Path planning and control algorithm research by Marlin P. Strub, including AIT* and real-world deployments on NASA/JPL's Axel rover and EELS snake-like robot.
+
 * Research interests
 
 #+begin_export html

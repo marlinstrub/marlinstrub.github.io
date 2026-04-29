@@ -44,6 +44,12 @@
 ;; Open all links in external tabs, unless specified otherwise.
 (setq org-html-head (concat org-html-head "<base target=\"_blank\">"))
 
+;; Default preview image for social/chat link unfurling. Per-page description
+;; comes from each file's #+description and is emitted natively by org.
+(setq org-html-head
+      (concat org-html-head
+              "<meta property=\"og:image\" content=\"https://www.marlinstrub.com/assets/profile_picture.jpg\">"))
+
 ;; Generate the html. The 't' is for discarding cached values.
 (org-publish-all t)
 

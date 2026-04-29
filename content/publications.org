@@ -1,6 +1,8 @@
 #+include: ../elements/title.org
 #+include: ../elements/navigation.org
 
+#+description: Peer-reviewed publications by Marlin P. Strub on robotics, path planning, and motion planning.
+
 * Publications
 
 ** Journal articles

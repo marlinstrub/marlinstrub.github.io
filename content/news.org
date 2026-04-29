@@ -1,6 +1,8 @@
 #+include: ../elements/title.org
 #+include: ../elements/navigation.org
 
+#+description: Career timeline of Marlin P. Strub: positions, publications, field tests, and personal milestones.
+
 * News
 
 Categories for easy scanning:
