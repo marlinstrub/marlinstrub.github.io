@@ -3,7 +3,7 @@
 
 #+description: Career timeline of Marlin P. Strub: positions, publications, field tests, and personal milestones.
 
-* News
+* What's going on
 
 Categories for easy scanning:
 

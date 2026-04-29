@@ -3,9 +3,7 @@
 
 #+description: Peer-reviewed publications by Marlin P. Strub on robotics, path planning, and motion planning.
 
-* Publications
-
-** Journal articles
+* Journal articles
 
 #+html: <div class="pub" id="vaquero_sr2024"><span class="venue">Science Robotics<br>2024</span><div class="body">
 #+html: <p class="title">EELS: Autonomous snake-like robot with task and motion planning capabilities for ice world exploration</p>
@@ -83,7 +81,7 @@
 #+html: </details></div>
 #+html: </div></div>
 
-** Conference papers
+* Conference papers
 
 #+html: <div class="pub" id="jasour_icra2025"><span class="venue">ICRA 2025</span><div class="body">
 #+html: <p class="title">Risk-aware integrated task and motion planning for versatile snake robots under localization failures</p>
@@ -235,7 +233,7 @@
 #+html: </details></div>
 #+html: </div></div>
 
-** Theses
+* Theses
 
 #+html: <div class="pub" id="strub_phd2022"><span class="venue">PhD 2022</span><div class="body">
 #+html: <p class="title">Leveraging multiple sources of information to search continuous spaces</p>
@@ -283,7 +281,7 @@
 #+html: </details></div>
 #+html: </div></div>
 
-** Workshop papers and technical reports
+* Workshop papers and technical reports
 
 #+html: <div class="pub" id="gammell_empp22"><span class="venue">EMPP 2022</span><div class="body">
 #+html: <p class="title">Planner Developer Tools (PDT): Reproducible experiments and statistical analysis for developing and testing motion planners</p>
