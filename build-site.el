@@ -18,6 +18,17 @@
              :with-toc nil
              :section-numbers nil
              :time-stamp-file nil)
+       (list "mps-blog"
+             :recursive t
+             :base-directory "./content/blog"
+             :publishing-directory "./public/blog"
+             :publishing-function 'org-html-publish-to-html
+             :with-author nil
+             :with-creator nil
+             :with-date t
+             :with-toc nil
+             :section-numbers nil
+             :time-stamp-file nil)
        (list "mps-css"
              :recursive nil
              :base-directory "./style"

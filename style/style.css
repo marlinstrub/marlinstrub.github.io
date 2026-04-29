@@ -231,7 +231,8 @@ pre {
 .page-index    .site-nav a[href="index.html"],
 .page-news     .site-nav a[href="news.html"],
 .page-research .site-nav a[href="research.html"],
-.page-publications .site-nav a[href="publications.html"] {
+.page-publications .site-nav a[href="publications.html"],
+.page-blog .site-nav a[href="blog.html"] {
     color: rgba(51, 51, 51, 1.00);
     font-weight: 500;
     pointer-events: none;

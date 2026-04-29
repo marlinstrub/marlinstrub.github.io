@@ -5,6 +5,7 @@
     <li><a target="_self" href="news.html">News</a></li>
     <li><a target="_self" href="research.html">Research</a></li>
     <li><a target="_self" href="publications.html">Publications</a></li>
+    <li><a target="_self" href="blog.html">Blog</a></li>
   </ul>
 </nav>
 <script>

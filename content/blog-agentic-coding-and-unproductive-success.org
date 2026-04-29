@@ -1,0 +1,28 @@
+#+include: ../elements/title.org
+#+include: ../elements/navigation.org
+
+* Agentic coding and unproductive success
+
+Understanding software used to be a byproduct of building it. Getting a feature to work meant grappling with the code: wrong abstractions, incomplete mental models, problems that turned out to be different from what you thought. The efficiency agentic coding offers comes from removing this struggle, and with it, the conditions from which deep understanding can be earned.
+
+Consider two ways of understanding a codebase. The reviewer's understanding comes from observation. They read a design document and a pull request, verify that the proposed approach fits the system's architecture and handles its edge cases. The author's understanding comes from creation. They try approaches that don't work, discover constraints they didn't anticipate, and reshape their solution as their understanding of the system deepens. Both understand why the chosen solution works, but only the author understands why they discarded the alternatives.
+
+You have to be frustrated injecting a dependency through three layers of abstraction to finally realize your abstractions are wrong. You have to spend a puzzled afternoon chasing a segfault before you discover it's due to newly shared state between two subsystems you rarely touch. Author-level understanding includes /negative knowledge/. It's the map of the solution space, not just one solution that works. No amount of careful reviewing produces it.
+
+Learning theory (the human kind) has a name for this struggle. The unsuccessful attempt that precedes a working solution is called a /productive failure/, and there's robust evidence that it produces deeper understanding than being taught the correct solution directly [1-4]. The learning-theory term that applies to agentic coding is /unproductive success/.
+
+An unproductive success is when a task completes but the understanding it produces is shallow. When I delegate work to Claude and it offers a correct solution, I'm left with reviewer-level understanding. It creates, I observe. What's treacherous is that this unproductive success is self-concealing. There's no immediate signal that anything was lost.
+
+Even if coding agents become good enough to complete any well-specified task, someone still has to specify the task. Understanding what to build and diagnosing why what you built doesn't work both require the negative knowledge that only authorship yields. I let agents write code for me all the time. But the algorithm that touches core business logic? The API that every future module depends on? That I write myself.
+
+Understanding software was always an investment. Before agentic coding, you didn't have the choice not to invest if you wanted something built. Now you do.
+
+* References
+
+[1] Kapur, M. (2016). [[https://doi.org/10.1080/00461520.2016.1155457][Examining Productive Failure, Productive Success, Unproductive Failure, and Unproductive Success in Learning]]. /Educational Psychologist/, 51(2), 289-299.
+
+[2] Kapur, M. (2014). [[https://doi.org/10.1111/cogs.12107][Productive Failure in Learning Math]]. /Cognitive Science/, 38(5), 1008-1022.
+
+[3] Bjork, R.A. (1994). [[https://doi.org/10.7551/mitpress%2F4561.003.0011][Memory and metamemory considerations in the training of human beings]]. In J. Metcalfe and A. Shimamura (Eds.), /Metacognition: Knowing about knowing/ (pp. 185-205). Cambridge, MA: MIT Press.
+
+[4] Shen, J.H., Tamkin, A. (2026). [[https://arxiv.org/pdf/2601.20245][How AI Impacts Skill Formation]].
