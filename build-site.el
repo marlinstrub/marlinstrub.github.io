@@ -27,7 +27,7 @@
        (list "mps-assets"
              :recursive nil
              :base-directory "./assets"
-             :base-extension "pdf\\|svg\\|jpg\\|gif"
+             :base-extension "pdf\\|svg\\|jpg\\|gif\\|mp4"
              :publishing-directory "./public/assets"
              :publishing-function 'org-publish-attachment)))
 

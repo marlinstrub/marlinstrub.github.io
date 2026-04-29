@@ -3,8 +3,11 @@
 
 * Research interests
 
-#+attr_html: :width 210px :style  float: right; outline: 2px solid black; outline-offset: -1px; margin: 0.0rem 0.0rem 0.0rem 1.0rem; :title AIT* optimizing path length on random problems.
-[[file:./assets/aitstar_teaser.gif]]
+#+begin_export html
+<video width="210" autoplay loop muted playsinline style="float: right; outline: 2px solid black; outline-offset: -1px; margin: 0 0 0 1rem;" title="AIT* optimizing path length on random problems.">
+  <source src="./assets/aitstar_teaser.mp4" type="video/mp4">
+</video>
+#+end_export
 
 My primary research interests are path planning and control algorithms. I'm passionate about and have experience in algorithm design, analysis, implementation, evaluation, and deployment. The two deployments I was most heavily involved in so far are summarized below. I'm proud and humbled that my work has been useful to others. Some of my favorite examples of this include when researchers from
 
