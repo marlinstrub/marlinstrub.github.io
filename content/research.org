@@ -30,42 +30,42 @@ Some of the most interesting science targets of planetary exploration are locate
 #+begin_export html
 <center>
 <div class="wrapper">
-	<input type="radio" name="axel-slide" checked="checked">
+	<input type="radio" name="axel-slide" checked="checked" aria-label="Slide 1 of 8: Axel as part of DuAxel, driving on flat terrain.">
   <picture aria-label="Fig. 1: Axel as part of DuAxel, driving on flat terrain.">
 	<img src="./assets/axel_01.jpg" alt="DuAxel driving.">
   </picture>
-	
-	<input type="radio" name="axel-slide">
+
+	<input type="radio" name="axel-slide" aria-label="Slide 2 of 8: Separating from the anchor, connected by tether.">
   <picture aria-label="Fig. 2: Separating from the anchor, connected by tether.">
 	<img src="./assets/axel_02.jpg" alt="Axel separating from DuAxel.">
   </picture>
-  
-	<input type="radio" name="axel-slide">
+
+	<input type="radio" name="axel-slide" aria-label="Slide 3 of 8: The tether provides stability, power, and communication.">
   <picture aria-label="Fig. 3: The tether provides stability, power, and communication.">
 	<img src="./assets/axel_03.jpg" alt="Axel descending.">
   </picture>
-  
-	<input type="radio" name="axel-slide">
+
+	<input type="radio" name="axel-slide" aria-label="Slide 4 of 8: Axel knows its surroundings and can avoid obstacles.">
   <picture aria-label="Fig. 4: Axel knows its surroundings and can avoid obstacles.">
 	<img src="./assets/axel_04.jpg" alt="Axel scan.">
   </picture>
 
-	<input type="radio" name="axel-slide">
+	<input type="radio" name="axel-slide" aria-label="Slide 5 of 8: This allows it to safely traverse steep slopes...">
   <picture aria-label="Fig. 5: This allows it to safely traverse steep slopes...">
 	<img src="./assets/axel_05.jpg" alt="Axel on steep terrain.">
   </picture>
 
-	<input type="radio" name="axel-slide">
+	<input type="radio" name="axel-slide" aria-label="Slide 6 of 8: ... and take scientific measurements of the soil.">
   <picture aria-label="Fig. 6: ... and take scientific measurements of the soil.">
 	<img src="./assets/axel_06.jpg" alt="Axel 4">
   </picture>
 
-	<input type="radio" name="axel-slide">
+	<input type="radio" name="axel-slide" aria-label="Slide 7 of 8: Our field-test site in the Mojave Desert, USA.">
   <picture aria-label="Fig. 7: Our field-test site in the Mojave Desert, USA.">
 	<img src="./assets/axel_07.jpg" alt="Axel 4">
   </picture>
 
-	<input type="radio" name="axel-slide">
+	<input type="radio" name="axel-slide" aria-label="Slide 8 of 8: Me, Axel, and Dr. Jonathan Gammell, my PhD advisor.">
   <picture aria-label="Fig. 8: Me, Axel, and Dr. Jonathan Gammell, my PhD advisor.">
 	<img src="./assets/axel_08.jpg" alt="Axel 4">
   </picture>
@@ -84,42 +84,42 @@ Enceladus, a small moon of Saturn, has large water plumes at its south pole. The
 #+begin_export html
 <center>
 <div class="wrapper">
-	<input type="radio" name="eels-slide" checked="checked">
+	<input type="radio" name="eels-slide" checked="checked" aria-label="Slide 1 of 8: EELS 1.0 is about 4.4 m long and 100 kg in weight.">
   <picture aria-label="Fig. 9: EELS 1.0 is about 4.4 m long and 100 kg in weight.">
 	<img src="./assets/eels_01.jpg" alt="EELS during shake-out tests.">
   </picture>
-	
-	<input type="radio" name="eels-slide">
+
+	<input type="radio" name="eels-slide" aria-label="Slide 2 of 8: It has screws all along its body which can propel it.">
   <picture aria-label="Fig. 10: It has screws all along its body which can propel it.">
 	<img src="./assets/eels_02.jpg" alt="The screws of EELS.">
   </picture>
-  
-	<input type="radio" name="eels-slide">
+
+	<input type="radio" name="eels-slide" aria-label="Slide 3 of 8: It also has 20 actuators to change its shape.">
   <picture aria-label="Fig. 11: It also has 20 actuators to change its shape.">
 	<img src="./assets/eels_03.jpg" alt="EELS doing a scan.">
   </picture>
-  
-	<input type="radio" name="eels-slide">
+
+	<input type="radio" name="eels-slide" aria-label="Slide 4 of 8: We tested it on many surfaces, e.g., loose snow ...">
   <picture aria-label="Fig. 12: We tested it on many surfaces, e.g., loose snow ...">
 	<img src="./assets/eels_04.jpg" alt="EELS on loose snow.">
   </picture>
 
-	<input type="radio" name="eels-slide">
+	<input type="radio" name="eels-slide" aria-label="Slide 5 of 8: ...consolidated snow...">
   <picture aria-label="Fig. 13: ...consolidated snow...">
 	<img src="./assets/eels_05.jpg" alt="EELS on consolidated snow.">
   </picture>
 
-	<input type="radio" name="eels-slide">
+	<input type="radio" name="eels-slide" aria-label="Slide 6 of 8: ...glacial surface-ice...">
   <picture aria-label="Fig. 14: ...glacial surface-ice...">
 	<img src="./assets/eels_06.jpg" alt="EELS on glacier.">
   </picture>
 
-	<input type="radio" name="eels-slide">
+	<input type="radio" name="eels-slide" aria-label="Slide 7 of 8: ...and sand.">
   <picture aria-label="Fig. 15: ...and sand.">
 	<img src="./assets/eels_07.jpg" alt="EELS on sand.">
   </picture>
 
-	<input type="radio" name="eels-slide">
+	<input type="radio" name="eels-slide" aria-label="Slide 8 of 8: We even tested a later version in glacial moulins.">
   <picture aria-label="Fig. 16: We even tested a later version in glacial moulins.">
 	<img src="./assets/eels_08.jpg" alt="EELS in moulin.">
   </picture>
