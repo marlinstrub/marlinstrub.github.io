@@ -232,6 +232,21 @@ pre {
     border-left: 2px dotted #00008b;
 }
 
+/* --- Top navigation --- */
+.site-nav {
+    margin-top: 1em;
+}
+.site-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.site-nav li {
+    padding: 6px;
+}
+
 /* --- Navigation highlighting --- */
 .page-index    .site-nav a[href="index.html"],
 .page-news     .site-nav a[href="news.html"],
@@ -664,21 +679,11 @@ input:checked + * {
     font-size: 1.3em;
   }
 
-  /* Section number prefixes reserve 2em of left margin that crowds narrow viewports */
-  h2::before, h3::before {
-    margin-right: 1em;
-  }
-
   /* Stack navigation vertically — four links don't fit horizontally below ~400px */
-  table.site-nav,
-  table.site-nav tbody,
-  table.site-nav tr,
-  table.site-nav td {
-    display: block;
-    width: 100%;
+  .site-nav ul {
+    flex-direction: column;
   }
-  table.site-nav td {
-    text-align: left;
+  .site-nav li {
     padding: 0.4em 0;
   }
 

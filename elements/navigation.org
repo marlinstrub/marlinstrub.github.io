@@ -1,22 +1,12 @@
 #+begin_export html
-<table class="site-nav" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-<tbody>
-<tr>
-<td class="org-left">
-  <a target="_self" href="index.html">About</a>
-</td>
-<td class="org-left">
-  <a target="_self" href="news.html">News</a>
-</td>
-<td class="org-left">
-  <a target="_self" href="research.html">Research</a>
-</td>
-<td class="org-left">
-  <a target="_self" href="publications.html">Publications</a>
-</td>
-</tr>
-</tbody>
-</table>
+<nav class="site-nav">
+  <ul>
+    <li><a target="_self" href="index.html">About</a></li>
+    <li><a target="_self" href="news.html">News</a></li>
+    <li><a target="_self" href="research.html">Research</a></li>
+    <li><a target="_self" href="publications.html">Publications</a></li>
+  </ul>
+</nav>
 <script>
   (function () {
     var name = location.pathname.split('/').pop().replace(/\.html$/, '') || 'index';
