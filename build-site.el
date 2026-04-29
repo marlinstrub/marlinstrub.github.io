@@ -69,15 +69,16 @@
               "<link rel=\"icon\" type=\"image/x-icon\" href=\"/favicon.ico\">"
               "<link rel=\"apple-touch-icon\" href=\"/assets/apple-touch-icon.png\">"))
 
-;; Footer with contact links.
+;; Footer with contact links. Icons are inline Tabler Icons (outline):
+;; mail, brand-github, brand-linkedin. Stroke colour follows currentColor.
 (setq org-html-postamble t)
 (setq org-html-postamble-format
       '(("en" "<nav class=\"site-footer\">
-<a href=\"mailto:marlin.strub@gmail.com\">Email</a>
+<a href=\"mailto:marlin.strub@gmail.com\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z\"/><path d=\"M3 7l9 6l9 -6\"/></svg>Email</a>
 <span class=\"separator\">·</span>
-<a href=\"https://github.com/marlinstrub\">GitHub</a>
+<a href=\"https://github.com/marlinstrub\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5\"/></svg>GitHub</a>
 <span class=\"separator\">·</span>
-<a href=\"https://linkedin.com/in/marlinstrub\">LinkedIn</a>
+<a href=\"https://linkedin.com/in/marlinstrub\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z\"/><path d=\"M8 11l0 5\"/><path d=\"M8 8l0 .01\"/><path d=\"M12 16l0 -5\"/><path d=\"M16 16v-3a2 2 0 0 0 -4 0\"/></svg>LinkedIn</a>
 </nav>")))
 
 ;; Generate the html. The 't' is for discarding cached values.
