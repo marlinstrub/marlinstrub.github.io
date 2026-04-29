@@ -21,7 +21,7 @@
        (list "mps-css"
              :recursive nil
              :base-directory "./style"
-             :base-extension "css"
+             :base-extension "css\\|js"
              :publishing-directory "./public"
              :publishing-function 'org-publish-attachment)
        (list "mps-assets"
@@ -40,6 +40,9 @@
 
 ;; Include my own css style.
 (setq org-html-head "<link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">")
+
+;; Inject bibtex copy-button behaviour.
+(setq org-html-head (concat org-html-head "<script src=\"bibtex-copy.js\" defer></script>"))
 
 ;; Open all links in external tabs, unless specified otherwise.
 (setq org-html-head (concat org-html-head "<base target=\"_blank\">"))

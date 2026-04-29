@@ -303,6 +303,41 @@ pre {
   }
 }
 
+/* --- Bibtex copy button --- */
+summary:has(> .bibtex-copy-button) {
+    position: relative;
+    padding-right: 4em;
+}
+.bibtex-copy-button {
+    position: absolute;
+    top: 50%;
+    right: 0.25em;
+    transform: translateY(-50%);
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.85em;
+    font-weight: 400;
+    color: rgba(51, 51, 51, 0.65);
+    background: #ffffff;
+    border: 1px solid rgba(51, 51, 51, 0.2);
+    border-radius: 3px;
+    padding: 0.05em 0.5em;
+    cursor: pointer;
+    transition: color 0.15s ease, border-color 0.15s ease;
+}
+.bibtex-copy-button:hover,
+.bibtex-copy-button:focus {
+    color: rgba(51, 51, 51, 1);
+    border-color: rgba(51, 51, 51, 0.5);
+}
+.bibtex-copy-button.copied {
+    color: rgba(8, 63, 255, 1);
+    border-color: rgba(8, 63, 255, 0.5);
+}
+.bibtex-copy-button.failed {
+    color: #a02020;
+    border-color: #a02020;
+}
+
 /* --- Folding --- */
 details {
     background: #fbfbfb;
