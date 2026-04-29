@@ -77,7 +77,7 @@
 
 ** Conference papers
 
-#+html: <span id="thakker_iros2023"></span>
+#+html: <span id="reid_aeroconf2024"></span>
 - W. Reid, T. Bartlett, A. Bouton, M. P. Strub, M. Newby, S. Gerdts, J. Martin, S. Moreland, R. McCormick (2024) /Planning and control for autonomous drives of the mars sample recovery helicopter/. In: Proceedings of the IEEE Aerospace Conference (AeroConf).
 #+html: <details><summary>Bibtex entry</summary>
 #+begin_src bibtex
