@@ -5,45 +5,17 @@
 
 * What's going on
 
-Categories for easy scanning:
-
 #+begin_export html
-<div class="desktop-only">
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides" style="width: 100%; table-layout: fixed; overflow-wrap: break-word;">
-<tbody>
-<tr>
-<td class="org-left"><span class="icon-publication"></span> Publication</td>
-<td class="org-left"><span class="icon-code"></span> Open-source</td>
-<td class="org-left"><span class="icon-position"></span> New position</td>
-</tr>
-<tr>
-<td class="org-left"><span class="icon-field-test"></span> Field trial</td>
-<td class="org-left"><span class="icon-academic"></span> Academic</td>
-<td class="org-left"><span class="icon-personal"></span> Personal</td>
-</tr>
-</tbody>
-</table>
-</div>
-#+end_export
-
-#+begin_export html
-<div class="mobile-only">
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides" style="width: 100%; table-layout: fixed; overflow-wrap: break-word;">
-<tbody>
-<tr>
-<td class="org-left"><span class="icon-publication"></span>&nbsp;Publication</td>
-<td class="org-left"><span class="icon-code"></span>&nbsp;Open-source</td>
-</tr>
-<tr>
-<td class="org-left"><span class="icon-position"></span>&nbsp;New position</td>
-<td class="org-left"><span class="icon-field-test"></span>&nbsp;Field trial</td>
-</tr>
-<tr>
-<td class="org-left"><span class="icon-academic"></span>&nbsp;Academic</td>
-<td class="org-left"><span class="icon-personal"></span>&nbsp;Personal</td>
-</tr>
-</tbody>
-</table>
+<div class="legend">
+  <div class="label">Legend</div>
+  <div class="items">
+    <span class="item"><span class="icon-publication"></span> publication</span>
+    <span class="item"><span class="icon-code"></span> open-source</span>
+    <span class="item"><span class="icon-position"></span> new position</span>
+    <span class="item"><span class="icon-field-test"></span> field trial</span>
+    <span class="item"><span class="icon-academic"></span> academic</span>
+    <span class="item"><span class="icon-personal"></span> personal</span>
+  </div>
 </div>
 #+end_export
 

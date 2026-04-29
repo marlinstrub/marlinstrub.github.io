@@ -297,6 +297,37 @@ pre {
   }
 }
 
+/* --- News page legend ---
+   Two-column grid: lowercase "Legend" label sits in the left column (sized
+   to fit the word), categories in a 3×2 grid in the right column. Mirrors
+   the .pub margin-column pattern on publications.html and the row labels in
+   .tldr-card on the about page. */
+.legend {
+    display: grid;
+    grid-template-columns: max-content minmax(0, 1fr);
+    column-gap: 1em;
+    align-items: baseline;
+    margin: 0.5em 0 1.25em;
+}
+.legend > .label {
+    text-align: right;
+    color: rgba(51, 51, 51, 0.55);
+    line-height: 1.35em;
+}
+.legend > .items {
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    column-gap: 2em;
+    row-gap: 0.25em;
+    line-height: 1.5em;
+}
+.legend .item {
+    white-space: nowrap;
+}
+.legend .item span[class^="icon-"] {
+    margin-right: 0.15em;
+}
+
 /* --- Bibtex copy button --- */
 .bibtex-copy-button {
     position: absolute;
@@ -665,6 +696,19 @@ input:checked + * {
   }
   .pub > :not(.venue) {
     grid-column: 1;
+  }
+
+  /* News legend: stack label above items, drop to 2 columns */
+  .legend {
+    grid-template-columns: 1fr;
+    row-gap: 0.5em;
+  }
+  .legend > .label {
+    text-align: left;
+  }
+  .legend > .items {
+    grid-template-columns: repeat(2, max-content);
+    column-gap: 1.5em;
   }
 }
 
