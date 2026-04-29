@@ -77,8 +77,23 @@
 
 ** Conference papers
 
+#+html: <span id="jasour_icra2025"></span>
+- A. Jasour, G. Daddi, M. Endo, T. S. Vaquero, M. Paton, M. P. Strub, S. Corpino, M. Ingham, M. Ono, R. Thakker (2025) /Risk-aware integrated task and motion planning for versatile snake robots under localization failures/. In: Proceedings of the IEEE International Conference on Robotics and Automation (ICRA). pages 8880—8886. ([[https://arxiv.org/abs/2502.19690][open-access]], [[https://www.doi.org/10.1109/ICRA55743.2025.11127363][doi]])
+#+html: <details><summary>Bibtex entry</summary>
+#+begin_src bibtex
+@InProceedings{jasour_icra2025,
+  author = {Jasour, Akash and Daddi, Guglielmo and Endo, Masahiro and Vaquero, Tiago S. and Paton, Michael and Strub, Marlin P. and Corpino, Sabrina and Ingham, Michel and Ono, Masahiro and Thakker, Rohan},
+  title = {Risk-aware integrated task and motion planning for versatile snake robots under localization failures},
+  booktitle = {Proceedings of the {IEEE} International Conference on Robotics and Automation ({ICRA})},
+  year = {2025},
+  pages = {8880--8886},
+  doi = {10.1109/ICRA55743.2025.11127363}
+}
+#+end_src
+#+html: </details>
+
 #+html: <span id="reid_aeroconf2024"></span>
-- W. Reid, T. Bartlett, A. Bouton, M. P. Strub, M. Newby, S. Gerdts, J. Martin, S. Moreland, R. McCormick (2024) /Planning and control for autonomous drives of the mars sample recovery helicopter/. In: Proceedings of the IEEE Aerospace Conference (AeroConf).
+- W. Reid, T. Bartlett, A. Bouton, M. P. Strub, M. Newby, S. Gerdts, J. Martin, S. Moreland, R. McCormick (2024) /Planning and control for autonomous drives of the mars sample recovery helicopter/. In: Proceedings of the IEEE Aerospace Conference (AeroConf). pages 1—11. ([[https://www.doi.org/10.1109/AERO58975.2024.10521039][doi]])
 #+html: <details><summary>Bibtex entry</summary>
 #+begin_src bibtex
 @InProceedings{reid_aeroconf24,
@@ -86,6 +101,38 @@
   title = {Planning and control for autonomous drives of the {Mars} sample {Recovery} {Helicopter}},
   booktitle = {Proceedings of the {IEEE} Aerospace Conference ({AeroConf})},
   year = {2024},
+  pages = {1--11},
+  doi = {10.1109/AERO58975.2024.10521039}
+}
+#+end_src
+#+html: </details>
+
+#+html: <span id="paton_aeroconf2024"></span>
+- M. Paton, /et al./ (incl. M. P. Strub) (2024) /2023 EELS field tests at Athabasca Glacier as an icy moon analogue environment/. In: Proceedings of the IEEE Aerospace Conference (AeroConf). pages 1—18. ([[https://www.doi.org/10.1109/AERO58975.2024.10521174][doi]])
+#+html: <details><summary>Bibtex entry</summary>
+#+begin_src bibtex
+@InProceedings{paton_aeroconf2024,
+  author = {Paton, Michael and others},
+  title = {2023 {EELS} field tests at {Athabasca} {Glacier} as an icy moon analogue environment},
+  booktitle = {Proceedings of the {IEEE} Aerospace Conference ({AeroConf})},
+  year = {2024},
+  pages = {1--18},
+  doi = {10.1109/AERO58975.2024.10521174}
+}
+#+end_src
+#+html: </details>
+
+#+html: <span id="thakker_aiaa2024"></span>
+- R. Thakker, M. Paton, B. Jones, G. Daddi, R. Royce, M. Swan, M. P. Strub, /et al./ (2024) /To boldly go where no robots have gone before — part 4: Neo autonomy for robustly exploring unknown, extreme environments with versatile robots/. AIAA SCITECH 2024 Forum, paper 1747. ([[https://www.doi.org/10.2514/6.2024-1747][doi]])
+#+html: <details><summary>Bibtex entry</summary>
+#+begin_src bibtex
+@InProceedings{thakker_aiaa2024,
+  author = {Thakker, Rohan and Paton, Michael and Jones, Benjamin and Daddi, Guglielmo and Royce, Rob and Swan, Michael and Strub, Marlin P. and others},
+  title = {To boldly go where no robots have gone before -- part 4: {Neo} autonomy for robustly exploring unknown, extreme environments with versatile robots},
+  booktitle = {{AIAA} {SCITECH} 2024 Forum},
+  year = {2024},
+  number = {1747},
+  doi = {10.2514/6.2024-1747}
 }
 #+end_src
 #+html: </details>
@@ -173,6 +220,33 @@
   title = {Leveraging multiple sources of information to search continuous spaces},
   school = {University of Oxford},
   year = {2022}
+}
+#+end_src
+#+html: </details>
+
+#+html: <span id="strub_msc2017"></span>
+- M. P. Strub (2017) /Exploring continuous representation of the world for place recognition/. M.Sc. Thesis, ETH Zurich.
+#+html: <details><summary>Bibtex entry</summary>
+#+begin_src bibtex
+@MastersThesis{strub_msc2017,
+  author = {Strub, Marlin P.},
+  title = {Exploring continuous representation of the world for place recognition},
+  school = {ETH Zurich},
+  year = {2017}
+}
+#+end_src
+#+html: </details>
+
+#+html: <span id="strub_bsc2015"></span>
+- M. P. Strub (2015) /Model-based control of a bounding gait for a quadruped robot/. B.Sc. Thesis, ETH Zurich.
+#+html: <details><summary>Bibtex entry</summary>
+#+begin_src bibtex
+@MastersThesis{strub_bsc2015,
+  author = {Strub, Marlin P.},
+  title = {Model-based control of a bounding gait for a quadruped robot},
+  type = {Bachelor's Thesis},
+  school = {ETH Zurich},
+  year = {2015}
 }
 #+end_src
 #+html: </details>
