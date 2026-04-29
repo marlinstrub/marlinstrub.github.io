@@ -1,11 +1,7 @@
 (function () {
     function attachButton(pre) {
-        var details = pre.closest("details");
-        if (!details) {
-            return;
-        }
-        var summary = details.querySelector("summary");
-        if (!summary || summary.querySelector(".bibtex-copy-button")) {
+        var container = pre.closest(".org-src-container") || pre.parentElement;
+        if (!container || container.querySelector(".bibtex-copy-button")) {
             return;
         }
         var button = document.createElement("button");
@@ -45,7 +41,7 @@
             }
         });
 
-        summary.appendChild(button);
+        container.appendChild(button);
     }
 
     function init() {

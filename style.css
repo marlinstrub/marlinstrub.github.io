@@ -108,7 +108,7 @@ span.underline {
 
 #content, #postamble {
     margin: 0 auto;
-    max-width: 600px;
+    max-width: 680px;
     margin-top: 1.5%;
     margin-bottom: 1.5%;
 }
@@ -160,38 +160,17 @@ h1 {
     text-transform: uppercase;
 }
 h2 {
-    text-transform: uppercase;
     padding-top: 2em;
+    padding-bottom: 0.4em;
+    margin-bottom: 1em;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
 }
 h3 {
     padding-top: 1em;
+    padding-bottom: 0.4em;
+    margin-bottom: 0.75em;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
     font-weight: 400;
-}
-
-body {
-  counter-reset: section;
-}
-h2 {
-  counter-reset: subsection;
-}
-h2::before {
-    color: rgba(51, 51, 51, 1.00);
-    float: left;
-    text-align: right;
-    font-weight: 500;
-    margin-right: 2em;
-    counter-increment: section;
-    content: counter(section);
-}
-
-h3::before {
-    color: rgba(51, 51, 51, 1.00);
-    float: left;
-    text-align: right;
-    font-weight: 400;
-    margin-right: 2em;
-    counter-increment: subsection;
-    content: counter(section) "." counter(subsection);
 }
 
 code {
@@ -225,6 +204,21 @@ pre {
     font-family: "IBM Plex Mono", sans-serif;
     font-weight: 300;
     border-left: 2px dotted #00008b;
+}
+
+/* --- Top navigation --- */
+.site-nav {
+    margin-top: 1em;
+}
+.site-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.site-nav li {
+    padding: 6px;
 }
 
 /* --- Navigation highlighting --- */
@@ -304,15 +298,10 @@ pre {
 }
 
 /* --- Bibtex copy button --- */
-summary:has(> .bibtex-copy-button) {
-    position: relative;
-    padding-right: 4em;
-}
 .bibtex-copy-button {
     position: absolute;
-    top: 50%;
-    right: 0.25em;
-    transform: translateY(-50%);
+    top: 0.4em;
+    right: 0.4em;
     font-family: "IBM Plex Mono", monospace;
     font-size: 0.85em;
     font-weight: 400;
@@ -385,26 +374,52 @@ news summary::after {
     content: "";
 }
 
-resume details {
-    background: #fbfbfb;
-    border: 1px solid #ebebeb;
-    border-radius: 5px;
-    margin: 0.0em;
-    margin-top: 1.2em;
-    padding: 0.25em 0.5em 0.25em 0.5em;
-    font-size: 0.95em;
+/* --- About TLDR card ---
+   Profile card matching the hard 2px black outline used on the AIT* video on
+   the research page. Headshot sits in a fixed-width left column; lists are
+   aligned by category in a margin column. */
+.tldr-card {
+    margin-top: 1.5em;
+    padding: 1em 1.1em;
+    outline: 0px solid black;
+    outline-offset: -1px;
+    display: grid;
+    grid-template-columns: 130px minmax(0, 1fr);
+    column-gap: 1.25em;
+    align-items: start;
 }
-resume details summary {
-    background: #fbfbfb;
-    font-size: 1.0em;
-    color: rgba(51, 51, 51, 1.00);
+.tldr-card .headshot img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    margin: 0;
+    border-radius: 2px;
 }
-resume details summary::marker {
-    color: rgba(51, 51, 51, 0.90);
+.tldr-card .body > .row {
+    display: grid;
+    grid-template-columns: 7.5em minmax(0, 1fr);
+    column-gap: 1em;
+    margin-bottom: 0.55em;
+    align-items: baseline;
 }
-* {-webkit-font-smoothing: antialiased;}
-resume summary::after {
-    content: "";
+.tldr-card .body > .row:last-of-type {
+    margin-bottom: 0;
+}
+.tldr-card .label {
+    text-align: right;
+    color: rgba(51, 51, 51, 0.55);
+}
+.tldr-card .items div {
+    line-height: 1.45em;
+}
+.tldr-card-cv {
+    grid-column: 1 / -1;
+    margin: 0.85em 0 0;
+    font-size: 0.9em;
+    color: rgba(51, 51, 51, 0.7);
+    text-align: right;
 }
 
 /* --- Table --- */
@@ -519,6 +534,86 @@ input:checked + * {
 	z-index: 1;
 }
 
+/* --- Publications page (margin column layout) ---
+   Each entry is a .pub grid container. The venue label sits in a fixed-width
+   left column; title, authors, and links sit in the right column.
+   Venue, volume, and pages are deliberately omitted from the flow text —
+   that information lives in the margin label and the bibtex entry. */
+.pub {
+    display: grid;
+    grid-template-columns: 140px minmax(0, 1fr);
+    column-gap: 1.5em;
+    margin-bottom: 1.4em;
+    align-items: baseline;
+}
+.pub > .venue {
+    grid-column: 1;
+    text-align: right;
+    color: rgba(51, 51, 51, 0.55);
+    line-height: 1.35em;
+}
+.pub > .body {
+    grid-column: 2 / 3;
+    min-width: 0;
+}
+.pub .title {
+    margin: 0 0 0.15em;
+    line-height: 1.4em;
+}
+.pub .authors {
+    color: rgba(51, 51, 51, 0.55);
+    font-size: 0.95em;
+    margin: 0 0 0.35em;
+    line-height: 1.45em;
+}
+.pub .links {
+    font-size: 0.88em;
+    color: rgba(51, 51, 51, 0.4);
+}
+
+/* Bibtex inline toggle: sits next to open-access/doi links */
+.pub .links details {
+    display: inline;
+    background: none;
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    margin: 0;
+    font-size: 1em;
+}
+.pub .links details > summary {
+    display: inline;
+    list-style: none;
+    cursor: pointer;
+    color: rgba(8, 63, 255, 1.0);
+    position: static;
+    padding-right: 0;
+}
+.pub .links details > summary::-webkit-details-marker { display: none; }
+.pub .links details > summary::after { display: none; }
+.pub .links details > summary:hover { text-decoration: underline; }
+.pub .links details > .org-src-container {
+    display: block;
+    position: relative;
+    margin: 0.5em 0 0;
+    background: #fbfbfb;
+    border: 1px solid #ebebeb;
+    border-radius: 4px;
+    padding: 0.5em 0.7em;
+}
+.pub .links details > .org-src-container > pre {
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: none;
+    border-left: none;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 300;
+    font-size: 0.95em;
+    line-height: 1.5em;
+    color: rgba(51, 51, 51, 0.55);
+}
+
 /* --- Responsive breakpoints ---
    Placed at end of file so these rules override the base declarations above. */
 
@@ -553,6 +648,39 @@ input:checked + * {
   input + *[aria-label]:before {
     width: 100%;
   }
+
+  /* Publications: collapse the margin column to a single stack with venue
+     becoming an uppercase label above each citation. */
+  .pub {
+    grid-template-columns: 1fr;
+    row-gap: 0.25em;
+    margin-bottom: 1.25em;
+  }
+  .pub > .venue {
+    grid-column: 1;
+    text-align: left;
+    font-size: 0.85em;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+  .pub > :not(.venue) {
+    grid-column: 1;
+  }
+}
+
+/* Narrow tablets / large phones: ≤540px — stack the TLDR card */
+@media only screen and (max-width: 540px) {
+  .tldr-card {
+    grid-template-columns: 1fr;
+    row-gap: 1em;
+  }
+  .tldr-card .headshot {
+    max-width: 140px;
+    margin: 0 auto;
+  }
+  .tldr-card-cv {
+    text-align: left;
+  }
 }
 
 /* Mobile: ≤480px */
@@ -566,21 +694,11 @@ input:checked + * {
     font-size: 1.3em;
   }
 
-  /* Section number prefixes reserve 2em of left margin that crowds narrow viewports */
-  h2::before, h3::before {
-    margin-right: 1em;
-  }
-
   /* Stack navigation vertically — four links don't fit horizontally below ~400px */
-  table.site-nav,
-  table.site-nav tbody,
-  table.site-nav tr,
-  table.site-nav td {
-    display: block;
-    width: 100%;
+  .site-nav ul {
+    flex-direction: column;
   }
-  table.site-nav td {
-    text-align: left;
+  .site-nav li {
     padding: 0.4em 0;
   }
 
