@@ -7,9 +7,10 @@
 
 ** Journal articles
 
-#+html: <span id="vaquero_sr2024"></span>
-- T. S. Vaquero, G. Daddi, R. Thakker, M. Paton, A. Jasour, M. P. Strub, R. M. Swan,  R. Royce /et al./ (2024) /EELS: Autonomous snake-like robot with task and motion planning capabilities for ice world exploration/. Science Robotics, 9(88): pages 1—11. ([[https://www.science.org/doi/full/10.1126/scirobotics.adh8332][open-access]], [[https://www.doi.org/10.1126/scirobotics.adh8332][doi]])
-#+html: <details><summary>Bibtex entry</summary>
+#+html: <div class="pub" id="vaquero_sr2024"><span class="venue">Science Robotics<br>2024</span><div class="body">
+#+html: <p class="title">EELS: Autonomous snake-like robot with task and motion planning capabilities for ice world exploration</p>
+#+html: <p class="authors">T. S. Vaquero, G. Daddi, R. Thakker, M. Paton, A. Jasour, M. P. Strub, R. M. Swan, R. Royce, <i>et al.</i></p>
+#+html: <div class="links"><a href="https://www.science.org/doi/full/10.1126/scirobotics.adh8332">open-access</a> · <a href="https://www.doi.org/10.1126/scirobotics.adh8332">doi</a> · <details><summary>bibtex</summary>
 #+begin_src bibtex
 @Article{vaquero_sr2024,
   author = {Vaquero, Tiago S. and Daddi, Guglielmo and Thakker, Rohan and Paton, Michael and Jasour, Akash and Strub, Marlin P. and Swan, R. Michael and Royce, Rob and Gildner, Matthew and Tosi, Phillipe and Veismann, Marcel and Gavrilov, Peter and Marteau, Elo\"{i}se and Bowkett, Joseph and Loret de Mola Lemus, Daniel and Nakka, Yashwanth and Hockman, Ben and Orekhov, Andrew and Hasseler, Tristan D. and Leake, Carl and Nuernberger, Benjamin and Proen\c{c}a, Pedro and Reid, William and Talbot, William and Georgiev, Nikola and Pailevanian, Torkom and Archanian, Avak and Ambrose, Eric and Jasper, Jay and Etheredge, Rachel and Roman, Christian and Levine, Dan and Otsu, Kyon and Yearicks, Sarah and Melikyan, Hovhannes and Rieber, Richard R. and Carpenter, Kalind and Nash, Jeremy and Jain, Abhinandan and Shiraishi, Lori and Robinson, Matt and Travers, Matthew and Choset, Howie and Burdick, Joel W. and Gardner, Alex and Cable, Morgan L. and Ingham, Mitch and Ono, Hiro},
@@ -22,11 +23,13 @@
   doi = {10.1126/scirobotics.adh8332}
 }
 #+end_src
-#+html: </details>
+#+html: </details></div>
+#+html: </div></div>
 
-#+html: <span id="thomason_ral2022"></span>
-- W. Thomason, M. P. Strub, J. D. Gammell (2022) /Task and Motion Informed Trees (TMIT*): Almost-surely asymptotically optimal integrated task and motion planning/. Robotics and Automation Letters (RA-L), 7(4): pages 11370—11377. ([[https://arxiv.org/abs/2210.09367][open-access]], [[https://www.doi.org/10.1109/LRA.2022.3199676][doi]])
-#+html: <details><summary>Bibtex entry</summary>
+#+html: <div class="pub" id="thomason_ral2022"><span class="venue">RA-L 2022</span><div class="body">
+#+html: <p class="title">Task and Motion Informed Trees (TMIT*): Almost-surely asymptotically optimal integrated task and motion planning</p>
+#+html: <p class="authors">W. Thomason, M. P. Strub, J. D. Gammell</p>
+#+html: <div class="links"><a href="https://arxiv.org/abs/2210.09367">open-access</a> · <a href="https://www.doi.org/10.1109/LRA.2022.3199676">doi</a> · <details><summary>bibtex</summary>
 #+begin_src bibtex
 @Article{thomason_ral2022,
   author = {Thomason, Wil and Strub, Marlin P. and Gammell, Jonathan D.},
@@ -39,11 +42,13 @@
   doi = {10.1109/LRA.2022.3199676}
 }
 #+end_src
-#+html: </details>
+#+html: </details></div>
+#+html: </div></div>
 
-#+html: <span id="strub_ijrr2021"></span>
-- M. P. Strub, J. D. Gammell (2022) /AIT​* and EIT*: Asymmetric bidirectional sampling-based path planning/. The International Journal of Robotics Research (IJRR), 41(4): pages 390—417. ([[https://arxiv.org/abs/2111.01877][open-access]], [[https://www.doi.org/10.1177/02783649211069572][doi]])
-#+html: <details><summary>Bibtex entry</summary>
+#+html: <div class="pub" id="strub_ijrr2021"><span class="venue">IJRR 2022</span><div class="body">
+#+html: <p class="title">AIT* and EIT*: Asymmetric bidirectional sampling-based path planning</p>
+#+html: <p class="authors">M. P. Strub, J. D. Gammell</p>
+#+html: <div class="links"><a href="https://arxiv.org/abs/2111.01877">open-access</a> · <a href="https://www.doi.org/10.1177/02783649211069572">doi</a> · <details><summary>bibtex</summary>
 #+begin_src bibtex
 @Article{strub_ijrr2021,
   author = {Strub, Marlin P. and Gammell, Jonathan D.}
@@ -56,11 +61,13 @@
   doi = {10.1177/02783649211069572}
 }
 #+end_src
-#+html: </details>
+#+html: </details></div>
+#+html: </div></div>
 
-#+html: <span id="gammell_arcras2021"></span>
-- J. D. Gammell, M. P. Strub (2021) /Asymptotically optimal sampling-based motion planning methods/. Annual Review of Control, Robotics, and Autonomous Systems (ARCRAS), 4(1): pages 295—318. Invited. ([[https://arxiv.org/abs/2009.10484][open-access]], [[https://www.doi.org/10.1146/annurev-control-061920-093753][doi]])
-#+html: <details><summary>Bibtex entry</summary>
+#+html: <div class="pub" id="gammell_arcras2021"><span class="venue">ARCRAS 2021</span><div class="body">
+#+html: <p class="title">Asymptotically optimal sampling-based motion planning methods</p>
+#+html: <p class="authors">J. D. Gammell, M. P. Strub</p>
+#+html: <div class="links"><a href="https://arxiv.org/abs/2009.10484">open-access</a> · <a href="https://www.doi.org/10.1146/annurev-control-061920-093753">doi</a> · <details><summary>bibtex</summary>
 #+begin_src bibtex
 @Article{gammell_arcras2021,
   author = {Gammell, Jonathan D. and Strub, Marlin P.},
@@ -73,13 +80,15 @@
   doi = {10.1146/annurev-control-061920-093753}
 }
 #+end_src
-#+html: </details>
+#+html: </details></div>
+#+html: </div></div>
 
 ** Conference papers
 
-#+html: <span id="jasour_icra2025"></span>
-- A. Jasour, G. Daddi, M. Endo, T. S. Vaquero, M. Paton, M. P. Strub, S. Corpino, M. Ingham, M. Ono, R. Thakker (2025) /Risk-aware integrated task and motion planning for versatile snake robots under localization failures/. In: Proceedings of the IEEE International Conference on Robotics and Automation (ICRA). pages 8880—8886. ([[https://arxiv.org/abs/2502.19690][open-access]], [[https://www.doi.org/10.1109/ICRA55743.2025.11127363][doi]])
-#+html: <details><summary>Bibtex entry</summary>
+#+html: <div class="pub" id="jasour_icra2025"><span class="venue">ICRA 2025</span><div class="body">
+#+html: <p class="title">Risk-aware integrated task and motion planning for versatile snake robots under localization failures</p>
+#+html: <p class="authors">A. Jasour, G. Daddi, M. Endo, T. S. Vaquero, M. Paton, M. P. Strub, S. Corpino, M. Ingham, M. Ono, R. Thakker</p>
+#+html: <div class="links"><a href="https://arxiv.org/abs/2502.19690">open-access</a> · <a href="https://www.doi.org/10.1109/ICRA55743.2025.11127363">doi</a> · <details><summary>bibtex</summary>
 #+begin_src bibtex
 @InProceedings{jasour_icra2025,
   author = {Jasour, Akash and Daddi, Guglielmo and Endo, Masahiro and Vaquero, Tiago S. and Paton, Michael and Strub, Marlin P. and Corpino, Sabrina and Ingham, Michel and Ono, Masahiro and Thakker, Rohan},
@@ -90,11 +99,13 @@
   doi = {10.1109/ICRA55743.2025.11127363}
 }
 #+end_src
-#+html: </details>
+#+html: </details></div>
+#+html: </div></div>
 
-#+html: <span id="reid_aeroconf2024"></span>
-- W. Reid, T. Bartlett, A. Bouton, M. P. Strub, M. Newby, S. Gerdts, J. Martin, S. Moreland, R. McCormick (2024) /Planning and control for autonomous drives of the mars sample recovery helicopter/. In: Proceedings of the IEEE Aerospace Conference (AeroConf). pages 1—11. ([[https://www.doi.org/10.1109/AERO58975.2024.10521039][doi]])
-#+html: <details><summary>Bibtex entry</summary>
+#+html: <div class="pub" id="reid_aeroconf2024"><span class="venue">AeroConf 2024</span><div class="body">
+#+html: <p class="title">Planning and control for autonomous drives of the Mars Sample Recovery Helicopter</p>
+#+html: <p class="authors">W. Reid, T. Bartlett, A. Bouton, M. P. Strub, M. Newby, S. Gerdts, J. Martin, S. Moreland, R. McCormick</p>
+#+html: <div class="links"><a href="https://www.doi.org/10.1109/AERO58975.2024.10521039">doi</a> · <details><summary>bibtex</summary>
 #+begin_src bibtex
 @InProceedings{reid_aeroconf24,
   author = {Reid, William and Bartlett, Tara and Bouton, Arthur and Strub, Marlin P. and Newby, Michael and Gerdts, Stephen and Martin, Joshua and Moreland, Scott and McCormick, Ryan},
@@ -105,11 +116,13 @@
   doi = {10.1109/AERO58975.2024.10521039}
 }
 #+end_src
-#+html: </details>
+#+html: </details></div>
+#+html: </div></div>
 
-#+html: <span id="paton_aeroconf2024"></span>
-- M. Paton, /et al./ (incl. M. P. Strub) (2024) /2023 EELS field tests at Athabasca Glacier as an icy moon analogue environment/. In: Proceedings of the IEEE Aerospace Conference (AeroConf). pages 1—18. ([[https://www.doi.org/10.1109/AERO58975.2024.10521174][doi]])
-#+html: <details><summary>Bibtex entry</summary>
+#+html: <div class="pub" id="paton_aeroconf2024"><span class="venue">AeroConf 2024</span><div class="body">
+#+html: <p class="title">2023 EELS field tests at Athabasca Glacier as an icy moon analogue environment</p>
+#+html: <p class="authors">M. Paton, <i>et al.</i> (incl. M. P. Strub)</p>
+#+html: <div class="links"><a href="https://www.doi.org/10.1109/AERO58975.2024.10521174">doi</a> · <details><summary>bibtex</summary>
 #+begin_src bibtex
 @InProceedings{paton_aeroconf2024,
   author = {Paton, Michael and others},
@@ -120,11 +133,13 @@
   doi = {10.1109/AERO58975.2024.10521174}
 }
 #+end_src
-#+html: </details>
+#+html: </details></div>
+#+html: </div></div>
 
-#+html: <span id="thakker_aiaa2024"></span>
-- R. Thakker, M. Paton, B. Jones, G. Daddi, R. Royce, M. Swan, M. P. Strub, /et al./ (2024) /To boldly go where no robots have gone before — part 4: Neo autonomy for robustly exploring unknown, extreme environments with versatile robots/. AIAA SCITECH 2024 Forum, paper 1747. ([[https://www.doi.org/10.2514/6.2024-1747][doi]])
-#+html: <details><summary>Bibtex entry</summary>
+#+html: <div class="pub" id="thakker_aiaa2024"><span class="venue">AIAA 2024</span><div class="body">
+#+html: <p class="title">To boldly go where no robots have gone before — part 4: Neo autonomy for robustly exploring unknown, extreme environments with versatile robots</p>
+#+html: <p class="authors">R. Thakker, M. Paton, B. Jones, G. Daddi, R. Royce, M. Swan, M. P. Strub, <i>et al.</i></p>
+#+html: <div class="links"><a href="https://www.doi.org/10.2514/6.2024-1747">doi</a> · <details><summary>bibtex</summary>
 #+begin_src bibtex
 @InProceedings{thakker_aiaa2024,
   author = {Thakker, Rohan and Paton, Michael and Jones, Benjamin and Daddi, Guglielmo and Royce, Rob and Swan, Michael and Strub, Marlin P. and others},
@@ -135,11 +150,13 @@
   doi = {10.2514/6.2024-1747}
 }
 #+end_src
-#+html: </details>
+#+html: </details></div>
+#+html: </div></div>
 
-#+html: <span id="thakker_iros2023"></span>
-- R. Thakker, M. Paton, M. P. Strub, M. Swan, G. Daddi, R. Royce, /et al./ (2023) /EELS: Towards autonomous mobility in extreme terrain with a versatile snake robot with resilience to exteroception failures/. In: Proceedings of the IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS). ([[https://ai.jpl.nasa.gov/public/documents/papers/thakker-et-al-iros2023-eels.pdf][open-access]], [[https://www.doi.org/10.1109/IROS55552.2023.10341448][doi]])
-#+html: <details><summary>Bibtex entry</summary>
+#+html: <div class="pub" id="thakker_iros2023"><span class="venue">IROS 2023</span><div class="body">
+#+html: <p class="title">EELS: Towards autonomous mobility in extreme terrain with a versatile snake robot with resilience to exteroception failures</p>
+#+html: <p class="authors">R. Thakker, M. Paton, M. P. Strub, M. Swan, G. Daddi, R. Royce, <i>et al.</i></p>
+#+html: <div class="links"><a href="https://ai.jpl.nasa.gov/public/documents/papers/thakker-et-al-iros2023-eels.pdf">open-access</a> · <a href="https://www.doi.org/10.1109/IROS55552.2023.10341448">doi</a> · <details><summary>bibtex</summary>
 #+begin_src bibtex
 @InProceedings{thakker_iros23,
   author = {Thakker, Rohan and Paton, Michael and Strub, Marlin P. and Swan, Michael and Daddi, Guglielmo and Royce, Rob and Tosi, Phillipe and Gildner, Matthew and Vaquero, Tiago and Veismann, Marcel and Gavrilov, Peter and Marteau, Eloise Bowkett, Joseph and Loret, Daniel and Nakka, Yashwanth and Hockman, Benjamin and Orekhov, Andrew and Hasseler, Tristan and Leake, Carl and Nuernberger, Benjamin and Proen\c{c}a, Pedro and Reid, William and Talbot, William and Georgiev, Nikola and Pailevanian, Torkom and Archanian, Avak and Ambrose, Eric and Jasper, Jay and Etheredge, Rachel and Roman, Christiahn and Levine, Dan and Otsu, Kyohei and Melikyan, Hovhannes and Nash, Jeremy and Rieber, Richard and Carpenter, Kalind and Jain, Abhinandan and Shiraishi, Lori and Pastor, Daniel and Yearicks, Sarah and Ingham, Michel and Robinson, Matthew and Agha, Ali and Travers, Matthew and Choset, Howie and Burdick, Joel and Ono Masahiro},
@@ -148,11 +165,13 @@
   year = {2023},
 }
 #+end_src
-#+html: </details>
+#+html: </details></div>
+#+html: </div></div>
 
-#+html: <span id="hartmann_isrr2022"></span>
-- V. N. Hartmann, M. P. Strub, M. Toussaint, J. D. Gammell (2022) /Effort Informed Roadmaps (EIRM*): Efficient asymptotically optimal multiquery planning by actively reusing validation effort/. In: Proceedings of the International Symposium on Robotics Research (ISRR). ([[https://arxiv.org/pdf/2205.08480][open-access]], [[https://www.doi.org/10.1007/978-3-031-25555-7_37][doi]])
-#+html: <details><summary>Bibtex entry</summary>
+#+html: <div class="pub" id="hartmann_isrr2022"><span class="venue">ISRR 2022</span><div class="body">
+#+html: <p class="title">Effort Informed Roadmaps (EIRM*): Efficient asymptotically optimal multiquery planning by actively reusing validation effort</p>
+#+html: <p class="authors">V. N. Hartmann, M. P. Strub, M. Toussaint, J. D. Gammell</p>
+#+html: <div class="links"><a href="https://arxiv.org/pdf/2205.08480">open-access</a> · <a href="https://www.doi.org/10.1007/978-3-031-25555-7_37">doi</a> · <details><summary>bibtex</summary>
 #+begin_src bibtex
 @InProceedings{hartmann_isrr22,
   author = {Hartmann, Valentin N. and Strub, Marlin P. and Toussaint, Marc and Gammell, Jonathan D.},
@@ -162,11 +181,13 @@
   doi = {10.1007/978-3-031-25555-7_37}
 }
 #+end_src
-#+html: </details>
+#+html: </details></div>
+#+html: </div></div>
 
-#+html: <span id="paton_iros2020"></span>
-- M. Paton, M. P. Strub, T. Brown, R. J. Greene, J. Lizewski, V. Patel, J. D. Gammell, I. A. D. Nesnas (2020) /Navigation on the line: Traversability analysis and path planning for extreme-terrain rappelling rovers/. In: Proceedings of the IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS). pages 7034—7041. ([[https://robotic-esp.com/papers/paton_iros20.pdf][open-access]], [[https://www.doi.org/10.1109/IROS45743.2020.9341409][doi]])
-#+html: <details><summary>Bibtex entry</summary>
+#+html: <div class="pub" id="paton_iros2020"><span class="venue">IROS 2020</span><div class="body">
+#+html: <p class="title">Navigation on the line: Traversability analysis and path planning for extreme-terrain rappelling rovers</p>
+#+html: <p class="authors">M. Paton, M. P. Strub, T. Brown, R. J. Greene, J. Lizewski, V. Patel, J. D. Gammell, I. A. D. Nesnas</p>
+#+html: <div class="links"><a href="https://robotic-esp.com/papers/paton_iros20.pdf">open-access</a> · <a href="https://www.doi.org/10.1109/IROS45743.2020.9341409">doi</a> · <details><summary>bibtex</summary>
 #+begin_src bibtex
 @InProceedings{paton_iros2020,
   author = {Paton, Michael and Strub, Marlin P. and Brown, Travis and Greene, Rebecca J. and Lizewski, Jacob and Patel, Vandan and Gammell, Jonathan D. and Nesnas, Issa A.D.},
@@ -177,11 +198,13 @@
   doi = {10.1109/IROS45743.2020.9341409}
 }
 #+end_src
-#+html: </details>
+#+html: </details></div>
+#+html: </div></div>
 
-#+html: <span id="strub_icra2020b"></span>
-- M. P. Strub, J. D. Gammell (2020) /Adaptively Informed Trees (AIT*): Fast asymptotically optimal path planning through adaptive heuristics/. In: Proceedings of the IEEE International Conference on Robotics and Automation (ICRA). pages 3191—3198. ([[https://arxiv.org/abs/2002.06599][open-access]], [[https://www.doi.org/10.1109/ICRA40945.2020.9197338][doi]])
-#+html: <details><summary>Bibtex entry</summary>
+#+html: <div class="pub" id="strub_icra2020b"><span class="venue">ICRA 2020</span><div class="body">
+#+html: <p class="title">Adaptively Informed Trees (AIT*): Fast asymptotically optimal path planning through adaptive heuristics</p>
+#+html: <p class="authors">M. P. Strub, J. D. Gammell</p>
+#+html: <div class="links"><a href="https://arxiv.org/abs/2002.06599">open-access</a> · <a href="https://www.doi.org/10.1109/ICRA40945.2020.9197338">doi</a> · <details><summary>bibtex</summary>
 #+begin_src bibtex
 @InProceedings{strub_icra2020b,
   author = {Strub, Marlin P. and Gammell, Jonathan D.},
@@ -192,11 +215,13 @@
   doi = {10.1109/ICRA40945.2020.9197338}
 }
 #+end_src
-#+html: </details>
+#+html: </details></div>
+#+html: </div></div>
 
-#+html: <span id="strub_icra2020a"></span>
-- M. P. Strub, J. D. Gammell (2020) /Advanced BIT* (ABIT*): Sampling-based planning with advanced graph-search techniques/. In: Proceedings of the IEEE International Conference on Robotics and Automation (ICRA). pages 130—136. ([[https://arxiv.org/abs/2002.06589][open-access]], [[https://www.doi.org/10.1109/ICRA40945.2020.9196580][doi]])
-#+html: <details><summary>Bibtex entry</summary>
+#+html: <div class="pub" id="strub_icra2020a"><span class="venue">ICRA 2020</span><div class="body">
+#+html: <p class="title">Advanced BIT* (ABIT*): Sampling-based planning with advanced graph-search techniques</p>
+#+html: <p class="authors">M. P. Strub, J. D. Gammell</p>
+#+html: <div class="links"><a href="https://arxiv.org/abs/2002.06589">open-access</a> · <a href="https://www.doi.org/10.1109/ICRA40945.2020.9196580">doi</a> · <details><summary>bibtex</summary>
 #+begin_src bibtex
 @InProceedings{strub_icra2020a,
   author = {Strub, Marlin P. and Gammell, Jonathan D.},
@@ -207,13 +232,15 @@
   doi = {10.1109/ICRA40945.2020.9196580},
 }
 #+end_src
-#+html: </details>
+#+html: </details></div>
+#+html: </div></div>
 
 ** Theses
 
-#+html: <span id="strub_phd2022"></span>
-- M. P. Strub (2022) /Leveraging multiple sources of information to search continuous spaces/. Ph.D. Thesis, University of Oxford ([[https://ora.ox.ac.uk/objects/uuid:1a241006-0ddd-4829-bdd5-ade7301c863a][open-access]])
-#+html: <details><summary>Bibtex entry</summary>
+#+html: <div class="pub" id="strub_phd2022"><span class="venue">PhD 2022</span><div class="body">
+#+html: <p class="title">Leveraging multiple sources of information to search continuous spaces</p>
+#+html: <p class="authors">M. P. Strub <span class="links">· University of Oxford</span></p>
+#+html: <div class="links"><a href="https://ora.ox.ac.uk/objects/uuid:1a241006-0ddd-4829-bdd5-ade7301c863a">open-access</a> · <details><summary>bibtex</summary>
 #+begin_src bibtex
 @PhDThesis{strub_phd2022,
   author = {Strub, Marlin P.},
@@ -222,11 +249,13 @@
   year = {2022}
 }
 #+end_src
-#+html: </details>
+#+html: </details></div>
+#+html: </div></div>
 
-#+html: <span id="strub_msc2017"></span>
-- M. P. Strub (2017) /Exploring continuous representation of the world for place recognition/. M.Sc. Thesis, ETH Zurich.
-#+html: <details><summary>Bibtex entry</summary>
+#+html: <div class="pub" id="strub_msc2017"><span class="venue">MSc 2017</span><div class="body">
+#+html: <p class="title">Exploring continuous representation of the world for place recognition</p>
+#+html: <p class="authors">M. P. Strub <span class="links">· ETH Zurich</span></p>
+#+html: <div class="links"><details><summary>bibtex</summary>
 #+begin_src bibtex
 @MastersThesis{strub_msc2017,
   author = {Strub, Marlin P.},
@@ -235,11 +264,13 @@
   year = {2017}
 }
 #+end_src
-#+html: </details>
+#+html: </details></div>
+#+html: </div></div>
 
-#+html: <span id="strub_bsc2015"></span>
-- M. P. Strub (2015) /Model-based control of a bounding gait for a quadruped robot/. B.Sc. Thesis, ETH Zurich.
-#+html: <details><summary>Bibtex entry</summary>
+#+html: <div class="pub" id="strub_bsc2015"><span class="venue">BSc 2015</span><div class="body">
+#+html: <p class="title">Model-based control of a bounding gait for a quadruped robot</p>
+#+html: <p class="authors">M. P. Strub <span class="links">· ETH Zurich</span></p>
+#+html: <div class="links"><details><summary>bibtex</summary>
 #+begin_src bibtex
 @MastersThesis{strub_bsc2015,
   author = {Strub, Marlin P.},
@@ -249,12 +280,15 @@
   year = {2015}
 }
 #+end_src
-#+html: </details>
+#+html: </details></div>
+#+html: </div></div>
 
 ** Workshop papers and technical reports
 
-- J. D. Gammell, M. P. Strub, V. N. Hartmann (2022) /Planner Developer Tools (PDT): Reproducible experiments and statistical analysis for developing and testing motion planners/. In: Proceedings of the Workshop on Evaluating Motion Planning Performance (EMPP), IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS). ([[https://robotic-esp.com/papers/gammell_empp22.pdf][open-access]])
-#+html: <details><summary>Bibtex entry</summary>
+#+html: <div class="pub" id="gammell_empp22"><span class="venue">EMPP 2022</span><div class="body">
+#+html: <p class="title">Planner Developer Tools (PDT): Reproducible experiments and statistical analysis for developing and testing motion planners</p>
+#+html: <p class="authors">J. D. Gammell, M. P. Strub, V. N. Hartmann</p>
+#+html: <div class="links"><a href="https://robotic-esp.com/papers/gammell_empp22.pdf">open-access</a> · <details><summary>bibtex</summary>
 #+begin_src bibtex
 @InProceedings{gammell_empp22,
   author = {Gammell, Jonathan D. and Strub, Marlin P. and Hartmann, Valentin N.},
@@ -263,11 +297,13 @@
   year = {2022}
 }
 #+end_src
-#+html: </details>
+#+html: </details></div>
+#+html: </div></div>
 
-#+html: <span id="strub_tr2021"></span>
-- M. P. Strub, J. D. Gammell (2021) Admissible heuristics for obstacle clearance optimization objectives. ([[https://arxiv.org/abs/2104.02298][open-access]])
-#+html: <details><summary>Bibtex entry</summary>
+#+html: <div class="pub" id="strub_tr2021"><span class="venue">arXiv 2021</span><div class="body">
+#+html: <p class="title">Admissible heuristics for obstacle clearance optimization objectives</p>
+#+html: <p class="authors">M. P. Strub, J. D. Gammell</p>
+#+html: <div class="links"><a href="https://arxiv.org/abs/2104.02298">open-access</a> · <details><summary>bibtex</summary>
 #+begin_src bibtex
 @TechReport{strub_tr2021,
   author = {Strub, Marlin P. and Gammell, Jonathan D.},
@@ -278,4 +314,5 @@
 	year = {2021}
 }
 #+end_src
-#+html: </details>
+#+html: </details></div>
+#+html: </div></div>
