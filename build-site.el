@@ -50,6 +50,17 @@
       (concat org-html-head
               "<meta property=\"og:image\" content=\"https://www.marlinstrub.com/assets/profile_picture.jpg\">"))
 
+;; Footer with contact links.
+(setq org-html-postamble t)
+(setq org-html-postamble-format
+      '(("en" "<nav class=\"site-footer\">
+<a href=\"mailto:marlin.strub@gmail.com\">Email</a>
+<span class=\"separator\">·</span>
+<a href=\"https://github.com/marlinstrub\">GitHub</a>
+<span class=\"separator\">·</span>
+<a href=\"https://linkedin.com/in/marlinstrub\">LinkedIn</a>
+</nav>")))
+
 ;; Generate the html. The 't' is for discarding cached values.
 (org-publish-all t)
 
