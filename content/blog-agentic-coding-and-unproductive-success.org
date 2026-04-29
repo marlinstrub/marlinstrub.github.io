@@ -1,0 +1,28 @@
+#+include: ../elements/title.org
+#+include: ../elements/navigation.org
+
+* Agentic coding and unproductive success
+
+Understanding software used to be a byproduct of building it. Getting a feature to work meant grappling with the code: wrong abstractions, incomplete mental models, problems that turned out to be different from what you thought. It was slow and often frustrating. It turns out it was also how deep understanding got built. The efficiency agentic coding offers comes from removing this struggle, and with it, the conditions from which deep understanding can be wrested.
+
+Consider two kinds of understanding of a codebase. The reviewer's understanding comes from observation. They read a design document and a pull request, verify that the proposed approach handles edge cases and fits the system's architecture. The author's understanding comes from creation. They try approaches that don't work, discover constraints they didn't anticipate, and reshape their solution as their understanding of the system deepens. Both understand why the chosen solution works, but only the author understands why they discarded the alternatives.
+
+You have to be frustrated injecting a dependency through three layers of abstraction to finally realize your abstractions are wrong. You have to spend a puzzled afternoon chasing a segfault before you discover it's due to newly shared state between two subsystems you rarely touch. This is how you earn the understanding that includes the topology of dead ends, the ghosts of all the discarded alternatives. Author-level understanding is the map of the solution space, not just the path that works. No amount of careful reviewing produces it.
+
+Learning theory (the human kind) has a name for this. The unsuccessful attempt that precedes a working solution is called a /productive failure/, and there's robust evidence that it produces deeper understanding than being taught the correct solution directly [1,2,3]. The learning-theory term that applies to agentic coding is /unproductive success/.
+
+An unproductive success is when a task completes but the understanding it produces is shallow. When I delegate work to Claude and it offers a correct solution I'm left with reviewer-level understanding. What's treacherous is that unproductive success is self-concealing. There's no immediate signal that anything was lost.
+
+Software engineering is famously about trade-offs. What architecture to use, which part to optimize, how to balance technical debt against execution speed. Now there's a new trade-off and it's not about the product, it's about the process. The depth of understanding you want to develop through working on a feature has become a conscious decision.
+
+Business pressure will always favor speed because a lack of understanding bears no cost until something breaks in a novel way and nobody in the room has invested in the mental model needed to diagnose it. Businesses may think they're trading off speed vs. understanding, but they're really trading off speed vs. resilience.
+
+Even if coding agents become good enough to complete any well-specified task, someone still has to specify the task. Understanding what to build and diagnosing why what you built doesn't work both require the negative knowledge that only authorship yields. I'm not arguing against agentic coding. I use it every day. But the algorithm that touches core business logic and interacts with subsystems I'll need to reason about to make informed decisions about architecture? That I write myself.
+
+** References
+
+[1] Kapur, M. (2016). Examining Productive Failure, Productive Success, Unproductive Failure, and Unproductive Success in Learning. Educational Psychologist, 51(2), 289-299.
+
+[2] Kapur, M. (2014). Productive Failure in Learning Math. Cognitive Science, 38(5), 1008-1022.
+
+[3] Bjork, R.A. (1994). Memory and metamemory considerations in the training of human beings. In J. Metcalfe and A. Shimamura (Eds.), Metacognition: Knowing about knowing (pp. 185-205). Cambridge, MA: MIT Press.

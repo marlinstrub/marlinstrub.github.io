@@ -1,0 +1,6 @@
+#+include: ../elements/title.org
+#+include: ../elements/navigation.org
+
+* Blog
+
+  - @@html:<a target="_self" href="blog-agentic-coding-and-unproductive-success.html">Agentic coding is an unproductive success</a>@@
