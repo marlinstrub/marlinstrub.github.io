@@ -590,19 +590,46 @@ dd {
 	justify-content: center;
 }
 
-.figure {
-    max-width: 200px;
-    float: right;
-    margin-left: 1rem;
-    margin-bottom: 0.25rem;
-    padding: 0rem;
-}
-
 img {
     max-width: 500px;
     width: 100%;
     height: auto;
     margin-top: 50px;
+}
+
+/* --- Blog figures: centered image and caption, override the global
+   img top-margin which is too large inside a figure block. --- */
+body[class*="page-blog"] .figure {
+    text-align: center;
+    margin: 1.5em auto;
+}
+body[class*="page-blog"] .figure img {
+    margin-top: 0;
+}
+/* d2 SVGs ship intrinsic width/height that match the page font — let
+   them render at that size instead of stretching to fill via the
+   global img { width: 100%; max-width: 500px; }. */
+body[class*="page-blog"] .figure img.org-svg {
+    display: block;
+    width: auto;
+    /* Allow the image to extend beyond the 680px content column up to
+       the viewport edge (with 2rem of safety margin per side). Text
+       inside the SVG only stays at 14px while it isn't being scaled
+       down — once a diagram is wider than (viewport - 4rem) it shrinks
+       and the in-image text shrinks with it. */
+    max-width: calc(100vw - 4rem);
+    /* Center on the figure's midpoint regardless of width so that
+       wide images break out symmetrically left and right instead of
+       only overflowing to the right. */
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+/* Italicize caption text but keep "Figure N:" upright. */
+body[class*="page-blog"] .figure p:has(.figure-number) {
+    font-style: italic;
+}
+body[class*="page-blog"] .figure .figure-number {
+    font-style: normal;
 }
 
 input {
