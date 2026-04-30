@@ -212,39 +212,75 @@ pre {
 .org-comment-delimiter,
 .org-doc                 { color: #999999; font-style: italic; }
 
-/* --- Foldable source blocks (build-site.el wraps each src block in
-   <details open class="src-fold"><summary>LANG</summary>...</details>).
-   The summary doubles as the Rougier-style left-margin language label;
-   clicking it toggles the fold. ▾/▸ indicate state. --- */
-details.src-fold { margin: 0; font-size: 1em; }
-details.src-fold > summary {
-    list-style: none;
-    cursor: pointer;
-    color: #aaaaaa;
-    float: left;
-    text-align: right;
+/* --- Source-block peek (build-site.el wraps each src block in:
+       <div class="src-peek">
+         <input type="checkbox" id="peek-N" hidden>
+         <div class="src-peek-content">
+           <div class="org-src-container">...</div>
+           [<pre class="example">...</pre>]   <!-- adjacent #+RESULTS, if any -->
+         </div>
+         <label for="peek-N"></label>
+       </div>
+   Clipped to ~5 lines with a soft fade at the bottom; click the
+   centered "see more" button to expand, click "see less" to collapse.
+   CSS-only via the :checked sibling selector — no JS. --- */
+.src-peek {
+    position: relative;
+    margin: 0.25em 0;
+}
+.src-peek > input[type="checkbox"] { display: none; }
+.src-peek > .src-peek-content {
+    position: relative;
+    max-height: 7em;
+    overflow: hidden;
+}
+.src-peek > .src-peek-content::after {
+    content: "";
+    position: absolute;
+    left: 0; right: 0; bottom: 0;
+    height: 4em;
+    background: linear-gradient(rgba(251, 251, 251, 0), #fbfbfb 75%);
+    pointer-events: none;
+}
+.src-peek > input:checked ~ .src-peek-content { max-height: none; }
+.src-peek > input:checked ~ .src-peek-content::after { display: none; }
+.src-peek > label {
+    position: absolute;
+    bottom: 0.4em;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: "IBM Plex Mono", monospace;
+    /* Match the bibtex copy button exactly. The bibtex button is a
+       <button>, which inherits UA defaults for line-height/text-align
+       and sits two font-size inheritance steps deep (each 0.85em).
+       Use 0.75em + explicit line-height/text-align to reproduce the
+       visual on a <label>. */
+    font-size: 0.75em;
     font-weight: 400;
-    width: 3.0em;
-    margin-left: -4.25em;
-    margin-top: 0.25em;
-    font-variant: small-caps;
+    line-height: normal;
+    text-align: center;
+    color: rgba(51, 51, 51, 0.65);
+    background: #ffffff;
+    border: 1px solid rgba(51, 51, 51, 0.2);
+    border-radius: 3px;
+    padding: 0.05em 0.5em;
+    cursor: pointer;
     user-select: none;
+    transition: color 0.15s ease, border-color 0.15s ease;
 }
-details.src-fold > summary::-webkit-details-marker { display: none; }
-details.src-fold[open]       > summary::after { content: " ▾"; color: #cccccc; }
-details.src-fold:not([open]) > summary::after { content: " ▸"; color: #cccccc; }
-details.src-fold:not([open]) {
-    padding: 0.25em 0.5em;
-    background: #fbfbfb;
-    border-left: 2px solid #ebebeb;
-    min-height: 1.4em;
+.src-peek > label::after { content: "see more"; }
+.src-peek > input:checked ~ label::after { content: "see less"; }
+.src-peek > label:hover {
+    color: rgba(51, 51, 51, 1);
+    border-color: rgba(51, 51, 51, 0.5);
 }
-details.src-fold:not([open])::after {
-    content: "code hidden — click the language label to expand";
-    font-size: 0.85em;
-    color: #aaaaaa;
-    font-style: italic;
-    margin-left: 0.5em;
+
+/* Demarcate the #+RESULTS output from the source above it via a
+   slightly darker background. Scoped to .src-peek-content so that
+   standalone #+begin_example blocks (not paired with a source) keep
+   the regular pre background. */
+.src-peek-content > pre.example {
+    background-color: #f3f3f3;
 }
 
 /* --- Top navigation --- */
@@ -622,7 +658,7 @@ body[class*="page-blog"] .figure .figure-number {
     font-style: normal;
 }
 
-input {
+.wrapper input {
   appearance: none;
   display: inline-block;
 	z-index: 100;
@@ -636,11 +672,11 @@ input {
   cursor: pointer;
 }
 
-input:checked {
-  opacity: 0.7;  
+.wrapper input:checked {
+  opacity: 0.7;
 }
 
-input + * {
+.wrapper input + * {
 	position: absolute;
 	display: block;
 	top: -2.0rem;
@@ -652,7 +688,7 @@ input + * {
   transform: translateX(100%);
 }
 
-input + *[aria-label]:before {
+.wrapper input + *[aria-label]:before {
 	content: attr(aria-label);
 	position: absolute;
 	bottom: 0;
@@ -667,7 +703,7 @@ input + *[aria-label]:before {
 	background-color: rgba(255, 255, 255, 1.0);
 }
 
-input:checked + * {
+.wrapper input:checked + * {
 	transform: translateX(0);
 	z-index: 1;
 }

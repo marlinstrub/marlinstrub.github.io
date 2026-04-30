@@ -11,39 +11,62 @@
 (require 'htmlize)
 (setq org-html-htmlize-output-type 'css)
 
-;; Wrap exported source blocks in <details open class="src-fold"> so the
-;; left-margin language label doubles as a click-to-fold toggle. CSS in
-;; style.css styles the <summary> and the open/collapsed states. Pure
-;; HTML/CSS — no JS — via the documented org-export filter hook.
-(defvar mps-org-html-src-fold-lang-labels
-  '(("cpp" . "C++"))
-  "Per-language overrides for the <summary> margin label.
-Keys are the org src-block language id; values are the small-caps
-label shown in the left margin. Languages not listed here use the
-language id verbatim.")
-
-(defvar mps-org-html-src-fold-skip-langs
+;; Wrap exported source blocks in a peek-with-see-more shell. The block
+;; defaults to a clipped preview (~5 lines) with a soft fade at the
+;; bottom and a small "see more" button centered below; checking the
+;; hidden checkbox via its label expands the block to full height.
+;; Pure HTML/CSS — no JS — via the :checked sibling selector. Each
+;; block needs a unique id so the label/checkbox pair is unambiguous;
+;; a per-export counter handles that.
+(defvar mps-org-html-src-peek-skip-langs
   '("bibtex")
-  "Languages whose source blocks should NOT be wrapped in a fold.
+  "Languages whose source blocks should NOT be wrapped in a peek.
 Bibtex entries on publications.html already sit inside their own
-disclosure (the per-entry \"bibtex\" toggle), so wrapping them again
-would render a redundant nested <details> with a duplicate summary.")
+disclosure (the per-entry \"bibtex\" toggle), so adding the peek shell
+on top would create redundant chrome.")
 
-(defun mps-org-html-fold-src-block (text backend _info)
-  "Wrap HTML-exported source-block TEXT in <details>/<summary> for fold-on-click."
+(defvar mps-org-html-src-peek-counter 0
+  "Counter for unique src-peek checkbox ids; reset at the start of each export.")
+
+(defun mps-org-html-src-peek-reset-counter (&rest _)
+  "Reset the src-peek id counter so each exported file starts at peek-1."
+  (setq mps-org-html-src-peek-counter 0))
+
+(add-hook 'org-export-before-processing-functions
+          #'mps-org-html-src-peek-reset-counter)
+
+(defun mps-org-html-peek-src-block (text backend _info)
+  "Wrap HTML-exported source-block TEXT in a click-to-expand peek wrapper."
   (if (and (org-export-derived-backend-p backend 'html)
            (string-match "class=\"src src-\\([^\" ]+\\)\"" text))
-      (let* ((lang (match-string 1 text))
-             (label (or (cdr (assoc lang mps-org-html-src-fold-lang-labels))
-                        lang)))
-        (if (member lang mps-org-html-src-fold-skip-langs)
+      (let ((lang (match-string 1 text)))
+        (if (member lang mps-org-html-src-peek-skip-langs)
             text
-          (format "<details open class=\"src-fold\">\n<summary>%s</summary>\n%s</details>"
-                  label text)))
+          (cl-incf mps-org-html-src-peek-counter)
+          (let ((id (format "peek-%d" mps-org-html-src-peek-counter)))
+            (format "<div class=\"src-peek\">\n<input type=\"checkbox\" id=\"%s\" hidden>\n<div class=\"src-peek-content\">\n%s\n</div>\n<label for=\"%s\"></label>\n</div>"
+                    id text id))))
     text))
 
 (add-to-list 'org-export-filter-src-block-functions
-             #'mps-org-html-fold-src-block)
+             #'mps-org-html-peek-src-block)
+
+;; Pull a #+RESULTS-style example block into the .src-peek-content of
+;; the peek wrapper immediately preceding it, so source and output are
+;; clipped/expanded together. Run as a final-output filter because the
+;; source-block filter only sees the source, not the sibling that
+;; follows it in document order.
+(defun mps-org-html-merge-result-into-peek (text backend _info)
+  "Move <pre class=\"example\"> into the preceding .src-peek-content."
+  (if (org-export-derived-backend-p backend 'html)
+      (replace-regexp-in-string
+       "\\(<div class=\"src-peek-content\">\\(?:.\\|\n\\)*?\\)\\(\n</div>\n<label for=\"peek-[0-9]+\"></label>\n</div>\\)\\([\n\t ]*<pre class=\"example\">\\(?:.\\|\n\\)*?</pre>\\)"
+       "\\1\\3\\2"
+       text)
+    text))
+
+(add-to-list 'org-export-filter-final-output-functions
+             #'mps-org-html-merge-result-into-peek)
 
 ;; Let org use imagemagick to set the image to the desired width.
 (setq org-image-actual-width nil)
