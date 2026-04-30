@@ -159,6 +159,64 @@ on top would create redundant chrome.")
 <a href=\"https://linkedin.com/in/marlinstrub\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z\"/><path d=\"M8 11l0 5\"/><path d=\"M8 8l0 .01\"/><path d=\"M12 16l0 -5\"/><path d=\"M16 16v-3a2 2 0 0 0 -4 0\"/></svg>LinkedIn</a>
 </nav>")))
 
+;; Soften d2 class-shape headers. d2 hardcodes the header background to
+;; theme color N1 (the same color as body text), which gives the diagrams
+;; a heavy stack-of-dark-slabs feel. We can't change just the header via
+;; the d2 source — every escape hatch we have (theme override, *.style.fill)
+;; either bleeds into body text or swaps fill/stroke unpredictably. So we
+;; append a couple of CSS rules to the SVG's internal <style> block that
+;; recolor the .class_header rect to the site's #fbfbfb surface (matching
+;; the <pre> code-block background) and the (otherwise white) title text
+;; to #333. Idempotent — skips files that already carry the override.
+(defun mps-d2-recolor-class-headers (svg-file)
+  "Append CSS overrides to SVG-FILE so class-shape headers render as a
+light surface band rather than d2's default dark slab. The injection is
+wrapped with sentinel comments so it can be safely replaced when the
+ruleset evolves."
+  (let ((coding-system-for-read 'utf-8)
+        (coding-system-for-write 'utf-8)
+        (sentinel-start "/*mps-d2-recolor*/")
+        (sentinel-end "/*end-mps-d2-recolor*/")
+        (rules (concat
+                ".class_header{fill:#fbfbfb !important;"
+                ;; The class_header rect sits on top of the outer rect at
+                ;; the same x,y,width — so its fill covers the inside
+                ;; half of the outer rect's stroke, leaving only the
+                ;; outside 0.5px visible at the header. The body level
+                ;; shows the full 1px (both halves). Giving the header
+                ;; rect its own matching stroke restores parity, and as
+                ;; a bonus draws a thin rule between the header band and
+                ;; the first member row.
+                "stroke:#aaaaaa !important;"
+                "stroke-width:1 !important}"
+                "text.fill-N7{fill:#333333 !important}"
+                ;; d2 strokes the outer class rect at 2px while the field/
+                ;; method separator is 1px — the mismatch reads as a
+                ;; heavier frame around the methods than the class name.
+                "rect[style*=\"stroke-width:2\"]{stroke-width:1 !important}"
+                ;; Match every structural line (outer rect, separator,
+                ;; class_header) to the connector tone so the diagram
+                ;; reads as one consistent grayscale.
+                ".stroke-N1{stroke:#aaaaaa !important}")))
+    (with-temp-buffer
+      (insert-file-contents svg-file)
+      (let ((before (buffer-string)))
+        (goto-char (point-min))
+        (while (re-search-forward
+                (concat (regexp-quote sentinel-start)
+                        ".*?"
+                        (regexp-quote sentinel-end))
+                nil t)
+          (replace-match ""))
+        (goto-char (point-min))
+        (when (search-forward ".dark-code{display: none}" nil t)
+          (insert sentinel-start rules sentinel-end))
+        (unless (string= before (buffer-string))
+          (write-region (point-min) (point-max) svg-file))))))
+
+(dolist (svg (file-expand-wildcards "assets/blog-*.svg"))
+  (mps-d2-recolor-class-headers svg))
+
 ;; Generate the html. The 't' is for discarding cached values.
 (org-publish-all t)
 
