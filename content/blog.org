@@ -3,4 +3,15 @@
 
 * Blog
 
-  - @@html:<a target="_self" href="blog-agentic-coding-and-unproductive-success.html">Agentic coding and unproductive success</a>@@
+#+attr_html: :class posts
+- @@html:<span class="stamp">YYYY-MM-DD</span>@@ [[file:blog-policy-based-design-in-robotics.html][Policy-based design in robotics]] @@html:<span class="meta">XXXw &middot; ~Ymin</span>@@
+
+  On a C++ design pattern I'd like to see more in robotics. How does this look if this is a longer text that will break?
+
+- @@html:<span class="stamp">YYYY-MM-DD</span>@@ [[file:blog-agentic-coding-and-unproductive-success.html][Agentic coding and unproductive success]] @@html:<span class="meta">XXXw &middot; ~Ymin</span>@@
+
+  On a specific overlooked cost of agentic coding.
+
+- @@html:<span class="stamp">YYYY-MM-DD</span>@@ [[file:blog-rowing-the-atlantic.html][Rowing the Atlantic]] @@html:<span class="meta">XXXw &middot; ~Ymin</span>@@
+
+  On how three friends and I completed an unsupported row across the Atlantic.

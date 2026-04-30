@@ -133,6 +133,28 @@ on top would create redundant chrome.")
 ;; Open all links in external tabs, unless specified otherwise.
 (setq org-html-head (concat org-html-head "<base target=\"_blank\">"))
 
+;; Counter the <base target="_blank"> default for *internal* links.
+;; Org HTML export emits `<a href="foo.html">…</a>` with no target attr,
+;; so the base would force every internal link into a new tab. Add a
+;; link-filter that injects target="_self" on <a> tags whose href is a
+;; relative URL (no scheme, no protocol-relative leading //). External
+;; links keep inheriting the _blank default.
+(defun mps-org-html-internal-link-target-self (text backend _info)
+  "Add target=\"_self\" to relative-href <a> tags in Org's HTML link export."
+  (if (and (org-export-derived-backend-p backend 'html)
+           (string-match "\\`<a href=\"\\([^\"]*\\)\"" text)
+           (not (string-match-p "target=" text)))
+      (let ((href (match-string 1 text)))
+        (if (or (string-match-p "\\`[a-z][a-z0-9+.-]*:" href)
+                (string-prefix-p "//" href))
+            text
+          (replace-regexp-in-string
+           "\\`<a href=" "<a target=\"_self\" href=" text)))
+    text))
+
+(add-to-list 'org-export-filter-link-functions
+             #'mps-org-html-internal-link-target-self)
+
 ;; Default preview image for social/chat link unfurling. Per-page description
 ;; comes from each file's #+description and is emitted natively by org.
 (setq org-html-head

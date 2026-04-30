@@ -787,6 +787,57 @@ body[class*="page-blog"] .figure .figure-number {
     color: rgba(51, 51, 51, 0.55);
 }
 
+/* --- Blog index (log-register layout) ---
+   Each entry is a 3-col row: ISO date | title | word/reading-time meta.
+   The italic gloss sits beneath as a second muted line, padded so its
+   left edge aligns with the title column. The markup comes straight from
+   Org's plain-list export: <li> with two <p> children (the second being
+   the continuation paragraph holding the italic gloss). The first <p>
+   contains <span.stamp>, <a>, <span.meta>; we apply grid to that <p>.
+   Scoped under body.page-blog (exact match) so individual post pages,
+   which carry page-blog-<slug> classes, are not affected. */
+body.page-blog .posts {
+    padding: 0;
+    margin: 0.25em 0 0;
+}
+body.page-blog .posts > li {
+    list-style-type: none;     /* override the "- " bullet from ul.org-ul li */
+    margin-left: 0;            /* override 2rem from ul.org-ul li */
+    margin-bottom: 0;
+    padding: 0.5em 0;
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.06);
+}
+body.page-blog .posts > li:last-child {
+    border-bottom: none;
+}
+body.page-blog .posts > li > p {
+    display: block;            /* override inline-block from ul.org-ul li p */
+    margin: 0;
+}
+body.page-blog .posts > li > p:first-of-type {
+    display: grid;
+    grid-template-columns: 7em minmax(0, 1fr) auto;
+    column-gap: 1em;
+    align-items: baseline;
+}
+body.page-blog .posts > li > p + p {
+    margin-top: 0.05em;
+    padding-left: 8em;          /* aligns with title column: stamp 7em + gap 1em */
+    line-height: 1.45em;
+    /* italic styling comes from the <i> Org wraps the /text/ in;
+       color inherits the body default so the gloss reads as primary content */
+}
+body.page-blog .posts .stamp {
+    color: rgba(51, 51, 51, 0.55);
+    white-space: nowrap;
+}
+body.page-blog .posts .meta {
+    color: rgba(51, 51, 51, 0.45);
+    font-size: 0.88em;
+    white-space: nowrap;
+    text-align: right;
+}
+
 /* --- Responsive breakpoints ---
    Placed at end of file so these rules override the base declarations above. */
 
@@ -852,6 +903,21 @@ body[class*="page-blog"] .figure .figure-number {
     grid-template-columns: repeat(2, max-content);
     column-gap: 1.5em;
   }
+
+  /* Blog index: drop the meta column down beneath the title (stamp keeps
+     its fixed-width left column; the gloss padding still aligns under
+     the title, since the stamp column hasn't changed). */
+  body.page-blog .posts > li > p:first-of-type {
+    grid-template-columns: 6.2em minmax(0, 1fr);
+    row-gap: 0.05em;
+  }
+  body.page-blog .posts .meta {
+    grid-column: 2;
+    font-size: 0.82em;
+  }
+  body.page-blog .posts > li > p + p {
+    padding-left: 7.2em; /* matches the new 6.2em + 1em gap */
+  }
 }
 
 /* Narrow tablets / large phones: ≤540px — stack the TLDR card */
@@ -896,6 +962,20 @@ body[class*="page-blog"] .figure .figure-number {
   :root {
     --news-month: 2em;
     --news-gap:   0.5em;
+  }
+
+  /* Blog index: collapse to a single column at very narrow widths.
+     Stamp / title / meta stack; gloss drops its title-column alignment. */
+  body.page-blog .posts > li > p:first-of-type {
+    grid-template-columns: 1fr;
+    row-gap: 0.05em;
+  }
+  body.page-blog .posts .meta {
+    grid-column: 1;
+    text-align: left;
+  }
+  body.page-blog .posts > li > p + p {
+    padding-left: 0;
   }
 
   /* Carousel radio buttons: 44x44 touch target with a small visible dot in the centre.
