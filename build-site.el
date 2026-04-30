@@ -11,6 +11,40 @@
 (require 'htmlize)
 (setq org-html-htmlize-output-type 'css)
 
+;; Wrap exported source blocks in <details open class="src-fold"> so the
+;; left-margin language label doubles as a click-to-fold toggle. CSS in
+;; style.css styles the <summary> and the open/collapsed states. Pure
+;; HTML/CSS — no JS — via the documented org-export filter hook.
+(defvar mps-org-html-src-fold-lang-labels
+  '(("cpp" . "C++"))
+  "Per-language overrides for the <summary> margin label.
+Keys are the org src-block language id; values are the small-caps
+label shown in the left margin. Languages not listed here use the
+language id verbatim.")
+
+(defvar mps-org-html-src-fold-skip-langs
+  '("bibtex")
+  "Languages whose source blocks should NOT be wrapped in a fold.
+Bibtex entries on publications.html already sit inside their own
+disclosure (the per-entry \"bibtex\" toggle), so wrapping them again
+would render a redundant nested <details> with a duplicate summary.")
+
+(defun mps-org-html-fold-src-block (text backend _info)
+  "Wrap HTML-exported source-block TEXT in <details>/<summary> for fold-on-click."
+  (if (and (org-export-derived-backend-p backend 'html)
+           (string-match "class=\"src src-\\([^\" ]+\\)\"" text))
+      (let* ((lang (match-string 1 text))
+             (label (or (cdr (assoc lang mps-org-html-src-fold-lang-labels))
+                        lang)))
+        (if (member lang mps-org-html-src-fold-skip-langs)
+            text
+          (format "<details open class=\"src-fold\">\n<summary>%s</summary>\n%s</details>"
+                  label text)))
+    text))
+
+(add-to-list 'org-export-filter-src-block-functions
+             #'mps-org-html-fold-src-block)
+
 ;; Let org use imagemagick to set the image to the desired width.
 (setq org-image-actual-width nil)
 

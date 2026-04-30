@@ -185,20 +185,6 @@ code {
     font-weight: 400;
 }
 
-pre::before {
-    color: #aaaaaa;
-    float: left;
-    text-align: right;
-    font-weight: 400;
-    width: 3.0em;
-    margin-left: -4.25em;
-    font-variant: small-caps;
-    content: "";
-}
-pre.src-lisp::before { content: "lisp"; }
-pre.src-org::before { content: "org"; }
-
-
 pre {
     color: rgba(51, 51, 51, 0.50);
     background-color: #fbfbfb;
@@ -414,19 +400,23 @@ details.src-fold:not([open])::after {
     border-color: #a02020;
 }
 
-/* --- Folding --- */
+/* --- Folding (collapsible disclosures: bibtex on publications, code
+   blocks via details.src-fold, etc.). Frame is a single left rule on
+   the details — no rounded full border. The inner <pre> drops its own
+   left border so we don't render two parallel lines. --- */
 details {
     background: #fbfbfb;
-    border: 1px solid #ebebeb;
-    border-radius: 5px;
-    padding:  0.25em;
+    border-left: 2px solid #ebebeb;
+    padding: 0.25em 0.5em;
     margin-bottom: 0.25em;
     margin-top: 0.25em;
     margin-left: 2rem;
     font-size: 0.85em;
 }
 details pre {
-    border: 1px;
+    border-left: none;
+    background: transparent;
+    padding: 0;
 }
 summary {
     color: rgba(51, 51, 51, 0.80);
@@ -745,8 +735,7 @@ input:checked + * {
     position: relative;
     margin: 0.5em 0 0;
     background: #fbfbfb;
-    border: 1px solid #ebebeb;
-    border-radius: 4px;
+    border-left: 2px solid #ebebeb;
     padding: 0.5em 0.7em;
 }
 .pub .links details > .org-src-container > pre {
