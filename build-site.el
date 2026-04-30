@@ -1,6 +1,16 @@
 ;; Load the publishing system.
 (require 'ox-publish)
 
+;; Source-block syntax highlighting via htmlize. Vendored under lisp/ so
+;; the batch build (emacs -Q --script) does not depend on package init or
+;; the user's elpa. Output type 'css makes htmlize emit CSS classes that
+;; style.css colors — keeps the palette in the site, not the emacs theme.
+(add-to-list 'load-path
+             (expand-file-name "lisp"
+                               (file-name-directory load-file-name)))
+(require 'htmlize)
+(setq org-html-htmlize-output-type 'css)
+
 ;; Let org use imagemagick to set the image to the desired width.
 (setq org-image-actual-width nil)
 
