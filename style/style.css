@@ -226,6 +226,9 @@ pre {
 .site-nav li {
     padding: 6px;
 }
+.site-nav li:first-child {
+    padding-left: 0;
+}
 
 /* --- Navigation highlighting --- */
 .page-index    .site-nav a[href="index.html"],
