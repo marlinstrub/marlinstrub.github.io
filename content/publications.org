@@ -237,7 +237,7 @@
 
 #+html: <div class="pub" id="strub_phd2022"><span class="venue">PhD 2022</span><div class="body">
 #+html: <p class="title">Leveraging multiple sources of information to search continuous spaces</p>
-#+html: <p class="authors">M. P. Strub <span class="links">· University of Oxford</span></p>
+#+html: <p class="authors">M. P. Strub</p>
 #+html: <div class="links"><a href="https://ora.ox.ac.uk/objects/uuid:1a241006-0ddd-4829-bdd5-ade7301c863a">open-access</a> · <details><summary>bibtex</summary>
 #+begin_src bibtex
 @PhDThesis{strub_phd2022,
@@ -252,7 +252,7 @@
 
 #+html: <div class="pub" id="strub_msc2017"><span class="venue">MSc 2017</span><div class="body">
 #+html: <p class="title">Exploring continuous representation of the world for place recognition</p>
-#+html: <p class="authors">M. P. Strub <span class="links">· ETH Zurich</span></p>
+#+html: <p class="authors">M. P. Strub</p>
 #+html: <div class="links"><details><summary>bibtex</summary>
 #+begin_src bibtex
 @MastersThesis{strub_msc2017,
@@ -267,7 +267,7 @@
 
 #+html: <div class="pub" id="strub_bsc2015"><span class="venue">BSc 2015</span><div class="body">
 #+html: <p class="title">Model-based control of a bounding gait for a quadruped robot</p>
-#+html: <p class="authors">M. P. Strub <span class="links">· ETH Zurich</span></p>
+#+html: <p class="authors">M. P. Strub</p>
 #+html: <div class="links"><details><summary>bibtex</summary>
 #+begin_src bibtex
 @MastersThesis{strub_bsc2015,
