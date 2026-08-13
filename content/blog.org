@@ -4,6 +4,11 @@
 * Blog
 
 #+attr_html: :class posts
+
+- @@html:<span class="stamp">YYYY-MM-DD</span>@@ [[file:blog-polymorphism-in-robotics.org][Your guide to using polymorphism in robotics]] @@html:<span class="meta">XXXw &middot; ~Ymin</span>@@
+
+  How to choose between the different mechanisms for polymorphism in C++
+
 - @@html:<span class="stamp">YYYY-MM-DD</span>@@ [[file:blog-policy-based-design-in-robotics.html][Policy-based design in robotics]] @@html:<span class="meta">XXXw &middot; ~Ymin</span>@@
 
   On a C++ design pattern I'd like to see more in robotics. How does this look if this is a longer text that will break?

@@ -1,0 +1,62 @@
+#+include: ../elements/title.org
+#+include: ../elements/navigation.org
+
+* Your guide to using polymorphism in robotics
+
+Polymorphism allows one interface to stand in for many types. This is especially powerful when prototyping because it allows you to try out different approaches or behaviors simply by swapping the type behind the interface.
+
+If your C++ education was similar to mine, then you thought for longer than you'd like to admit that polymorphism in C++ basically /is/ public inheritance. But there are several other mechanisms that enable polymorphism in C++, and I think it's worth knowing what their trade-offs are.
+
+This post offers two high-level questions to guide you in selecting the correct mechanism and summarizes the benefits and drawbacks of the available mechanisms.
+
+** Two questions to guide you
+
+There are two questions that I find generally useful in determining what the right mechanism is for a given use-case. Let's start with the simpler question:
+
+“Do I need run-time polymorphism?”
+
+Another way to ask this is “Will it be necessary to select the approach while my stack is running (or launching)?” If yes then you have to use run-time polymorphism. Otherwise you should probably prefer compile-time polymorphism because the compiler is great at helping you find bugs.
+
+The second question is
+
+“Do I want to satisfy the open-closed principle for types or for operations?”
+
+Another way to ask this is “Will I be more likely to try completely new approaches (i.e., add new types) or to extend the interface (i.e., add new operations)?” Doing both without significantly modifying existing code is possible, but requires considerable machinery*. Cleverly-written libraries like [[https://www.boost.org/doc/libs/latest/libs/openmethod/doc/html/openmethod/motivation.html][Boost.OpenMethod]] solve it, but I find they add significant cognitive load -- no free lunch.
+
+** The polymorphism table
+
+The table below is a peek at the rest of this post as well as a reference for later (and for myself).
+
+|                   | Compile-time                                              | Run-time                                                                             |
+|--------------------------------------+-----------------------------------------------------------+--------------------------------------------------------------------------------------|
+| *Types*   | Concepts (CRTP pre C++20)   | Inheritance or type erasure |
+| *Operations* | Overload set / tag dispatch                | Visitors, variants or tagged union |
+
+If you cannot answer these questions confidently, then you'll have to do what good engineers do best and weigh the trade-offs outlined below.
+
+** Dynamic polymorphism
+
+Happens when the program is executed. Example: Switching a controller that satisfies an interface. ros2_control?
+
+*** Adding types
+
+- Virtual inheritance. Benefits: Familiarity. Drawbacks: Reference semantics.
+- Type erasure. Benefits: Value semantics. Drawbacks: Boilerplate.
+
+*** Adding operations
+
+** Static polymorphism
+
+Happens when the program is compiled. Example: Configuring a planner for a robot. VAMP?
+
+*** Adding types
+
+*** Adding operations
+
+
+
+** Notes
+
+- Presentation idea: Illustrative but non-idiomatic code snippets in text, links to idiomatic versions on compiler explorer.
+
+- * Satisfying the open-closed principle for both types and operations is called the [[https://en.wikipedia.org/wiki/Expression_problem][Expression Problem]], and there is rich literature on it if you're interested [T][O][D][O].
