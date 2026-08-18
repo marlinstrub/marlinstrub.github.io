@@ -3,11 +3,11 @@
 
 * Your guide to using polymorphism in robotics
 
-Polymorphism allows one interface to stand in for many types. This is especially powerful when prototyping because it allows you to try out different approaches or behaviors simply by swapping the type behind the interface.
+Polymorphism allows one interface to stand in for many types. This can be useful in various scenarios but I think it is especially powerful when prototyping because it allows you to try out different approaches and implement different behaviors simply by swapping the type behind the interface.
 
-If your C++ education was similar to mine, then you thought for longer than you'd like to admit that polymorphism in C++ basically /is/ public inheritance. But there are several other mechanisms that enable polymorphism in C++, and I think it's worth knowing what their trade-offs are.
+If your C++ education was similar to mine, then you thought for a while that polymorphism in C++ basically /is/ public inheritance. But there are several other mechanisms that enable polymorphism in C++, and I think it's worth knowing what their trade-offs are.
 
-This post offers two high-level questions to guide you in selecting the correct mechanism and summarizes the benefits and drawbacks of the available mechanisms.
+This post looks at these mechanisms from the perspective of someone that aims to write code that is both /flexible/, i.e., allows you to prototype and adapt to changing requirements, and /maintainable/, i.e., localizes complexity and minimizes dependencies (as opposed to, e.g., someone that aims to maximize performance).
 
 ** Two questions to guide you
 
@@ -21,30 +21,25 @@ The second question is
 
 /“Do I want to satisfy the open-closed principle for types or for operations?”/
 
-Another way to ask this is “Will I be more likely to try completely new approaches (i.e., add new types) or to extend the interface (i.e., add new operations)?” Doing both without significantly modifying existing code is possible, but requires considerable machinery*. Cleverly-written libraries like [[https://www.boost.org/doc/libs/latest/libs/openmethod/doc/html/openmethod/motivation.html][Boost.OpenMethod]] solve it, but I find they add significant cognitive load -- no free lunch.
+Another way to ask this is “Will I more often add completely new approaches (i.e., add new types) or extend the initial interface (i.e., add new operations)?” Cleverly-written libraries like [[https://www.boost.org/doc/libs/latest/libs/openmethod/doc/html/openmethod/motivation.html][Boost.OpenMethod]] allow you to both add new types and new operations without modifying existing code, but it requires considerable machinery and I find they add significant cognitive load -- no free lunch*.
 
-** The polymorphism table
+The table below summarizes the rest of this post.
 
-The table below is a peek at the rest of this post as well as a reference for later (and for myself).
+|            | Run-time (dynamic)                 | Compile-time (static)       |
+|------------+------------------------------------+-----------------------------|
+| *Types*      | Inheritance or type erasure        | Concepts (CRTP pre C++20)   |
+| *Operations* | Visitors, variants or tagged union | Overload set / tag dispatch |
 
-|                   | Compile-time                                              | Run-time                                                                             |
-|--------------------------------------+-----------------------------------------------------------+--------------------------------------------------------------------------------------|
-| *Types*   | Concepts (CRTP pre C++20)   | Inheritance or type erasure |
-| *Operations* | Overload set / tag dispatch                | Visitors, variants or tagged union |
+** Public inheritance
 
-If you cannot answer these questions confidently, then you'll have to do what good engineers do best and weigh the trade-offs outlined below.
+- Strengths: Satisfies the OCP for types, is familiar to most, requires virtually no boilerplate (pun intended)
+- Drawbacks: Violates the OCP for operations, forces reference semantics
 
-** Dynamic polymorphism, adding types
-
-There are two patterns that are suitable for dynamic polymorphism when you think adding types should not require a lot of code changes.
-
-*Public inheritance*
-
-This is your classic interface base class:
+This is your classic interface base class that most people are familiar with:
 
 #+header: :transclude [[file:code/blog-polymorphism-in-robotics_public-inheritance-0.cpp]]
 #+begin_src cpp :flags "-std=c++23" :includes '(<print> <memory>) :noweb yes :results verbatim :exports both
-struct control{}; // Dummy type to represent the control of your robot
+struct control{}; // Dummy type to represent the control input of your robot
 struct state{};   // Dummy type to represent the state of your robot
 
 struct controller_base {
@@ -80,7 +75,7 @@ int main() {
 : controller_a::advance
 : controller_b::advance
 
-The main benefit of this is that most people are familiar with it and that adding types requires no changes to existing code:
+Ideally you find a single (probably learned) controller that can handle every motion your system must execute. Every robotics stack I've ever worked with had multiple controllers, each geared for different purposes (e.g., trotting vs. walking up stairs). Public inheritance allows you to switch these controllers at runtime. It also allows you to try out completely new controllers if you're unsatisfied with the performance of an existing controller and to extend the capabilities of your robot by adding a completely new controller.
 
 #+header: :transclude [[file:code/blog-polymorphism-in-robotics_public-inheritance-1.cpp]]
 #+header: :diff-base [[file:code/blog-polymorphism-in-robotics_public-inheritance-0.cpp]]
@@ -132,7 +127,9 @@ int main() {
 : controller_b::advance
 : controller_c::advance
 
-One drawback is that adding operations to the interface, requires you to change every implementation of it.
+One drawback is that adding operations to the interface, requires you to change every implementation of it. Another drawback is that it forces reference semantics. A third drawback is that in practice it often results in violation of the interface segregation principle.
+
+Let's say one of your controllers is a PID controller and a first-time deployment reveals that in some scenarios you need the be able to reset the integral wind-up of it. If you've chosen public inheritance as your polymorphism mechanism, then it is not enough to implement a ~reset~ method in the PID controller, you also need to implement it in the base class and, worse, in the controller that is not a PID controller and maybe doesn't hold state, so there's nothing the ~reset~ method can sensibly do.
 
 #+header: :transclude [[file:code/blog-polymorphism-in-robotics_public-inheritance-2.cpp]]
 #+header: :diff-base [[file:code/blog-polymorphism-in-robotics_public-inheritance-1.cpp]]
@@ -142,7 +139,7 @@ struct state{};   // Dummy type to represent the state of your robot
 
 struct controller_base {
   virtual auto advance(const state &state) const -> control = 0;
-  virtual auto reset() const -> void = 0;
+  virtual auto reset() -> void = 0; // This change is only needed because of the mechanism
 };
 
 struct controller_a : public controller_base {
@@ -150,7 +147,7 @@ struct controller_a : public controller_base {
     std::println("controller_a::advance"); return {};
   }
   auto reset() -> void override {
-    std::println("controller_a::reset")
+    std::println("controller_a::reset"); // Resets the integrator (the change you want)
   }
 };
 
@@ -159,167 +156,36 @@ struct controller_b : public controller_base {
     std::println("controller_b::advance"); return {};
   };
   auto reset() -> void override {
-    std::println("controller_b::reset")
-  }
-};
-
-struct controller_c : public controller_base {
-  auto advance(const state& state) const -> control override {
-    std::println("controller_c::advance"); return {};
-  };
-  auto reset() -> void override {
-    std::println("controller_c::reset")
+    std::println("controller_b::reset"); // This change is only needed because of the mechanism
   }
 };
 
 int main() {
   std::unique_ptr<controller_base> controller;
-  std::unique_ptr<controller_base> controller;
   if (/* runtime_condition_for_controller_a == */ true) {
     controller = std::make_unique<controller_a>();
-    controller->advance();
+    controller->advance(state{});
     controller->reset();
   }
   if (/* runtime_condition_for_controller_b == */ true) {
     controller = std::make_unique<controller_b>();
-    controller->advance();
-    controller->reset();
-  }
-  if (/* runtime_condition_for_controller_c == */ true) {
-    controller = std::make_unique<controller_c>();
-    controller->advance();
-    controller->reset();
+    controller->advance(state{});
+    controller->reset(); // You can call it but it may not do anything meaningful
   }
 }
 #+end_src
 
 #+RESULTS:
-: Error (exit 1):
-: /tmp/babel-tIMLSN/C-src-hP5NAS.cpp: In function ‘int main()’:
-: /tmp/babel-tIMLSN/C-src-hP5NAS.cpp:47:34: error: no matching function for call to ‘make_unique(controller_a)’
-:    47 |     controller = std::make_unique(controller_a{});
-:       |                  ~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
-:   • there are 3 candidates
-: In file included from /usr/include/c++/16/memory:80,
-:                  from /tmp/babel-tIMLSN/C-src-hP5NAS.cpp:2:
-:     • candidate 1: ‘template<class _Tp, class ... _Args> constexpr std::__detail::__unique_ptr_t<_Tp> std::make_unique(_Args&& ...)’
-:       /usr/include/c++/16/bits/unique_ptr.h:1104:5:
-:        1104 |     make_unique(_Args&&... __args)
-:             |     ^~~~~~~~~~~
-:       • template argument deduction/substitution failed:
-:         •   couldn’t deduce template parameter ‘_Tp’
-:           /tmp/babel-tIMLSN/C-src-hP5NAS.cpp:47:34:
-:              47 |     controller = std::make_unique(controller_a{});
-:                 |                  ~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
-:     • candidate 2: ‘template<class _Tp> constexpr std::__detail::__unique_ptr_array_t<_Tp> std::make_unique(size_t)’
-:       /usr/include/c++/16/bits/unique_ptr.h:1119:5:
-:        1119 |     make_unique(size_t __num)
-:             |     ^~~~~~~~~~~
-:       • template argument deduction/substitution failed:
-:         •   couldn’t deduce template parameter ‘_Tp’
-:           /tmp/babel-tIMLSN/C-src-hP5NAS.cpp:47:34:
-:              47 |     controller = std::make_unique(controller_a{});
-:                 |                  ~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
-:     • candidate 3: ‘template<class _Tp, class ... _Args> std::__detail::__invalid_make_unique_t<_Tp> std::make_unique(_Args&& ...)’ (deleted)
-:       /usr/include/c++/16/bits/unique_ptr.h:1129:5:
-:        1129 |     make_unique(_Args&&...) = delete;
-:             |     ^~~~~~~~~~~
-:       • template argument deduction/substitution failed:
-:         •   couldn’t deduce template parameter ‘_Tp’
-:           /tmp/babel-tIMLSN/C-src-hP5NAS.cpp:47:34:
-:              47 |     controller = std::make_unique(controller_a{});
-:                 |                  ~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
-: /tmp/babel-tIMLSN/C-src-hP5NAS.cpp:48:24: error: no matching function for call to ‘controller_base::advance()’
-:    48 |     controller->advance();
-:       |     ~~~~~~~~~~~~~~~~~~~^~
-:   • there is 1 candidate
-:     • candidate 1: ‘virtual control controller_base::advance(const state&) const’
-:       /tmp/babel-tIMLSN/C-src-hP5NAS.cpp:13:16:
-:          13 |   virtual auto advance(const state &state) const -> control = 0;
-:             |                ^~~~~~~
-:       • candidate expects 1 argument, 0 provided
-: /tmp/babel-tIMLSN/C-src-hP5NAS.cpp:52:34: error: no matching function for call to ‘make_unique(controller_b)’
-:    52 |     controller = std::make_unique(controller_b{});
-:       |                  ~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
-:   • there are 3 candidates
-:     • candidate 1: ‘template<class _Tp, class ... _Args> constexpr std::__detail::__unique_ptr_t<_Tp> std::make_unique(_Args&& ...)’
-:       /usr/include/c++/16/bits/unique_ptr.h:1104:5:
-:        1104 |     make_unique(_Args&&... __args)
-:             |     ^~~~~~~~~~~
-:       • template argument deduction/substitution failed:
-:         •   couldn’t deduce template parameter ‘_Tp’
-:           /tmp/babel-tIMLSN/C-src-hP5NAS.cpp:52:34:
-:              52 |     controller = std::make_unique(controller_b{});
-:                 |                  ~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
-:     • candidate 2: ‘template<class _Tp> constexpr std::__detail::__unique_ptr_array_t<_Tp> std::make_unique(size_t)’
-:       /usr/include/c++/16/bits/unique_ptr.h:1119:5:
-:        1119 |     make_unique(size_t __num)
-:             |     ^~~~~~~~~~~
-:       • template argument deduction/substitution failed:
-:         •   couldn’t deduce template parameter ‘_Tp’
-:           /tmp/babel-tIMLSN/C-src-hP5NAS.cpp:52:34:
-:              52 |     controller = std::make_unique(controller_b{});
-:                 |                  ~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
-:     • candidate 3: ‘template<class _Tp, class ... _Args> std::__detail::__invalid_make_unique_t<_Tp> std::make_unique(_Args&& ...)’ (deleted)
-:       /usr/include/c++/16/bits/unique_ptr.h:1129:5:
-:        1129 |     make_unique(_Args&&...) = delete;
-:             |     ^~~~~~~~~~~
-:       • template argument deduction/substitution failed:
-:         •   couldn’t deduce template parameter ‘_Tp’
-:           /tmp/babel-tIMLSN/C-src-hP5NAS.cpp:52:34:
-:              52 |     controller = std::make_unique(controller_b{});
-:                 |                  ~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
-: /tmp/babel-tIMLSN/C-src-hP5NAS.cpp:53:24: error: no matching function for call to ‘controller_base::advance()’
-:    53 |     controller->advance();
-:       |     ~~~~~~~~~~~~~~~~~~~^~
-:   • there is 1 candidate
-:     • candidate 1: ‘virtual control controller_base::advance(const state&) const’
-:       /tmp/babel-tIMLSN/C-src-hP5NAS.cpp:13:16:
-:          13 |   virtual auto advance(const state &state) const -> control = 0;
-:             |                ^~~~~~~
-:       • candidate expects 1 argument, 0 provided
-: /tmp/babel-tIMLSN/C-src-hP5NAS.cpp:57:34: error: no matching function for call to ‘make_unique(controller_c)’
-:    57 |     controller = std::make_unique(controller_c{});
-:       |                  ~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
-:   • there are 3 candidates
-:     • candidate 1: ‘template<class _Tp, class ... _Args> constexpr std::__detail::__unique_ptr_t<_Tp> std::make_unique(_Args&& ...)’
-:       /usr/include/c++/16/bits/unique_ptr.h:1104:5:
-:        1104 |     make_unique(_Args&&... __args)
-:             |     ^~~~~~~~~~~
-:       • template argument deduction/substitution failed:
-:         •   couldn’t deduce template parameter ‘_Tp’
-:           /tmp/babel-tIMLSN/C-src-hP5NAS.cpp:57:34:
-:              57 |     controller = std::make_unique(controller_c{});
-:                 |                  ~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
-:     • candidate 2: ‘template<class _Tp> constexpr std::__detail::__unique_ptr_array_t<_Tp> std::make_unique(size_t)’
-:       /usr/include/c++/16/bits/unique_ptr.h:1119:5:
-:        1119 |     make_unique(size_t __num)
-:             |     ^~~~~~~~~~~
-:       • template argument deduction/substitution failed:
-:         •   couldn’t deduce template parameter ‘_Tp’
-:           /tmp/babel-tIMLSN/C-src-hP5NAS.cpp:57:34:
-:              57 |     controller = std::make_unique(controller_c{});
-:                 |                  ~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
-:     • candidate 3: ‘template<class _Tp, class ... _Args> std::__detail::__invalid_make_unique_t<_Tp> std::make_unique(_Args&& ...)’ (deleted)
-:       /usr/include/c++/16/bits/unique_ptr.h:1129:5:
-:        1129 |     make_unique(_Args&&...) = delete;
-:             |     ^~~~~~~~~~~
-:       • template argument deduction/substitution failed:
-:         •   couldn’t deduce template parameter ‘_Tp’
-:           /tmp/babel-tIMLSN/C-src-hP5NAS.cpp:57:34:
-:              57 |     controller = std::make_unique(controller_c{});
-:                 |                  ~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
-: /tmp/babel-tIMLSN/C-src-hP5NAS.cpp:58:24: error: no matching function for call to ‘controller_base::advance()’
-:    58 |     controller->advance();
-:       |     ~~~~~~~~~~~~~~~~~~~^~
-:   • there is 1 candidate
-:     • candidate 1: ‘virtual control controller_base::advance(const state&) const’
-:       /tmp/babel-tIMLSN/C-src-hP5NAS.cpp:13:16:
-:          13 |   virtual auto advance(const state &state) const -> control = 0;
-:             |                ^~~~~~~
-:       • candidate expects 1 argument, 0 provided
+: controller_a::advance
+: controller_a::reset
+: controller_b::advance
+: controller_b::reset
 
-- Public inheritance :: Benefits: Familiarity. Drawbacks: Reference semantics.
+*** Type erasure
+
+
+
+
 - Type erasure :: Benefits: Value semantics. Drawbacks: Boilerplate.
 
 *** Adding operations
